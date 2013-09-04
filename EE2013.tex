@@ -1,17 +1,27 @@
-\documentclass[twoside,12pt,parskip=half-]{scrartcl}
-\raggedbottom
+% Dokument Ersti-Einstein WiSe 2013/2014
+% für die O-Phase 2013
+% ophase-orga@gaf.fs.lmu.de
+% Booklet Layout A5 Seiten, komplett 4 Farben
+%TODO daher rausfinden, wie man A4-Bögen hiermit druckt
+%TODO update all to A5 paper size
+%TODO transfer changes from markep up print version
+%TODO all graphics bleed
+%TODO change papersize back to show crop marks
 
-% Für TODO nach %XXX suchen.
-% Regeln: du statt euch in sätzen verwenden um Leser direkt anzusprechen
-% Darauf achten, dass Seitenzahl durch 4 teilbar ist damit es am ende keine leeren seiten gibt 
-% fs.lmu.de/gaf/impurity :) 
-% Schreibweisen: E-Books, E-Mail, Webseite, Campuskennung, VPN-Client, BAföG, WLAN, UniWorX
 
-%\usepackage[paperwidth=152mm, paperheight = 214mm,twoside, left=17mm, right=17mm, top=22mm, bottom=27mm, bindingoffset=5mm]{geometry}
-\usepackage[a4paper,left=17mm, right=17mm, top=22mm, bottom=27mm, bindingoffset=5mm,twoside]{geometry}
-\usepackage[ngerman]{babel}
+\documentclass[twoside,a5paper,9pt]{scrartcl}
 
+% all referenced packages
+\usepackage{calc} %need this for dimension calcs
 \usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{img//}{img//daumenkino//}}
+\usepackage[absolute]{textpos}
+\usepackage{fancyhdr} %set up in a bit
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
 \usepackage{dtklogos}
 \usepackage{setspace}
 \usepackage{multicol}
@@ -21,49 +31,27 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{wrapfig}
 \usepackage{microtype}
-\usepackage{graphicx}
 \usepackage{multirow}
-\usepackage{tikz}
-\usetikzlibrary{positioning}
-\usetikzlibrary{shapes}
-\graphicspath{{img//}}
+
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\linespread{1.05}
+
 \usepackage[hidelinks]{hyperref}
-\usepackage[absolute]{textpos}
+\usepackage{url}
+\urlstyle{same}
 
-% redefine header/footer
-\usepackage{scrpage2}
-\ihead{}
-\ohead{\rightmark}
-\chead{}
-\ifoot{}
-\ofoot{\thepage}
-\cfoot{Ersti-Einstein WS 2012/13}
-\pagestyle{scrheadings}
-\automark[section]{section}
-
-% no section numbers in heads
-\renewcommand\sectionmark[1]{\markright{#1}}
-\newcommand{\emd}{\textendash}
+\usepackage{lipsum} %TODO remove this
 
 % compact toc
 \setlength{\cftbeforesecskip}{0pt}
 \setcounter{tocdepth}{2}
 
-% lmu fonts
-\usepackage[T1]{fontenc}
-%\usepackage[defaultsans]{droidsans}
-%\renewcommand*\familydefault{\sfdefault}
-\usepackage{fontspec}
-\linespread{1.05}
-\usepackage{microtype}
-\setmainfont[Ligatures=TeX,SmallCapsFont={* SC}]{LMU CompatilText}
-
+\usepackage[ngerman]{babel}
 \usepackage[babel=once]{csquotes}
 \defineshorthand{"`}{\openautoquote}
 \defineshorthand{"'}{\closeautoquote}
 \DeclareQuoteStyle[quotes]{german}{„}{“}{‚}{‘}
-
-\newcommand{\skiptobottom}{\vspace*{0pt plus 1filll}}
 
 \usepackage{endnotes} %Für alle URLs am Ende des Einsteins
 \def\enotesize{\fontsize{9}{12}}
@@ -71,33 +59,78 @@
 \usepackage{tabularx}
 \newcolumntype{L}{>{\raggedright\arraybackslash}p{0.3\textwidth}} % linksbündig mit Breitenangabe
 
-%\usepackage[hyphens]{url}
-\usepackage{url}
-\urlstyle{same}
+%set up margins with geometry package
+\usepackage[twoside,
+    a5paper,
+    inner=15mm,
+    outer=12mm,
+    top=17mm,
+    bottom=20mm,
+    bindingoffset=0mm]{geometry}
+%use crop package for cropmarks, bleed and stock oversize
+\usepackage[cam,
+%    width=180truemm, %TODO talk to printer about actual dimens
+%    height=240truemm%,
+    %mount2
+    ]{crop}
+% in conjunction with crop: align pages
+% centered vertically and inner margin 0 (odd/even different)
+\voffset\stockheight
+\advance\voffset-\paperheight
+\voffset.5\voffset
+% shipout package, hook is run every time a page is output.
+\usepackage{atbegshi}
+\AtBeginShipout{
+    \ifodd\value{page}
+        %odd pages stick to the left (inside)
+        \setlength{\hoffset}{0mm}
+    \else
+        %even pages stick to the right (inside)
+        \setlength{\hoffset}{\stockwidth-\paperwidth}
+\fi}
 
-%\hypersetup{colorlinks=false,urlbordercolor=black,pdfborderstyle={/S/U/W 0.5}}
+% set up our own dimensions we need
+\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
+\setlength{\bleed}{2mm}
+\newlength{\fullwidth} %print size including bleed
+\setlength{\fullwidth}{\paperwidth+2\bleed}
+\newlength{\fullheight} %e.g. for fullpage images
+\setlength{\fullheight}{\paperheight+2\bleed}
 
-% section for own macros
+% set up fancyhdr for page titles and pacman mini feature
+\pagestyle{fancy}
+\fancyhead{} %clear all headers
+\fancyhead[RE,LO]{Ersti-Einstein WS 2013/14}
+\fancyhead[LE,RO]{\thepage} %page number on outside
+\fancyfoot{} %clear all footers
+\renewcommand*{\headrulewidth}{0.0pt}
+\renewcommand*{\footrulewidth}{0.0pt}
+% daumenkino movie
+%\fancyfoot[LE,RO]{\textsl{Put Pacman here\dots}}
+\fancyfoot[LE,RO]{
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(0,0)
+    \put(0,0){\includegraphics{ipac\thepage.jpg}}
+    \end{picture}}
+
+\raggedbottom % possibly for the foot notes?
+
+% section for own text macros
 \newcommand{\http}{http://}
 \newcommand{\https}{https://}
+
+\newcommand{\emd}{\textendash} % dash (used in i.e. phone nums)
+\newcommand{\skiptobottom}{\vspace*{0pt plus 1fill}}
 
 \mathchardef\UrlBreakPenalty=100
 \mathchardef\UrlBigBreakPenalty=100
 
 
-%\setlength{\parindent}{0cm}
-%\setlength{\parskip}{-1pt plus 0.0pt minus 0.0pt}
-%\setlength{\parsep}{0pt plus 0.0pt minus 0.0pt}
-
-
-
-
+%****************************************************
+% actual content
 \begin{document}
+
 % ---- begin formats
-
-
-
-
 \renewenvironment{itemize}
 {
     \begin{list}{$\circ$ \ }{}
@@ -110,16 +143,10 @@
 {
     \end{list} 
 }
-
-
-
-
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
-
 % ---- end formats
 
 %\frontmatter
-
 \begin{titlepage}
 \thispagestyle{empty}
 \begin{textblock*}{\paperwidth}(0mm,0mm)
@@ -127,8 +154,6 @@
 \end{textblock*}
 \mbox{}
 \end{titlepage}
-
-
 
 \newpage
 
@@ -145,6 +170,10 @@
 \clearpage
 
 \def\mail#1{\url{#1}}
+
+\input{vorwort}
+
+\clearpage
 
 \input{diegaf}
 
