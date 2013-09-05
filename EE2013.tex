@@ -7,9 +7,8 @@
 %TODO transfer changes from markep up print version
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
-\documentclass[twoside,a5paper,draft,9pt]{scrartcl}
-% This needs to come before hyperref to avoid errors
-\usepackage{fancyhdr} % adjust header and footer content
+\documentclass[twoside,a5paper,draft,fontsize=9pt]{scrartcl}
+\usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
 		\PackageError{Einstein}{Cannot build with (pdf-)latex}{Bitte mit Xelatex oder Lualatex bauen}
