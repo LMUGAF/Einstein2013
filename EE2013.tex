@@ -7,47 +7,57 @@
 %TODO transfer changes from markep up print version
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
-
-
-\documentclass[twoside,a5paper,9pt]{scrartcl}
+\documentclass[twoside,a5paper,draft,9pt]{scrartcl}
+% This needs to come before hyperref to avoid errors
+\usepackage{fancyhdr} % adjust header and footer content
+\usepackage{iftex}
+\ifPDFTeX
+		\PackageError{Einstein}{Cannot build with (pdf-)latex}{Bitte mit Xelatex oder Lualatex bauen}
+		\stop
+\else
+	\ifLuaTeX
+		\usepackage[ngerman]{babel}
+		\usepackage[pdftex]{graphicx} % graphix always before hyperref
+		\usepackage[pdftex,hidelinks]{hyperref}
+	\else
+	% don't switch the order: github.com/reutenauer/polyglossia/issues/50
+	\ifXeTeX
+		\usepackage{polyglossia}
+		\setdefaultlanguage{german}
+		\usepackage{xunicode} % loads graphicx so load it before hyperref
+		\usepackage[xetex,hidelinks]{hyperref}
+	\fi
+\fi
+\graphicspath{{img//}{img//daumenkino//}}
+\urlstyle{same}
 
 % all referenced packages
 \usepackage{calc} %need this for dimension calcs
 \usepackage{xcolor}
-\usepackage{graphicx}
-\graphicspath{{img//}{img//daumenkino//}}
 \usepackage[absolute]{textpos}
-\usepackage{fancyhdr} %set up in a bit
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usetikzlibrary{shapes}
 
-\usepackage{dtklogos}
-\usepackage{setspace}
-\usepackage{multicol}
-\usepackage{tocloft}
-\usepackage{eurosym}
-% implied by XeLaTeX
-%\usepackage[utf8]{inputenc}
-\usepackage{wrapfig}
-\usepackage{microtype}
-\usepackage{multirow}
+\usepackage{dtklogos} % what's this?
+\usepackage{multicol} % two col output
+\usepackage{multirow} % merge table cells
+\usepackage{eurosym} % for euro signs
+\usepackage{wrapfig} % wrap text around figures
+\usepackage{microtype} % makes line and par breaking nicer
+\usepackage{fontspec} % implies fontenc
+% sorgt für -- -> \endash
+\defaultfontfeatures{Ligatures=TeX}
 
-\usepackage[T1]{fontenc}
-\usepackage{fontspec}
+\usepackage{setspace}
 \linespread{1.05}
 
-\usepackage[hidelinks]{hyperref}
-\usepackage{url}
-\urlstyle{same}
-
-\usepackage{lipsum} %TODO remove this
 
 % compact toc
+\usepackage{tocloft}
 \setlength{\cftbeforesecskip}{0pt}
 \setcounter{tocdepth}{2}
 
-\usepackage[ngerman]{babel}
 \usepackage[babel=once]{csquotes}
 \defineshorthand{"`}{\openautoquote}
 \defineshorthand{"'}{\closeautoquote}
@@ -160,7 +170,7 @@
 \input{impressum} %include file impressum.tex
 
 \clearpage
-
+%\mainmatter
 \setcounter{page}{1}
 
 \vspace*{0.02cm}
@@ -170,7 +180,6 @@
 \clearpage
 
 \def\mail#1{\url{#1}}
-
 \input{vorwort}
 
 \clearpage
