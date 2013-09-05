@@ -167,9 +167,8 @@
 
 \newpage
 
-\input{impressum} %include file impressum.tex
+\include{impressum} %include file impressum.tex
 
-\clearpage
 %\mainmatter
 \setcounter{page}{1}
 
@@ -180,71 +179,22 @@
 \clearpage
 
 \def\mail#1{\url{#1}}
-\input{vorwort}
-
-\clearpage
-
-\input{diegaf}
-
-\clearpage
-
-\input{pcundinternet}
-
-\clearpage
-
-\input{vorlesungszeit}
-
-\clearpage
-
-\input{vorlesungsfrei}
-
-\clearpage
-
-\input{bibliothek}
-
-\clearpage
-
-\input{gumbel}
-
-\clearpage
-
-\input{beratung}
-
-\clearpage
-
-\input{ausland}
-
-\clearpage
-
-\input{geld}
-
-\clearpage
-
-\input{krankenversicherung}
-
-\clearpage
-
-\input{ankommen}
-
-\clearpage
-
-\input{transport}
-
-\pagebreak
-
-\input{gebaeude}
-
-\pagebreak
-
-\input{raetsel}
-
-\clearpage
-
-\input{glossar}
-
-\clearpage
-
-
+\include{vorwort}
+\include{diegaf}
+\include{pcundinternet}
+\include{vorlesungszeit}
+\include{vorlesungsfrei}
+\include{bibliothek}
+\include{gumbel}
+\include{beratung}
+\include{ausland}
+\include{geld}
+\include{krankenversicherung}
+\include{ankommen}
+\include{transport}
+\include{gebaeude}
+\include{raetsel}
+\include{glossar}
 
 %backmatter
 \thispagestyle{empty}
@@ -261,7 +211,6 @@
 \end{textblock*}
 \mbox{}
 
-
 \clearpage
 
 \thispagestyle{empty}
@@ -269,8 +218,4 @@
    \noindent\includegraphics[width=\paperwidth,height=\paperheight]{back}
 \end{textblock*}
 \mbox{}
-
-
-
-
 \end{document}
