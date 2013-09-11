@@ -160,8 +160,15 @@
 }
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 % ---- end formats
-\newcommand{\httpItem}[1]{\item \url{http://#1}}
-\newcommand{\httpsItem}[1]{\item \url{https://#1}}
+\newcommand{\httpItem}[1]{\item \url{\http #1}}
+\newcommand{\httpsItem}[1]{\item \url{\https #1}}
+\DeclareRobustCommand\subjectI{\tikz \node[draw,circle,radius=20mm,font=\small]{I};}
+\DeclareRobustCommand\subjectM{\tikz \node[draw,circle,radius=20mm,font=\small]{M};}
+\DeclareRobustCommand\subjectMI{\tikz \node[draw,circle,radius=20mm,font=\small]{MI};}
+\DeclareRobustCommand\subjectP{\tikz \node[draw,circle,radius=20mm,font=\small]{P};}
+\DeclareRobustCommand\subjectS{\tikz \node[draw,circle,radius=20mm,font=\small]{S};}
+\DeclareRobustCommand\subjectW{\tikz \node[draw,circle,radius=20mm,font=\small]{W};}
+\newcommand{\subjectList}[1]{#1}
 \newenvironment{urlList}{
 	\begin{itemize}
 }{
