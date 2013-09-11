@@ -8,7 +8,7 @@
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
 %INFO Formate, etc vom Drucker: http://www.flyeralarm.com/sheets/de/mag_a5_mass.pdf
-\documentclass[twoside,a5paper,draft,fontsize=9pt]{scrartcl}
+\documentclass[twoside,a5paper,fontsize=9pt]{scrartcl}
 \usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
@@ -46,6 +46,8 @@
 \usepackage{wrapfig} % wrap text around figures
 \usepackage{microtype} % makes line and par breaking nicer
 \usepackage{fontspec} % implies fontenc
+
+\usepackage{environ}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -136,6 +138,8 @@
 \mathchardef\UrlBigBreakPenalty=100
 
 
+
+
 %****************************************************
 % actual content
 \begin{document}
@@ -155,7 +159,13 @@
 }
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 % ---- end formats
-
+\newcommand{\httpItem}[1]{\item \url{http://#1}}
+\newcommand{\httpsItem}[1]{\item \url{https://#1}}
+\newenvironment{urlList}{
+	\begin{itemize}
+}{
+	\end{itemize}
+}
 %\frontmatter
 \begin{titlepage}
 \thispagestyle{empty}
