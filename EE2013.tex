@@ -8,7 +8,7 @@
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
 %INFO Formate, etc vom Drucker: http://www.flyeralarm.com/sheets/de/mag_a5_mass.pdf
-\documentclass[twoside,a5paper,fontsize=9pt]{scrartcl}
+\documentclass[twoside,a5paper,fontsize=9pt]{scrbook}
 \usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
@@ -46,7 +46,8 @@
 \usepackage{wrapfig} % wrap text around figures
 \usepackage{microtype} % makes line and par breaking nicer
 \usepackage{fontspec} % implies fontenc
-
+\usepackage[pagecolor=white]{pagecolor} % after xcolor
+\usepackage{afterpage}
 \usepackage{environ}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -113,18 +114,21 @@
 % set up fancyhdr for page titles and pacman mini feature
 \pagestyle{fancy}
 \fancyhead{} %clear all headers
-\fancyhead[RE,LO]{Ersti-Einstein WS 2013/14}
+\fancyhead[RE,LO]{\itshape\nouppercase{\leftmark}}
 \fancyhead[LE,RO]{\thepage} %page number on outside
 \fancyfoot{} %clear all footers
 \renewcommand*{\headrulewidth}{0.0pt}
 \renewcommand*{\footrulewidth}{0.0pt}
-% daumenkino movie
-%\fancyfoot[LE,RO]{\textsl{Put Pacman here\dots}}
+
+\addtocontents{toc}{\protect\thispagestyle{fancy}}
+\newcounter{FlipBookFrame}
+\setcounter{FlipBookFrame}{1}
 \fancyfoot[LE,RO]{
     \setlength{\unitlength}{1mm}
     \begin{picture}(18,0)
-    \put(0,0){\includegraphics[height=8mm]{ipac\thepage}}
-    \end{picture}}
+    \put(0,0){\includegraphics[height=8mm]{ipac\theFlipBookFrame}}
+    \end{picture}
+    \setcounter{FlipBookFrame}{\theFlipBookFrame+1}}
 
 \raggedbottom % possibly for the foot notes?
 
@@ -140,7 +144,15 @@
 
 %Don't indent paragraphs; newline instead
 \usepackage[parfill]{parskip}
-
+\makeatletter
+\let\ps@plain\ps@fancy
+\@openrightfalse
+\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
+\makeatother
 
 %****************************************************
 % actual content
@@ -175,67 +187,71 @@
 	\begin{itemize}
 }{
 	\end{itemize}
-}
-%\frontmatter
-\begin{titlepage}
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{titel}
-\end{textblock*}
-\mbox{}
-\end{titlepage}
+	}
+	
+	\newenvironment{fullPage}[1][white]{
+		\thispagestyle{empty}
+		\onepagecolor{#1}
+		
+		\begin{textblock*}{\paperwidth}(0mm,0mm)
+		\noindent
+	}{
+		\end{textblock*}
+		\mbox{}
+		\clearpage
+	}
 
-\newpage
 
-\include{impressum} %include file impressum.tex
+	\newcommand{\onepagecolor}[1]{\newpagecolor{#1}\afterpage{\restorepagecolor}}
 
-%\mainmatter
-\setcounter{page}{1}
 
-\vspace*{0.02cm}
-%\footnotesize
-\tableofcontents
-%\normalsize
-\clearpage
 
-\def\mail#1{\url{#1}}
-\include{vorwort}
-\include{diegaf}
-\include{pcundinternet}
-\include{vorlesungszeit}
-\include{vorlesungsfrei}
-\include{bibliothek}
-\include{gumbel}
-\include{beratung}
-\include{ausland}
-\include{geld}
-\include{krankenversicherung}
-\include{ankommen}
-\include{transport}
-\include{gebaeude}
-\include{raetsel}
-\include{glossar}
-
-%backmatter
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
-\end{textblock*}
-\mbox{}
-
-\clearpage
-
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
-\end{textblock*}
-\mbox{}
-
-\clearpage
-
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{back}
-\end{textblock*}
-\mbox{}
+	%\frontmatter
+	\begin{titlepage}
+		\begin{fullPage}[black]
+			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
+		\end{fullPage}
+	\end{titlepage}
+	
+	\frontmatter
+	\include{impressum}
+	
+	\tableofcontents{\pagestyle{fancy}}
+	
+	\mainmatter
+	
+	\def\mail#1{\url{#1}}
+	\include{vorwort}
+	\include{diegaf}
+	\include{pcundinternet}
+	\include{vorlesungszeit}
+	\include{vorlesungsfrei}
+	\include{bibliothek}
+	\include{gumbel}
+	\include{beratung}
+	\include{ausland}
+	\include{geld}
+	\include{krankenversicherung}
+	\include{ankommen}
+	\include{transport}
+	\include{gebaeude}
+	\include{raetsel}
+	\include{glossar}
+	
+	\appendix
+	% Nothing
+	
+	\backmatter
+	
+	\begin{fullPage}
+		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
+	\end{fullPage}
+	
+	\begin{fullPage}
+		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
+	\end{fullPage}
+	
+	\begin{fullPage}[black]
+		\includegraphics[width=\paperwidth,height=\paperheight]{back}
+	\end{fullPage}
 \end{document}
