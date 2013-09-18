@@ -46,7 +46,8 @@
 \usepackage{wrapfig} % wrap text around figures
 \usepackage{microtype} % makes line and par breaking nicer
 \usepackage{fontspec} % implies fontenc
-
+\usepackage[pagecolor=white]{pagecolor} % after xcolor
+\usepackage{afterpage}
 \usepackage{environ}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -176,67 +177,71 @@
 	\begin{itemize}
 }{
 	\end{itemize}
-}
-%\frontmatter
-\begin{titlepage}
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{titel}
-\end{textblock*}
-\mbox{}
-\end{titlepage}
+	}
+	
+	\newenvironment{fullPage}[1][white]{
+		\thispagestyle{empty}
+		\onepagecolor{#1}
+		
+		\begin{textblock*}{\paperwidth}(0mm,0mm)
+		\noindent
+	}{
+		\end{textblock*}
+		\mbox{}
+		\clearpage
+	}
 
-\newpage
 
-\include{impressum} %include file impressum.tex
+	\newcommand{\onepagecolor}[1]{\newpagecolor{#1}\afterpage{\restorepagecolor}}
 
-%\mainmatter
-\setcounter{page}{1}
 
-\vspace*{0.02cm}
-%\footnotesize
-\tableofcontents
-%\normalsize
-\clearpage
 
-\def\mail#1{\url{#1}}
-\include{vorwort}
-\include{diegaf}
-\include{pcundinternet}
-\include{vorlesungszeit}
-\include{vorlesungsfrei}
-\include{bibliothek}
-\include{gumbel}
-\include{beratung}
-\include{ausland}
-\include{geld}
-\include{krankenversicherung}
-\include{ankommen}
-\include{transport}
-\include{gebaeude}
-\include{raetsel}
-\include{glossar}
-
-%backmatter
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
-\end{textblock*}
-\mbox{}
-
-\clearpage
-
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
-\end{textblock*}
-\mbox{}
-
-\clearpage
-
-\thispagestyle{empty}
-\begin{textblock*}{\paperwidth}(0mm,0mm)
-   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{back}
-\end{textblock*}
-\mbox{}
+	%\frontmatter
+	\begin{titlepage}
+		\begin{fullPage}[black]
+			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
+		\end{fullPage}
+	\end{titlepage}
+	
+	\frontmatter
+	\include{impressum}
+	
+	\tableofcontents{\pagestyle{fancy}}
+	
+	\mainmatter
+	
+	\def\mail#1{\url{#1}}
+	\include{vorwort}
+	\include{diegaf}
+	\include{pcundinternet}
+	\include{vorlesungszeit}
+	\include{vorlesungsfrei}
+	\include{bibliothek}
+	\include{gumbel}
+	\include{beratung}
+	\include{ausland}
+	\include{geld}
+	\include{krankenversicherung}
+	\include{ankommen}
+	\include{transport}
+	\include{gebaeude}
+	\include{raetsel}
+	\include{glossar}
+	
+	\appendix
+	% Nothing
+	
+	\backmatter
+	
+	\begin{fullPage}
+		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
+	\end{fullPage}
+	
+	\begin{fullPage}
+		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
+	\end{fullPage}
+	
+	\begin{fullPage}[black]
+		\includegraphics[width=\paperwidth,height=\paperheight]{back}
+	\end{fullPage}
 \end{document}
