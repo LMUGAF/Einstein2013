@@ -114,7 +114,7 @@
 % set up fancyhdr for page titles and pacman mini feature
 \pagestyle{fancy}
 \fancyhead{} %clear all headers
-\fancyhead[RE,LO]{Ersti-Einstein WS 2013/14}
+\fancyhead[RE,LO]{\itshape\nouppercase{\leftmark}}
 \fancyhead[LE,RO]{\thepage} %page number on outside
 \fancyfoot{} %clear all footers
 \renewcommand*{\headrulewidth}{0.0pt}
@@ -143,7 +143,15 @@
 \mathchardef\UrlBigBreakPenalty=100
 
 
-
+\makeatletter
+\let\ps@plain\ps@fancy
+\@openrightfalse
+\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
+\makeatother
 
 %****************************************************
 % actual content
