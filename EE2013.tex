@@ -81,7 +81,8 @@
     top=17mm,
     bottom=20mm,
     bindingoffset=0mm,
-    showframe]{geometry} %TODO REMOVE BEFORE PRODUCTION
+    %showframe    %TODO REMOVE BEFORE PRODUCTION
+    ]{geometry}
 %use crop package for cropmarks, bleed and stock oversize
 \usepackage[cam,
     width=149truemm,
@@ -234,12 +235,11 @@
 	\include{krankenversicherung}
 	\include{ankommen}
 	\include{transport}
+	
+	\appendix
 	\include{gebaeude}
 	\include{raetsel}
 	\include{glossar}
-	
-	\appendix
-	% Nothing
 	
 	\backmatter
 	
