@@ -118,13 +118,16 @@
 \fancyfoot{} %clear all footers
 \renewcommand*{\headrulewidth}{0.0pt}
 \renewcommand*{\footrulewidth}{0.0pt}
-% daumenkino movie
-%\fancyfoot[LE,RO]{\textsl{Put Pacman here\dots}}
+
+\addtocontents{toc}{\protect\thispagestyle{fancy}}
+\newcounter{FlipBookFrame}
+\setcounter{FlipBookFrame}{1}
 \fancyfoot[LE,RO]{
     \setlength{\unitlength}{1mm}
     \begin{picture}(18,0)
-    \put(0,0){\includegraphics[height=8mm]{ipac\thepage}}
-    \end{picture}}
+    \put(0,0){\includegraphics[height=8mm]{ipac\theFlipBookFrame}}
+    \end{picture}
+    \setcounter{FlipBookFrame}{\theFlipBookFrame+1}}
 
 \raggedbottom % possibly for the foot notes?
 
