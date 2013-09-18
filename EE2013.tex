@@ -177,12 +177,13 @@
 % ---- end formats
 \newcommand{\httpItem}[1]{\item \url{\http #1}}
 \newcommand{\httpsItem}[1]{\item \url{\https #1}}
-\DeclareRobustCommand\subjectI{\tikz \node[draw,circle,radius=20mm,font=\small]{I};}
-\DeclareRobustCommand\subjectM{\tikz \node[draw,circle,radius=20mm,font=\small]{M};}
-\DeclareRobustCommand\subjectMI{\tikz \node[draw,circle,radius=20mm,font=\small]{MI};}
-\DeclareRobustCommand\subjectP{\tikz \node[draw,circle,radius=20mm,font=\small]{P};}
-\DeclareRobustCommand\subjectS{\tikz \node[draw,circle,radius=20mm,font=\small]{S};}
-\DeclareRobustCommand\subjectW{\tikz \node[draw,circle,radius=20mm,font=\small]{W};}
+
+\DeclareRobustCommand\subjectI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectI}}}
+\DeclareRobustCommand\subjectM{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectM}}}
+\DeclareRobustCommand\subjectMI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectMI}}}
+\DeclareRobustCommand\subjectP{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectP}}}
+\DeclareRobustCommand\subjectS{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectS}}}
+\DeclareRobustCommand\subjectW{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectW}}}
 \newcommand{\subjectList}[1]{#1}
 \newenvironment{urlList}{
 	\begin{itemize}
