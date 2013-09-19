@@ -53,6 +53,8 @@
 \usepackage{environ}
 \usepackage{float}
 \usepackage{xparse}
+
+\newfontface\lserif{Liberation Serif}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -221,6 +223,8 @@
 }
 
 
+\let\oldHash\#
+\renewcommand{\#}{{\lserif\oldHash}}
 
 
 \NewDocumentCommand{\httpItem }{omg}{\urlItem{#1}{\http  #2}{#3}}
