@@ -30,6 +30,7 @@
 \fi
 \graphicspath{{img//}{img//daumenkino//}}
 \urlstyle{same}
+%\urlstyle{tt}
 
 % all referenced packages
 \usepackage{calc} %need this for dimension calcs
@@ -50,6 +51,7 @@
 \usepackage{afterpage}
 \usepackage{environ}
 \usepackage{float}
+\usepackage{xparse}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -154,6 +156,8 @@
   \markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
 \renewcommand{\sectionmark}[1]{%
   \markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
+\newcommand{\urlLabel}[2]{%
+  \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
 \makeatother
 
 %****************************************************
@@ -175,8 +179,45 @@
 }
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 % ---- end formats
-\newcommand{\httpItem}[1]{\item \url{\http #1}}
-\newcommand{\httpsItem}[1]{\item \url{\https #1}}
+\newcounter{LinkCnt}
+
+\NewEnviron{urlList}{%
+	\setcounter{LinkCnt}{1}%
+	%
+	\colorbox{blue!20}{%
+		\parbox{.98\linewidth}{%
+			\begin{tabularx}{\textwidth}{rX}%
+				\BODY%
+			\end{tabularx}%
+		}%
+	}%
+}
+
+
+\NewDocumentCommand{\httpItem}{omg}{%
+	\ifnum\theLinkCnt>1%
+		\\[2mm]%
+	\fi%
+	%
+	\IfNoValueTF{#1}%
+	{{[}\theLinkCnt{]} & \url{\http #2}}%
+	{{[}\theLinkCnt{]} & \textbf{#1} \newline \url{\http #2}}%
+	%
+	\IfNoValueTF{#3}%
+	{}%
+	{\urlLabel{#3}{\theLinkCnt}}%
+	\setcounter{LinkCnt}{\theLinkCnt+1}%
+}
+
+
+
+% \newcommand{\httpItem}[2][x]{%
+% 	\item asd #2%[asd #2] {[}\theLinkCnt{]} \url{\http #2}%
+% 	\setcounter{LinkCnt}{\theLinkCnt+1}%
+% }
+\newcommand{\httpsItem}[1]{\httpItem{#1}}
+
+\newcommand{\subjectList}[1]{#1}
 
 \DeclareRobustCommand\subjectI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectI}}}
 \DeclareRobustCommand\subjectM{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectM}}}
@@ -184,12 +225,9 @@
 \DeclareRobustCommand\subjectP{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectP}}}
 \DeclareRobustCommand\subjectS{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectS}}}
 \DeclareRobustCommand\subjectW{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectW}}}
-\newcommand{\subjectList}[1]{#1}
-\newenvironment{urlList}{
-	\begin{itemize}
-}{
-	\end{itemize}
-	}
+
+
+
 	
 	\newenvironment{fullPage}[1][white]{
 		\thispagestyle{empty}
