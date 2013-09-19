@@ -157,8 +157,13 @@
   \markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
 \renewcommand{\sectionmark}[1]{%
   \markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
-\newcommand{\urlLabel}[2]{%
-  \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+% \newcommand{\urlLabel}[2]{%
+%   \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+\def\namedlabel#1#2#3{\begingroup
+   \def\@currentlabel{#2}%
+   \def\@currentlabelname{#3}%
+   \phantomsection\label{#1}\endgroup
+}
 \makeatother
 
 %****************************************************
@@ -195,28 +200,31 @@
 }
 
 
-\NewDocumentCommand{\httpItem}{omg}{%
+\newcommand{\urlItem}[3]{%
+	% "Close" the last row (create a new one) if not the first link
 	\ifnum\theLinkCnt>1%
 		\\[2mm]%
 	\fi%
 	%
-	\IfNoValueTF{#1}%
-	{{[}\theLinkCnt{]} & \url{\http #2}}%
-	{{[}\theLinkCnt{]} & \textbf{#1} \newline \url{\http #2}}%
-	%
+	% Create a lable if a label name is provided
 	\IfNoValueTF{#3}%
 	{}%
-	{\urlLabel{#3}{\theLinkCnt}}%
+	{\namedlabel{#3}{{[}\theLinkCnt{]}}{#1}}%
+	%
+	% Display the link number, the url and perhaps a description
+	\IfNoValueTF{#1}%
+	{{[}\theLinkCnt{]} & \url{\http #2}}%
+	{{[}\theLinkCnt{]} & \textbf{#1} \newline \url{#2}}%
+	%
+	% Increment the link number
 	\setcounter{LinkCnt}{\theLinkCnt+1}%
 }
 
 
 
-% \newcommand{\httpItem}[2][x]{%
-% 	\item asd #2%[asd #2] {[}\theLinkCnt{]} \url{\http #2}%
-% 	\setcounter{LinkCnt}{\theLinkCnt+1}%
-% }
-\newcommand{\httpsItem}[1]{\httpItem{#1}}
+
+\NewDocumentCommand{\httpItem }{omg}{\urlItem{#1}{\http  #2}{#3}}
+\NewDocumentCommand{\httpsItem}{omg}{\urlItem{#1}{\https #2}{#3}}
 
 \newcommand{\subjectList}[1]{#1}
 
