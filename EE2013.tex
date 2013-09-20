@@ -8,7 +8,7 @@
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
 %INFO Formate, etc vom Drucker: http://www.flyeralarm.com/sheets/de/mag_a5_mass.pdf
-\documentclass[twoside,a5paper,fontsize=9pt]{scrbook}
+\documentclass[twoside,openany,a5paper,fontsize=9pt]{scrbook}
 \usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
@@ -53,8 +53,8 @@
 \usepackage{environ}
 \usepackage{float}
 \usepackage{xparse}
+\usepackage[parfill]{parskip} %Don't indent paragraphs; newline instead
 
-\newfontface\lserif{Liberation Serif}
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -118,89 +118,116 @@
 \newlength{\fullheight} %e.g. for fullpage images
 \setlength{\fullheight}{\paperheight+2\bleed}
 
-% set up fancyhdr for page titles and pacman mini feature
-\pagestyle{fancy}
-\fancyhead{} %clear all headers
-\fancyhead[RE,LO]{\itshape\nouppercase{\leftmark}}
-\fancyhead[LE,RO]{\thepage} %page number on outside
-\fancyfoot{} %clear all footers
-\renewcommand*{\headrulewidth}{0.0pt}
-\renewcommand*{\footrulewidth}{0.0pt}
 
-\addtocontents{toc}{\protect\thispagestyle{fancy}}
-\newcounter{FlipBookFrame}
-\setcounter{FlipBookFrame}{1}
-\fancyfoot[LE,RO]{
-    \setlength{\unitlength}{1mm}
-    \begin{picture}(18,0)
-    \put(0,0){\includegraphics[height=8mm]{ipac\theFlipBookFrame}}
-    \end{picture}
-    \setcounter{FlipBookFrame}{\theFlipBookFrame+1}}
 
 \raggedbottom % possibly for the foot notes?
 
-% section for own text macros
-\newcommand{\http}{http://}
-\newcommand{\https}{https://}
-
-\newcommand{\emd}{\textendash} % dash (used in i.e. phone nums)
-\newcommand{\skiptobottom}{\vspace*{0pt plus 1fill}}
 
 \mathchardef\UrlBreakPenalty=100
 \mathchardef\UrlBigBreakPenalty=100
 
-%Don't indent paragraphs; newline instead
-\usepackage[parfill]{parskip}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Add header and flip-book footer to the first page of a chapter
 \makeatletter
-\let\ps@plain\ps@fancy
-\@openrightfalse
-\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
-\renewcommand{\chaptermark}[1]{%
-  \markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
-\renewcommand{\sectionmark}[1]{%
-  \markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
-% \newcommand{\urlLabel}[2]{%
-%   \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
-\def\namedlabel#1#2#3{\begingroup
-   \def\@currentlabel{#2}%
-   \def\@currentlabelname{#3}%
-   \phantomsection\label{#1}\endgroup
-}
+	\let\ps@plain\ps@fancy
 \makeatother
 
-%****************************************************
-% actual content
-\begin{document}
 
-% ---- begin formats
-\renewenvironment{itemize}
-{
-    \begin{list}{$\circ$ \ }{}
-        \setlength{\topsep}{0pt}
-        \setlength{\parskip}{0pt}
-        \setlength{\partopsep}{0pt}
-        \setlength{\parsep}{0pt}         
-        \setlength{\itemsep}{1pt} 
+%% Define your own labels
+\makeatletter
+	\newcommand{\namedlabel}[3]{
+		\begingroup
+			\def\@currentlabel{#2}
+			\def\@currentlabelname{#3}
+			\phantomsection\label{#1}
+		\endgroup
+	}
+\makeatother
+
+
+%% Header
+%% http://tex.stackexchange.com/questions/87435/fancyhead-not-in-small-caps
+\pagestyle{fancy}
+
+\makeatletter
+	\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
+	
+	\renewcommand{\chaptermark}[1]{
+		\markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}
+	}
+\makeatother
+
+\fancyhead[RE,LO]{\itshape\nouppercase{\leftmark}}
+\fancyhead[LE,RO]{\thepage}
+
+
+%% Flip-Book footer
+\newcounter{FlipBookFrame}
+\setcounter{FlipBookFrame}{1}
+
+\fancyfoot{} %clear all footers
+\fancyfoot[LE,RO]{
+	\setlength{\unitlength}{1mm}
+	%
+	\begin{picture}
+		(18,0)
+		\put(0,0){\includegraphics[height=8mm]{ipac\theFlipBookFrame}}
+	\end{picture}
+	%
+	\setcounter{FlipBookFrame}{\theFlipBookFrame+1}
 }
-{
-    \end{list} 
+
+
+%% Some trivial macros
+\newcommand{\mail}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
+
+\newcommand{\http}{http://}
+\newcommand{\https}{https://}
+
+\newcommand{\emd}{\textendash} % dash (used in i.e. phone nums)
+
+\newcommand{\skiptobottom}{\vspace*{0pt plus 1fill}}
+
+
+%% Set page color
+\newcommand{\onepagecolor}[1]{
+	\newpagecolor{#1}
+	\afterpage{\restorepagecolor}
 }
-\hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
-% ---- end formats
+
+
+%% Create empty pages
+\newenvironment{fullPage}[1][white]{
+	\thispagestyle{empty}
+	\onepagecolor{#1}
+	
+	\begin{textblock*}{\paperwidth}(0mm,0mm)
+	\noindent
+}{
+	\end{textblock*}
+	\mbox{}
+	\clearpage
+}
+
+
+%% urlList
 \newcounter{LinkCnt}
 
-\NewEnviron{urlList}{%
-	\setcounter{LinkCnt}{1}%
-	%
-	\colorbox{blue!20}{%
-		\parbox{.98\linewidth}{%
-			\begin{tabularx}{\textwidth}{rX}%
-				\BODY%
-			\end{tabularx}%
-		}%
-	}%
+\NewEnviron{urlList}{
+	\setcounter{LinkCnt}{1}
+	
+	\vskip 3mm
+	
+	\colorbox{blue!20}{
+		\parbox{\linewidth}{
+			\begin{tabularx}{\textwidth}{rX}
+				\BODY
+			\end{tabularx}
+		}
+	}
 }
-
 
 \newcommand{\urlItem}[3]{%
 	% "Close" the last row (create a new one) if not the first link
@@ -215,65 +242,67 @@
 	%
 	% Display the link number, the url and perhaps a description
 	\IfNoValueTF{#1}%
-	{{[}\theLinkCnt{]} & \url{\http #2}}%
+	{{[}\theLinkCnt{]} & \url{#2}}%
 	{{[}\theLinkCnt{]} & \textbf{#1} \newline \url{#2}}%
 	%
 	% Increment the link number
 	\setcounter{LinkCnt}{\theLinkCnt+1}%
 }
 
+\NewDocumentCommand{\httpItem }{omg}{\urlItem{#1}{\http  #2}{#3}}
+\NewDocumentCommand{\httpsItem}{omg}{\urlItem{#1}{\https #2}{#3}}
 
+
+%% Subject lists
+\newcommand{\subjectList}[1]{#1}
+
+\DeclareRobustCommand\subjectI {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectI}}}
+\DeclareRobustCommand\subjectM {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectM}}}
+\DeclareRobustCommand\subjectMI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectMI}}}
+\DeclareRobustCommand\subjectP {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectP}}}
+\DeclareRobustCommand\subjectS {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectS}}}
+\DeclareRobustCommand\subjectW {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectW}}}
+
+
+%% Better looking lists
+\renewenvironment{itemize}{
+	\begin{list}{$\circ$\ }{}
+		\setlength{\topsep}   {0pt}
+		\setlength{\parskip}  {0pt}
+		\setlength{\partopsep}{0pt}
+		\setlength{\parsep}   {0pt}
+		\setlength{\itemsep}  {1pt}
+}{
+	\end{list}
+}
+
+
+%% Better looking hash
+\newfontface\lserif{Liberation Serif}
 \let\oldHash\#
 \renewcommand{\#}{{\lserif\oldHash}}
 
 
-\NewDocumentCommand{\httpItem }{omg}{\urlItem{#1}{\http  #2}{#3}}
-\NewDocumentCommand{\httpsItem}{omg}{\urlItem{#1}{\https #2}{#3}}
-
-\newcommand{\subjectList}[1]{#1}
-
-\DeclareRobustCommand\subjectI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectI}}}
-\DeclareRobustCommand\subjectM{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectM}}}
-\DeclareRobustCommand\subjectMI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectMI}}}
-\DeclareRobustCommand\subjectP{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectP}}}
-\DeclareRobustCommand\subjectS{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectS}}}
-\DeclareRobustCommand\subjectW{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectW}}}
+%% Better looking hyphenation
+\hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 
 
 
-	
-	\newenvironment{fullPage}[1][white]{
-		\thispagestyle{empty}
-		\onepagecolor{#1}
-		
-		\begin{textblock*}{\paperwidth}(0mm,0mm)
-		\noindent
-	}{
-		\end{textblock*}
-		\mbox{}
-		\clearpage
-	}
-
-
-	\newcommand{\onepagecolor}[1]{\newpagecolor{#1}\afterpage{\restorepagecolor}}
-
-
-
-	%\frontmatter
+\begin{document}
 	\begin{titlepage}
 		\begin{fullPage}[black]
 			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
 		\end{fullPage}
 	\end{titlepage}
-	
+
 	\frontmatter
+
 	\include{impressum}
-	
-	\tableofcontents{\pagestyle{fancy}}
-	
+	\tableofcontents
+
 	\mainmatter
+
 	
-	\def\mail#1{\url{#1}}
 	\include{vorwort}
 	\include{diegaf}
 	\include{pcundinternet}
@@ -286,6 +315,7 @@
 	\include{geld}
 	\include{ankommen}
 	\include{transport}
+	\include{semesterticket}
 	
 	\appendix
 	\include{gebaeude}
