@@ -1,0 +1,3 @@
+[submodule "fonts/lmufonts"]
+	path = fonts/lmufonts
+	url = git@github.com:LMUGAF/lmufonts.git
