@@ -8,7 +8,7 @@
 %TODO all graphics bleed
 %TODO change papersize back to show crop marks
 %INFO Formate, etc vom Drucker: http://www.flyeralarm.com/sheets/de/mag_a5_mass.pdf
-\documentclass[twoside,openany,a5paper,fontsize=9pt]{scrbook}
+\documentclass[twoside,openany,a5paper,fontsize=9pt,cleardoublepage=plain]{scrbook}
 \usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
@@ -286,12 +286,6 @@
 %% Better looking hyphenation
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 
-\makeatletter
-\renewcommand\mainmatter{%
-    \clearpage
-  \@mainmattertrue
-  \pagenumbering{arabic}}
-\makeatother
 
 \begin{document}
 	\begin{titlepage}
@@ -299,15 +293,17 @@
 			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
 		\end{fullPage}
 	\end{titlepage}
-
+	
+	\begin{fullPage}
+	\end{fullPage}
+	
+	
 	\frontmatter
-
 	\include{impressum}
 	\tableofcontents
-
-	\mainmatter
-
 	
+	
+	\mainmatter
 	\include{vorwort}
 	\include{diegaf}
 	\include{pcundinternet}
@@ -327,7 +323,7 @@
 	\include{glossar}
 	
 	\backmatter
-	
+	\cleardoubleevenpage
 	\begin{fullPage}
 		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
 	\end{fullPage}
