@@ -1,0 +1,9 @@
+BEGIN:VCARD
+N:;Gruppe Aktiver Fachschaftika
+TITLE:GAF
+EMAIL;TYPE=INTERNET:gaf@fs.lmu.de
+ORG:LMU
+TEL;TYPE=WORK:+498921804382
+ADR:;;Theresienstraße 39;München;;80333;
+URL:https://gaf.fs.lmu.de
+END:VCARD
