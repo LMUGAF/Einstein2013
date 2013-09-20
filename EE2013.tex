@@ -286,7 +286,12 @@
 %% Better looking hyphenation
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 
-
+\makeatletter
+\renewcommand\mainmatter{%
+    \clearpage
+  \@mainmattertrue
+  \pagenumbering{arabic}}
+\makeatother
 
 \begin{document}
 	\begin{titlepage}
@@ -315,7 +320,6 @@
 	\include{geld}
 	\include{ankommen}
 	\include{transport}
-	\include{semesterticket}
 	
 	\appendix
 	\include{gebaeude}
