@@ -23,7 +23,7 @@
 	% don't switch the order: github.com/reutenauer/polyglossia/issues/50
 	\ifXeTeX
 		\usepackage{polyglossia}
-		\setdefaultlanguage{german}
+		\setdefaultlanguage[babelshorthands=true]{german}
 		\usepackage{xunicode} % loads graphicx so load it before hyperref
 		\usepackage[xetex,hidelinks]{hyperref}
 	\fi
@@ -236,7 +236,7 @@
 	\vskip 3mm
 	
 	\colorbox{blue!20}{
-		\parbox{\linewidth}{
+		\parbox{.97\textwidth}{
 			\begin{tabularx}{\textwidth}{rX}
 				\BODY
 			\end{tabularx}
