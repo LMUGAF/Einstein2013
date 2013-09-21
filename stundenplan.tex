@@ -1,44 +1,22 @@
-\chapter[Stundenplan]{}
-  \begin{landscape}
-    \begin{center}
-      \begin{widetable}{\columnwidth}{{r}*{5}{|c}}
-	& Montag & Dienstag & Mittwoch & Donnerstag & Freitag\\
+\chapter*{Stundenplan}
+
+\def\timeTableBreak{\\[5.65mm]}
+\begin{landscape}
+	\centering
+	\begin{tabularx}{\columnwidth}{r|X|X|X|X|X|}
+	\multicolumn{1}{c}{} & \multicolumn{1}{c}{Montag} & \multicolumn{1}{c}{Dienstag} & \multicolumn{1}{c}{Mittwoch} & \multicolumn{1}{c}{Donnerstag} & \multicolumn{1}{c}{Freitag} \\
 	\hline
-	08:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\
-	&  &  &  &  & \\       
-	\hline
-	10:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\
-	&  &  &  &  & \\
-	\hline
-	12:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\
-	&  &  &  &  & \\
-	\hline
-	14:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\
-	&  &  &  &  & \\
-	\hline
-	16:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\
-	&  &  &  &  & \\
-	\hline
-	18:00 &  &  &  &  & \\
-	&  &  &  &  & \\
-	\hdashline
-	&  &  &  &  & \\ 
-	&  &  &  &  &
-      \end{widetable}
-    \end{center}
-  \end{landscape}
+	08:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\hline
+	10:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\hline
+	12:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\hline
+	14:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\hline
+	16:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\hline
+	18:00 &  &  &  &  & \timeTableBreak\cdashline{2-6}
+	      &  &  &  &  & \timeTableBreak\cline{2-6}
+	\end{tabularx}
+\end{landscape}
