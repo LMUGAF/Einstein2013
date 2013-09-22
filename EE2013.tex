@@ -167,7 +167,7 @@
 
 %% Flip-Book footer
 \newcounter{LeftFlipBookFrame}
-\setcounter{LeftFlipBookFrame}{1}
+\setcounter{LeftFlipBookFrame}{30}
 \newcounter{RightFlipBookFrame}
 \setcounter{RightFlipBookFrame}{1}
 
@@ -177,10 +177,10 @@
 	%
 	\begin{picture}
 		(18,0)
-		\put(0,0){\includegraphics[height=8mm]{pac-a-\theLeftFlipBookFrame}}
+		\put(0,0){\includegraphics[height=8mm]{pac-b-\theLeftFlipBookFrame}}
 	\end{picture}
 	%
-	\setcounter{LeftFlipBookFrame}{\theLeftFlipBookFrame+1}
+	\setcounter{LeftFlipBookFrame}{\theLeftFlipBookFrame-1}
 }
 
 \fancyfoot[RO]{
@@ -188,7 +188,7 @@
 	%
 	\begin{picture}
 		(18,0)
-		\put(0,0){\includegraphics[height=8mm]{pac-b-\theRightFlipBookFrame}}
+		\put(0,0){\includegraphics[height=8mm]{pac-a-\theRightFlipBookFrame}}
 	\end{picture}
 	%
 	\setcounter{RightFlipBookFrame}{\theRightFlipBookFrame+1}
