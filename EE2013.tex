@@ -213,6 +213,8 @@
 	\afterpage{\restorepagecolor}
 }
 
+%%color-definintions
+\definecolor{einstein-red}{HTML}{800000}
 
 %% Create empty pages
 \newenvironment{fullPage}[1][white]{
@@ -306,7 +308,7 @@
 
 \begin{document}
 	\begin{titlepage}
-		\begin{fullPage}[black]
+		\begin{fullPage}[einstein-red]
 			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
 		\end{fullPage}
 	\end{titlepage}
@@ -361,7 +363,7 @@
 		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
 	\end{fullPage}
 	
-	\begin{fullPage}[black]
+	\begin{fullPage}[einstein-red]
 		\includegraphics[width=\paperwidth,height=\paperheight]{back}
 	\end{fullPage}
 \end{document}
