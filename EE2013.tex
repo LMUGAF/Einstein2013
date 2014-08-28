@@ -235,7 +235,7 @@
 
 %% urlList
 \newcounter{LinkCnt}
-\newcommand*{\urlListSpace}{3mm}
+\newcommand*{\urlListSpace}{4mm}
 \DTLloaddb{webcodes}{webcodes.csv}
 
 \NewEnviron{urlList}{%
@@ -268,8 +268,8 @@
 	%
 	% Display the link number, the url and perhaps a description
 	\begin{adjustbox}{valign=t}%
-		\begin{pspicture}(0.54in,0.54in)%
-			\psbarcode{http://opha.se/w/\theCode}{width=0.54 height=0.54 parse}{qrcode}%
+		\begin{pspicture}(0.4in,0.4in)%
+			\psbarcode{http://opha.se/w/\theCode}{width=0.4 height=0.4 parse}{qrcode}%
 		\end{pspicture}%
 	\end{adjustbox}%
 	\vspace{\urlListSpace}%
