@@ -54,6 +54,9 @@
 \usepackage{float}
 \usepackage{xparse}
 \usepackage[parfill]{parskip} %Don't indent paragraphs; newline instead
+\usepackage{datatool} % Read webcode database
+\usepackage{adjustbox} % Used for adjustbox eviroment used for webcodes
+\usepackage{pst-barcode} % Used for adjustbox eviroment used for webcodes
 
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -230,43 +233,49 @@
 
 %% urlList
 \newcounter{LinkCnt}
+\newcommand*{\urlListSpace}{3mm}
+\DTLloaddb{webcodes}{webcodes.csv}
 
-\NewEnviron{urlList}{
-	\setcounter{LinkCnt}{1}
-	
-	\vskip 3mm
-	
-	\colorbox{blue!20}{
-		\parbox{.97\textwidth}{
-			\begin{tabularx}{\textwidth}{rX}
-				\BODY
-			\end{tabularx}
-		}
-	}
+\NewEnviron{urlList}{%
+	\setcounter{LinkCnt}{1}%
+	%
+	\vskip 3mm%
+	%
+	\colorbox{blue!15}{%
+		\begin{tabularx}{\textwidth}{@{\hskip \urlListSpace}l@{\hskip \urlListSpace}X@{\hskip \urlListSpace}}%
+			\BODY%
+		\end{tabularx}%
+	}%
 }
 
-\newcommand{\urlItem}[3]{%
+\newcommand*{\theCode}{}%
+\newcommand*{\theTitle}{}%
+\newcommand*{\theUrl}{}%
+
+\NewDocumentCommand{\urlItem}{mo}{%
+	\xDTLassignfirstmatch{webcodes}{url}{#1}{\theCode=webcode,\theTitle=title,\theUrl=url}%
 	% "Close" the last row (create a new one) if not the first link
 	\ifnum\theLinkCnt>1%
-		\\[2mm]%
+		\\%
 	\fi%
 	%
 	% Create a lable if a label name is provided
-	\IfNoValueTF{#3}%
+	\IfNoValueTF{#2}%
 	{}%
-	{\namedlabel{#3}{{[}\theLinkCnt{]}}{#1}}%
+	{\namedlabel{#2}{{[}\theLinkCnt{]}}{\theTitle}}%
 	%
 	% Display the link number, the url and perhaps a description
-	\IfNoValueTF{#1}%
-	{{[}\theLinkCnt{]} & \url{#2}}%
-	{{[}\theLinkCnt{]} & \textbf{#1} \newline \url{#2}}%
-	%
+	\begin{adjustbox}{valign=t}%
+		\begin{pspicture}(0.54in,0.54in)%
+			\psbarcode{http://opha.se/w/\theCode}{width=0.54 height=0.54 parse}{qrcode}%
+		\end{pspicture}%
+	\end{adjustbox}%
+	\vspace{\urlListSpace}%
+	&%
+	{[}\theLinkCnt{]} \textbf{\theTitle} \newline \url{\theUrl} \newline \url{opha.se/w/\theCode}%
 	% Increment the link number
 	\setcounter{LinkCnt}{\theLinkCnt+1}%
 }
-
-\NewDocumentCommand{\httpItem }{omg}{\urlItem{#1}{\http  #2}{#3}}
-\NewDocumentCommand{\httpsItem}{omg}{\urlItem{#1}{\https #2}{#3}}
 
 
 %% Subject lists
