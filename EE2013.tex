@@ -216,6 +216,8 @@
 	\afterpage{\restorepagecolor}
 }
 
+%%color-definintions
+\definecolor{einstein-red}{HTML}{800000}
 
 %% Create empty pages
 \newenvironment{fullPage}[1][white]{
@@ -281,12 +283,12 @@
 %% Subject lists
 \newcommand{\subjectList}[1]{#1}
 
-\DeclareRobustCommand\subjectI {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectI}}}
-\DeclareRobustCommand\subjectM {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectM}}}
-\DeclareRobustCommand\subjectMI{\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectMI}}}
-\DeclareRobustCommand\subjectP {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectP}}}
-\DeclareRobustCommand\subjectS {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectS}}}
-\DeclareRobustCommand\subjectW {\hskip 2mm \raisebox{-0.3\height} {\includegraphics[height=5mm]{subjectW}}}
+\DeclareRobustCommand\subjectI {\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectI}}}
+\DeclareRobustCommand\subjectM {\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectM}}}
+\DeclareRobustCommand\subjectMI{\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectMI}}}
+\DeclareRobustCommand\subjectP {\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectP}}}
+\DeclareRobustCommand\subjectS {\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectS}}}
+\DeclareRobustCommand\subjectW {\hskip 2mm \raisebox{-0.1\height} {\includegraphics[height=7mm]{subjectW}}}
 
 
 %% Better looking lists
@@ -315,7 +317,7 @@
 
 \begin{document}
 	\begin{titlepage}
-		\begin{fullPage}[black]
+		\begin{fullPage}[einstein-red]
 			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
 		\end{fullPage}
 	\end{titlepage}
@@ -370,7 +372,7 @@
 		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
 	\end{fullPage}
 	
-	\begin{fullPage}[black]
+	\begin{fullPage}[einstein-red]
 		\includegraphics[width=\paperwidth,height=\paperheight]{back}
 	\end{fullPage}
 \end{document}
