@@ -143,12 +143,12 @@
 
 %% Define your own labels
 \makeatletter
-	\newcommand{\namedlabel}[3]{
-		\begingroup
-			\def\@currentlabel{#2}
-			\def\@currentlabelname{#3}
-			\phantomsection\label{#1}
-		\endgroup
+	\newcommand{\namedlabel}[3]{%
+		\begingroup%
+			\def\@currentlabel{#2}%
+			\def\@currentlabelname{#3}%
+			\phantomsection\label{#1}%
+		\endgroup%
 	}
 \makeatother
 
@@ -255,6 +255,7 @@
 	%
 	\colorbox{blue!15}{%
 		\begin{tabularx}{\textwidth}{@{\hskip \urlListSpace}l@{\hskip \urlListSpace}X@{\hskip \urlListSpace}}%
+			\noalign{\vskip 5mm}%
 			\BODY%
 		\end{tabularx}%
 	}%
