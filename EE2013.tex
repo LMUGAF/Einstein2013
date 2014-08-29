@@ -161,7 +161,17 @@
 	\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
 	
 	\renewcommand{\chaptermark}[1]{
-		\markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}
+		\markboth{%
+			\format@sec@number{%
+				\ifnum\c@secnumdepth>\m@ne%
+					\ifnum\thechapter>0%
+						\@chapapp\ \thechapter. %
+					\fi%
+				\fi%
+			}%
+			{#1}%
+		}%
+		{}%
 	}
 \makeatother
 
@@ -332,8 +342,8 @@
 	\tableofcontents
 	
 	
-	\mainmatter
 	\include{vorwort}
+	\mainmatter
 	\include{diegaf}
 	\include{pcundinternet}
 	\include{vorlesungszeit}
