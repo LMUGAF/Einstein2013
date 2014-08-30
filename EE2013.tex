@@ -57,6 +57,7 @@
 \usepackage{datatool} % Read webcode database
 \usepackage{adjustbox} % Used for adjustbox eviroment used for webcodes
 \usepackage{pst-barcode} % Used for adjustbox eviroment used for webcodes
+\usepackage{datetime} % Used to get the name of the calender items
 
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -321,6 +322,85 @@
 \renewcommand{\#}{{\lserif\oldHash}}
 
 
+%% Calendar
+\NewDocumentCommand{\tuFilm}{om}{%
+	Heute im TU-Film \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
+}
+
+\NewDocumentCommand{\calHeader}{mmmmm}{%
+\section*{%
+	%% Same month -> same year
+	\ifnum#1=#3%
+		\monthname[#1] #2%
+	%
+	%% Different month, same year
+	\else\ifnum#2=#4%
+		\monthname[#1]/\monthname[#3] #2%
+	%
+	%% Different month, differnet year
+	\else%
+		\monthname[#1] #2 / \monthname[#3] #4%
+	\fi\fi%
+}%
+\subsection*{#5. Kalenderwoche}
+}
+
+\NewDocumentEnvironment{calDayDscNr}{mm}{%
+	\begin{adjustbox}{valign=t}%
+		{\fontsize{.7cm}{1em}\selectfont\sffamily\textcolor{#1}{#2}}%
+	\end{adjustbox}%
+}
+
+\NewDocumentEnvironment{calDayDscName}{m}{%
+	\begin{adjustbox}{valign=t}%
+		#1%
+	\end{adjustbox}%
+}
+
+\NewDocumentEnvironment{calDayDscSpecial}{m}{%
+	\begin{adjustbox}{valign=t}%
+		{\footnotesize #1}%
+	\end{adjustbox}%
+}
+
+\NewDocumentEnvironment{calDayDescription}{mmmmm}{
+	\makebox[0cm][l]{%
+		\begin{tabularx}{#1}{#2}%
+			\noalign{\vskip 1.5mm}
+			#3 & #4 & #5
+		\end{tabularx}%
+	}%
+}
+
+
+\NewDocumentEnvironment{calDay}{O{black}mmO{}O{\linewidth-\tabcolsep}}{%
+	\noindent
+	%\makebox[#5]{\rule{#5}{1pt}}%
+	\ifodd\value{page}%
+		\calDayDescription{#5}{@{}Xr@{\hskip 2mm}r@{}}%
+		{\calDayDscSpecial{#4}}%
+		{\calDayDscName{#2}}%
+		{\calDayDscNr{#1}{#3}}%
+	\else%
+		\calDayDescription{#5}{@{}l@{\hskip 2mm}lX@{}}%
+		{\calDayDscNr{#1}{#3}}%
+		{\calDayDscName{#2}}%
+		{\raggedleft\calDayDscSpecial{#4}}%
+	\fi%
+	\minipage[t][2.2cm][b]{#5}\begingroup%
+		\ifodd\value{page}\else%
+			\flushright%
+		\fi%
+		\footnotesize\color{black!60} %
+}{%
+	\vskip 1.5mm%
+	\ifodd\value{page}\else%
+		\endflushright%
+	\fi%
+	\endgroup\endminipage%
+}
+
+
 %% Better looking hyphenation
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 
@@ -350,6 +430,10 @@
 	\include{vorlesungsfrei}
 	\include{bibliothek}
 	\include{gumbel}
+	
+	\include{kalender}
+	\include{kalender-days}
+	
 	\include{beratung}
 	\include{ausland}
 	\include{geld}
