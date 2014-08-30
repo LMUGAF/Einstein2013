@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from dateutil import rrule
 from datetime import datetime, timedelta
