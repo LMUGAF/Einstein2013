@@ -22,7 +22,12 @@ def fromFile(path, default = None):
 
 feiertage = {}
 
-def addFeiertag(month, day, title, noUni = False):
+NORMAL_DAY = 0
+NO_UNI_DAY = 1
+HOLIDAY_DAY = 2
+DAY_TYPE_NAMES = ["Normal", "NoUni", "Holiday"]
+
+def addFeiertag(month, day, title, t = NORMAL_DAY):
 	key = (month, day)
 	
 	if key not in feiertage:
@@ -30,21 +35,27 @@ def addFeiertag(month, day, title, noUni = False):
 	
 	feiertage[key].append({
 		"title": title,
-		"no_uni": noUni
+		"type": t,
+		"tex": "\\calSpecialDay%s{%s}" % (
+			DAY_TYPE_NAMES[t],
+			title
+		)
 	})
-
 
 
 def getFeiertag(month, day):
 	key = (month, day)
 	
 	if key not in feiertage:
-		return ""
+		return {"tex": "", "type": NORMAL_DAY}
 	
 	l = feiertage[key]
-	l.sort(key=lambda x: (not x["no_uni"], x["title"]))
-	l = map((lambda x: ("\\textbf{%s}" % x["title"]) if x["no_uni"] else x["title"]), l)
-	return "[%s]" % ", ".join(l)
+	l.sort(key=lambda x: (not x["type"], x["title"]))
+	lTex = map(lambda x: x["tex"], l)
+	return {
+		"tex": ", ".join(lTex),
+		"type": l[0]["type"]
+	}
 
 
 template = Template(fromFile("week.tpl"))
@@ -55,22 +66,22 @@ start = weekStartFromText(sys.argv[1])
 end   = weekStartFromText(sys.argv[2])
 
 # http://de.wikipedia.org/wiki/Feiertage_in_Deutschland
-addFeiertag( 1,  1, "Neujahrstag"              , True) # Fix
-addFeiertag( 1,  6, "Heilige Drei Könige"      , True) # Fix
-addFeiertag( 4,  3, "Karfreitag"               , True) # Variabel (Freitag vor Ostern)
-addFeiertag( 4,  5, "Ostersonntag"                   ) # Variabel
-addFeiertag( 4,  6, "Ostermontag"              , True) # Variabel (Montag nach Ostersonntag)
-addFeiertag( 5,  1, "Tag der Arbeit"           , True) # Fix
-addFeiertag( 0,  0, "Christi Himmelfahrt"      , True) # Variabel (39. Tag nach Ostersonntag)
-addFeiertag( 0,  0, "Pfingstsonntag"                 ) # Variabel (49. Tag nach Ostersonntag)
-addFeiertag( 0,  0, "Pfingstmontag"            , True) # Variabel (Montag nach Pfingstsonntag)
-addFeiertag( 0,  0, "Fronleichnam"             , True) # Variabel (60. Tag nach Ostersonntag)
-addFeiertag( 8, 15, "Mariä Himmelfahrt"        , True) # Fix
-addFeiertag(10,  3, "Tag der deutschen Einheit", True) # Fix
-addFeiertag(11,  1, "Allerheiligen"            , True) # Fix
-addFeiertag(12, 24, "Heiligabend"                    ) # Fix
-addFeiertag(12, 25, "1. Weihnachtsfeiertag"    , True) # Fix
-addFeiertag(12, 26, "2. Weihnachtsfeiertag"    , True) # Fix
+addFeiertag( 1,  1, "Neujahrstag"              , HOLIDAY_DAY) # Fix
+addFeiertag( 1,  6, "Heilige Drei Könige"      , HOLIDAY_DAY) # Fix
+addFeiertag( 4,  3, "Karfreitag"               , HOLIDAY_DAY) # Variabel (Freitag vor Ostern)
+addFeiertag( 4,  5, "Ostersonntag"                          ) # Variabel
+addFeiertag( 4,  6, "Ostermontag"              , HOLIDAY_DAY) # Variabel (Montag nach Ostersonntag)
+addFeiertag( 5,  1, "Tag der Arbeit"           , HOLIDAY_DAY) # Fix
+addFeiertag( 0,  0, "Christi Himmelfahrt"      , HOLIDAY_DAY) # Variabel (39. Tag nach Ostersonntag)
+addFeiertag( 0,  0, "Pfingstsonntag"                        ) # Variabel (49. Tag nach Ostersonntag)
+addFeiertag( 0,  0, "Pfingstmontag"            , HOLIDAY_DAY) # Variabel (Montag nach Pfingstsonntag)
+addFeiertag( 0,  0, "Fronleichnam"             , HOLIDAY_DAY) # Variabel (60. Tag nach Ostersonntag)
+addFeiertag( 8, 15, "Mariä Himmelfahrt"        , HOLIDAY_DAY) # Fix
+addFeiertag(10,  3, "Tag der deutschen Einheit", HOLIDAY_DAY) # Fix
+addFeiertag(11,  1, "Allerheiligen"            , HOLIDAY_DAY) # Fix
+addFeiertag(12, 24, "Heiligabend"                           ) # Fix
+addFeiertag(12, 25, "1. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
+addFeiertag(12, 26, "2. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
 
 # http://de.wikipedia.org/wiki/Diskordianischer_Kalender
 addFeiertag( 1,  5, "Mungtag"                        ) # Fix
@@ -85,6 +96,13 @@ addFeiertag( 9, 26, "Bureflux"                       ) # Fix
 addFeiertag(10, 24, "Malatag"                        ) # Fix
 addFeiertag(12,  8, "Afflux"                         ) # Fix
 
+def addVorlesungsfrei(start, end, text = "Vorlesungsfreie Zeit"):
+	for curDay in rrule.rrule(rrule.DAILY, dtstart=start, until=end):
+		addFeiertag(curDay.month,  curDay.day, text, NO_UNI_DAY)
+
+addVorlesungsfrei(datetime(2015,  2,  1), datetime(2015,  4, 12)) # Variabel
+addVorlesungsfrei(datetime(2014, 12, 24), datetime(2015,  1,  6), "Weihnachtspause") # Fix
+addVorlesungsfrei(datetime(2014,  7, 13), datetime(2014, 10,  5)) # Variabel
 
 
 for curWeek in rrule.rrule(rrule.WEEKLY, dtstart=start, until=end):
@@ -95,10 +113,13 @@ for curWeek in rrule.rrule(rrule.WEEKLY, dtstart=start, until=end):
 	
 	for dayOfWeek in range(7):
 		curDay = curWeek + timedelta(days = dayOfWeek)
+		feiertag = getFeiertag(curDay.month, curDay.day)
+		t = max(dayOfWeek - 4, feiertag["type"])
 		subst["wd%i_dayOfMonth" % dayOfWeek] = curDay.day
 		subst["wd%i_text" % dayOfWeek] = fromFile(curDay.strftime("days/%m-%d.tex"), "")
-		subst["wd%i_feiertage" % dayOfWeek] = getFeiertag(curDay.month, curDay.day)
-		
+		subst["wd%i_feiertage" % dayOfWeek] = feiertag["tex"]
+		subst["wd%i_fg" % dayOfWeek] = "red" if t >= 2 else "black"
+		subst["wd%i_bg" % dayOfWeek] = "black!10" if t >= 1 else "white"
 	
 	subst["end_month"] = curDay.month
 	subst["end_year"]  = curDay.year

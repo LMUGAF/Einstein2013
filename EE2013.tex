@@ -58,6 +58,8 @@
 \usepackage{adjustbox} % Used for adjustbox eviroment used for webcodes
 \usepackage{pst-barcode} % Used for adjustbox eviroment used for webcodes
 \usepackage{datetime} % Used to get the name of the calender items
+\usepackage{collcell}
+\usepackage{pgfkeys}
 
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -165,7 +167,7 @@
 		\markboth{%
 			\format@sec@number{%
 				\ifnum\c@secnumdepth>\m@ne%
-					\ifnum\thechapter>0%
+					\ifnum\value{chapter}>0%
 						\@chapapp\ \thechapter. %
 					\fi%
 				\fi%
@@ -190,10 +192,10 @@
 \fancyfoot[LE]{
 	\setlength{\unitlength}{1mm}
 	%
-	\begin{picture}
-		(18,0)
-		\put(0,0){\includegraphics[height=8mm]{pac-b-\theLeftFlipBookFrame}}
-	\end{picture}
+% 	\begin{picture}
+% 		(18,0)
+% 		\put(0,0){\includegraphics[height=8mm]{pac-b-\theLeftFlipBookFrame}}
+% 	\end{picture}
 	%
 	\setcounter{LeftFlipBookFrame}{\theLeftFlipBookFrame-1}
 }
@@ -201,10 +203,10 @@
 \fancyfoot[RO]{
 	\setlength{\unitlength}{1mm}
 	%
-	\begin{picture}
-		(18,0)
-		\put(0,0){\includegraphics[height=8mm]{pac-a-\theRightFlipBookFrame}}
-	\end{picture}
+% 	\begin{picture}
+% 		(18,0)
+% 		\put(0,0){\includegraphics[height=8mm]{pac-a-\theRightFlipBookFrame}}
+% 	\end{picture}
 	%
 	\setcounter{RightFlipBookFrame}{\theRightFlipBookFrame+1}
 }
@@ -351,6 +353,18 @@
 \subsection*{#5. Kalenderwoche}
 }
 
+\NewDocumentCommand{\calSpecialDayNormal}{m}{%
+	#1%
+}
+
+\NewDocumentCommand{\calSpecialDayNoUni}{m}{%
+	#1%
+}
+
+\NewDocumentCommand{\calSpecialDayHoliday}{m}{%
+	\textbf{#1}%
+}
+
 \NewDocumentEnvironment{calDayDscNr}{mm}{%
 	\begin{adjustbox}{valign=t}%
 		{\fontsize{.7cm}{1em}\selectfont\sffamily\textcolor{#1}{#2}}%
@@ -376,6 +390,38 @@
 			#3 & #4 & #5
 		\end{tabularx}%
 	}%
+}
+
+\pgfkeys{
+ /myparbox/.is family, /myparbox,
+ % Here are the options that a user can pass
+ default/.style = {color = white},
+ color/.estore in = \calCellColor
+}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\newcommand{\tikzMe}[1]{%
+	\tikz[baseline]{%
+		\node[anchor=base, inner sep=0pt,outer sep=0pt] (n) {\strut \noindent #1};%
+		\begin{pgfonlayer}{background}%
+			\fill[color=\calCellColor] (n.north west) rectangle (n.south east);%
+		\end{pgfonlayer}%
+	}%
+}
+\newcolumntype{A}[1]{%
+	@{}%
+	>{%
+		\def\calCellColor{red}%
+		\pgfkeys{/myparbox, default, #1}%
+		\collectcell\tikzMe%
+	}%
+	c%
+	<{\endcollectcell}%
+	@{}%
 }
 
 
