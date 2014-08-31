@@ -68,13 +68,17 @@ end   = weekStartFromText(sys.argv[2])
 # http://de.wikipedia.org/wiki/Feiertage_in_Deutschland
 addFeiertag( 1,  1, "Neujahrstag"              , HOLIDAY_DAY) # Fix
 addFeiertag( 1,  6, "Heilige Drei Könige"      , HOLIDAY_DAY) # Fix
+addFeiertag( 4,  2, "Gründonnerstags"          , NO_UNI_DAY ) # Variabel (Donnerstag vor Ostern)
 addFeiertag( 4,  3, "Karfreitag"               , HOLIDAY_DAY) # Variabel (Freitag vor Ostern)
+addFeiertag( 4,  4, "Karsamstag"               , NO_UNI_DAY ) # Variabel (Samstag vor Ostern)
 addFeiertag( 4,  5, "Ostersonntag"                          ) # Variabel
 addFeiertag( 4,  6, "Ostermontag"              , HOLIDAY_DAY) # Variabel (Montag nach Ostersonntag)
+addFeiertag( 4,  7, "Osterdienstag"            , NO_UNI_DAY ) # Variabel (Dienstag nach Ostersonntag)
 addFeiertag( 5,  1, "Tag der Arbeit"           , HOLIDAY_DAY) # Fix
 addFeiertag( 0,  0, "Christi Himmelfahrt"      , HOLIDAY_DAY) # Variabel (39. Tag nach Ostersonntag)
 addFeiertag( 0,  0, "Pfingstsonntag"                        ) # Variabel (49. Tag nach Ostersonntag)
 addFeiertag( 0,  0, "Pfingstmontag"            , HOLIDAY_DAY) # Variabel (Montag nach Pfingstsonntag)
+addFeiertag( 0,  0, "Pfingstdienstag"          , NO_UNI_DAY ) # Variabel (Dienstag nach Pfingstsonntag)
 addFeiertag( 0,  0, "Fronleichnam"             , HOLIDAY_DAY) # Variabel (60. Tag nach Ostersonntag)
 addFeiertag( 8, 15, "Mariä Himmelfahrt"        , HOLIDAY_DAY) # Fix
 addFeiertag(10,  3, "Tag der deutschen Einheit", HOLIDAY_DAY) # Fix
@@ -99,6 +103,17 @@ addFeiertag(12,  8, "Afflux"                         ) # Fix
 def addVorlesungsfrei(start, end, text = "Vorlesungsfreie Zeit"):
 	for curDay in rrule.rrule(rrule.DAILY, dtstart=start, until=end):
 		addFeiertag(curDay.month,  curDay.day, text, NO_UNI_DAY)
+
+
+
+
+
+## Vorlesungsfreie Tage nach LMU beschreibung
+##  * die gesetzlichen Feiertage
+##  * Pfingstdienstag
+##  * Gründonnerstag bis einschließlich Osterdienstag
+##  * Weihnachtspause vom 24.12. bis 6.1.
+
 
 addVorlesungsfrei(datetime(2015,  2,  1), datetime(2015,  4, 12)) # Variabel
 addVorlesungsfrei(datetime(2014, 12, 24), datetime(2015,  1,  6), "Weihnachtspause") # Fix
