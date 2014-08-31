@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="176.6308"
+   height="195.08318"
+   id="svg3022"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="calHeute.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview2997"
+     showgrid="false"
+     inkscape:zoom="1.2097404"
+     inkscape:cx="59.712233"
+     inkscape:cy="135.57562"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3024" />
+  <metadata
+     id="metadata3027">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-323.51048,-82.258399)"
+     id="layer1">
+    <path
+       d="m 499.86063,112.91967 0,140 -20,20 -0.66202,-142.21254 z"
+       id="path3906"
+       style="fill:#a5a5a5;fill-opacity:1;stroke:none" />
+    <path
+       d="m 479.821,173.24756 0,99.52962 -40,0 z"
+       id="path3930"
+       style="fill:#cccccc;fill-opacity:1;stroke:none" />
+    <path
+       d="m 360,102.36218 120,0 20,-19.999997 -120,0 z"
+       id="path3040"
+       style="fill:#000000;fill-opacity:1;stroke:none" />
+    <path
+       d="m 365.54325,131.34599 c 4.88599,54.07221 -7.09225,93.37959 -36.52833,140.49114 l 109.58497,0 c 31.1443,-43.67702 37.99699,-92.3154 36.52831,-140.49114 l 0,0"
+       id="path3878"
+       style="fill:none;stroke:#000000;stroke-width:11.00887966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 360.50113,102.272 0,29.64801 118.99774,0 0,-29.64801"
+       id="path3042"
+       style="fill:#262626;fill-opacity:1;stroke:#262626;stroke-width:0.99354118;stroke-opacity:1" />
+    <path
+       d="m 499.65748,82.742204 0,29.191596 -19.24397,19.46107 0,-29.19159 z"
+       id="path3889"
+       style="fill:#695c5c;fill-opacity:1;stroke:#695c5c;stroke-width:0.9676109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       x="502.65906"
+       y="210.89433"
+       transform="matrix(0.88573174,0.04079528,-0.45334099,1.1081299,0,0)"
+       id="text3943"
+       xml:space="preserve"
+       style="font-size:115.83882904px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LMU CompatilFact;-inkscape-font-specification:LMU CompatilFact Bold"
+       sodipodi:linespacing="125%"><tspan
+         x="502.65906"
+         y="210.89433"
+         id="tspan3151">X</tspan><tspan
+         x="502.65906"
+         y="210.89433"
+         id="tspan2999" /></text>
+  </g>
+</svg>

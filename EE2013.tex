@@ -259,7 +259,7 @@
 	\vskip 2mm%
 	%
 	\colorbox{blue!15}{%
-		\begin{tabularx}{\textwidth}{@{\hskip \urlListSpace}l@{\hskip 4mm}X@{\hskip \urlListSpace}}%
+		\begin{tabularx}{\linewidth}{@{\hskip \urlListSpace}l@{\hskip 4mm}X@{\hskip \urlListSpace}}%
 			\noalign{\vskip 2mm}%
 			\BODY%
 		\end{tabularx}%
@@ -331,6 +331,10 @@
 \NewDocumentCommand{\tuFilm}{om}{%
 	\includegraphics[height=7pt]{calFilm} %
 	Heute im TU-Film \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
+}
+
+\NewDocumentCommand{\calHeute}{m}{%
+	\includegraphics[height=7pt]{calHeute} #1%
 }
 
 \NewDocumentCommand{\calHist}{m}{%
