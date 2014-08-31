@@ -250,17 +250,17 @@
 
 %% urlList
 \newcounter{LinkCnt}
-\newcommand*{\urlListSpace}{4mm}
+\newcommand*{\urlListSpace}{2mm}
 \DTLloaddb{webcodes}{webcodes.csv}
 
 \NewEnviron{urlList}{%
 	\setcounter{LinkCnt}{1}%
 	%
-	\vskip 3mm%
+	\vskip 2mm%
 	%
 	\colorbox{blue!15}{%
-		\begin{tabularx}{\textwidth}{@{\hskip \urlListSpace}l@{\hskip \urlListSpace}X@{\hskip \urlListSpace}}%
-			\noalign{\vskip 5mm}%
+		\begin{tabularx}{\textwidth}{@{\hskip \urlListSpace}l@{\hskip 4mm}X@{\hskip \urlListSpace}}%
+			\noalign{\vskip 2mm}%
 			\BODY%
 		\end{tabularx}%
 	}%
@@ -329,6 +329,7 @@
 
 %% Calendar
 \NewDocumentCommand{\tuFilm}{om}{%
+	\includegraphics[height=7pt]{calFilm} %
 	Heute im TU-Film \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
 }
 
