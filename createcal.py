@@ -118,8 +118,7 @@ for curWeek in rrule.rrule(rrule.WEEKLY, dtstart=start, until=end):
 		subst["wd%i_dayOfMonth" % dayOfWeek] = curDay.day
 		subst["wd%i_text" % dayOfWeek] = fromFile(curDay.strftime("days/%m-%d.tex"), "")
 		subst["wd%i_feiertage" % dayOfWeek] = feiertag["tex"]
-		subst["wd%i_fg" % dayOfWeek] = "red" if t >= 2 else "black"
-		subst["wd%i_bg" % dayOfWeek] = "black!10" if t >= 1 else "white"
+		subst["wd%i_type" % dayOfWeek] = t
 	
 	subst["end_month"] = curDay.month
 	subst["end_year"]  = curDay.year
