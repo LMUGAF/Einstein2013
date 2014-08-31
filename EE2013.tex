@@ -434,16 +434,16 @@
 		draw=black,%
 		inner sep=0pt,%
 		outer sep=0pt,%
-		fill={\ifnum#3=0 white\else black!10\fi}%
+		fill={\ifnum#3=0 white\else black!4\fi}%
 	] {};
 	
 	%% Info Text (content)
 	\node [%
 		fit=(#1)(#2),%
 		align={\ifodd\value{page}left\else right\fi},%
-		opacity = .5,%
+		opacity = 1,%
 		align = center,%
-		font=\footnotesize,%
+		font=\fontsize{2mm}{1em}\selectfont\sffamily,%
 	] {%
 		\begin{minipage}[t][2.53cm][b]{\textwidth-3mm}%
 			\ifodd\value{page}\else%
