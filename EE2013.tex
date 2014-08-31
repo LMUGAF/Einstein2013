@@ -146,6 +146,23 @@
 \makeatother
 
 
+%% Making \{front,main,back}matter always break on every page
+%% Modification of /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
+\makeatletter
+	\renewcommand*\frontmatter{%
+		\clearpage
+		\@mainmatterfalse\pagenumbering{roman}%
+	}
+	\renewcommand*\mainmatter{%
+		\clearpage
+		\@mainmattertrue\pagenumbering{arabic}%
+	}
+	\renewcommand*\backmatter{%
+		\clearpage\@mainmatterfalse
+	}
+\makeatother
+
+
 %% Define your own labels
 \makeatletter
 	\newcommand{\namedlabel}[3]{%
@@ -490,17 +507,16 @@
 		\end{fullPage}
 	\end{titlepage}
 	
-	\begin{fullPage}
-		%\includegraphics[width=0.95\paperwidth,height=0.95\paperheight]{pacman_and_co__by_maryannasaurr-d4nm40r}\centering
-	\end{fullPage}
+% 	\begin{fullPage}
+% 		\includegraphics[width=0.95\paperwidth,height=0.95\paperheight]{pacman_and_co__by_maryannasaurr-d4nm40r}\centering
+% 	\end{fullPage}
 	
+	\include{impressum}
 	
 	\frontmatter
-	\include{impressum}
 	\tableofcontents
-	
-	
 	\include{vorwort}
+	
 	\mainmatter
 	\include{diegaf}
 	\include{pcundinternet}
