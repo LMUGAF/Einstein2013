@@ -21,7 +21,7 @@ EE2013: kalender-days.tex
 	latexmk 2>&1 >&3 | \
 	sed -l -e "s#\(.*\)#`tput bold`\1`tput sgr0`#"
 	@echo -e "\a"
-	@ln --force tmp/main.pdf $@.pdf
+	@ln --force tmp/EE2013.pdf $@.pdf
 
 clean:
 	@rm --force --verbose --recursive tmp
