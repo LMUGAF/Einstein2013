@@ -25,6 +25,7 @@ EE2013: kalender-days.tex
 
 clean:
 	@rm --force --verbose --recursive tmp
+	@rm --force --verbose kalender-days.tex
 
 distclean: clean
 	@rm --force --verbose EE2013.pdf
