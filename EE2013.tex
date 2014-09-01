@@ -146,6 +146,23 @@
 \makeatother
 
 
+%% Making \{front,main,back}matter always break on every page
+%% Modification of /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
+\makeatletter
+	\renewcommand*\frontmatter{%
+		\clearpage
+		\@mainmatterfalse\pagenumbering{roman}%
+	}
+	\renewcommand*\mainmatter{%
+		\clearpage
+		\@mainmattertrue\pagenumbering{arabic}%
+	}
+	\renewcommand*\backmatter{%
+		\clearpage\@mainmatterfalse
+	}
+\makeatother
+
+
 %% Define your own labels
 \makeatletter
 	\newcommand{\namedlabel}[3]{%
@@ -341,6 +358,11 @@
 	\includegraphics[height=7pt]{calcal} #1%
 }
 
+\NewDocumentCommand{\calJoke}{m}{%
+	%\includegraphics[height=7pt]{calcal} #1%
+	#1%
+}
+
 \NewDocumentCommand{\calSpecialDayNormal}{m}{%
 	#1%
 }
@@ -429,16 +451,16 @@
 		draw=black,%
 		inner sep=0pt,%
 		outer sep=0pt,%
-		fill={\ifnum#3=0 white\else black!10\fi}%
+		fill={\ifnum#3=0 white\else black!4\fi}%
 	] {};
 	
 	%% Info Text (content)
 	\node [%
 		fit=(#1)(#2),%
 		align={\ifodd\value{page}left\else right\fi},%
-		opacity = .5,%
+		opacity = 1,%
 		align = center,%
-		font=\footnotesize,%
+		font=\fontsize{2mm}{1em}\selectfont\sffamily,%
 	] {%
 		\begin{minipage}[t][2.53cm][b]{\textwidth-3mm}%
 			\ifodd\value{page}\else%
@@ -476,6 +498,7 @@
 
 %% Better looking hyphenation
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
+\hyphenation{Deutsch-land-sti-pen-di-um}
 
 
 \begin{document}
@@ -485,17 +508,16 @@
 		\end{fullPage}
 	\end{titlepage}
 	
-	\begin{fullPage}
-		%\includegraphics[width=0.95\paperwidth,height=0.95\paperheight]{pacman_and_co__by_maryannasaurr-d4nm40r}\centering
-	\end{fullPage}
+% 	\begin{fullPage}
+% 		\includegraphics[width=0.95\paperwidth,height=0.95\paperheight]{pacman_and_co__by_maryannasaurr-d4nm40r}\centering
+% 	\end{fullPage}
 	
+	\include{impressum}
 	
 	\frontmatter
-	\include{impressum}
 	\tableofcontents
-	
-	
 	\include{vorwort}
+	
 	\mainmatter
 	\include{diegaf}
 	\include{pcundinternet}
@@ -522,7 +544,7 @@
 	\backmatter
 	\include{stundenplan}
 	
-	\cleardoubleevenpage
+	\cleardoubleoddpage
 	\begin{fullPage}
 		\includegraphics[width=\paperwidth,height=\paperheight]{mvv_links}
 	\end{fullPage}
