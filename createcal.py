@@ -83,10 +83,10 @@ addFeiertag( 0,  0, "Fronleichnam"             , HOLIDAY_DAY) # Variabel (60. Ta
 addFeiertag( 8, 15, "Mariä Himmelfahrt"        , HOLIDAY_DAY) # Fix
 addFeiertag(10,  3, "Tag der deutschen Einheit", HOLIDAY_DAY) # Fix
 addFeiertag(11,  1, "Allerheiligen"            , HOLIDAY_DAY) # Fix
-addFeiertag(11, 29, "1. Advent"                             ) # Variabel
-addFeiertag(12,  6, "2. Advent"                             ) # Variabel
-addFeiertag(12, 13, "3. Advent"                             ) # Variabel
-addFeiertag(12, 20, "4. Advent"                             ) # Variabel
+addFeiertag(11, 30, "1. Advent"                             ) # Variabel
+addFeiertag(12,  7, "2. Advent"                             ) # Variabel
+addFeiertag(12, 14, "3. Advent"                             ) # Variabel
+addFeiertag(12, 21, "4. Advent"                             ) # Variabel
 addFeiertag(12, 24, "Heiligabend"                           ) # Fix
 addFeiertag(12, 25, "1. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
 addFeiertag(12, 26, "2. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
