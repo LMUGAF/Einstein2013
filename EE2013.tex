@@ -100,35 +100,35 @@
     ]{geometry}
 %use crop package for cropmarks, bleed and stock oversize
 %\usepackage[cam, %No marks for printer
-\usepackage[off,
-    width=149truemm,
-    height=212truemm,
+\usepackage[center,
+    width=152truemm,
+    height=214truemm,
     %mount2
     ]{crop}
 % in conjunction with crop: align pages
 % centered vertically and inner margin 0 (odd/even different)
-\voffset\stockheight
-\advance\voffset-\paperheight
-\voffset.5\voffset
+%\voffset\stockheight
+%\advance\voffset-\paperheight
+%\voffset.5\voffset
 % shipout package, hook is run every time a page is output.
-\usepackage{atbegshi}
-\AtBeginShipout{
-    \ifodd\value{page}
-        %odd pages stick to the left (inside)
-        \setlength{\hoffset}{0mm}
-    \else
-        %even pages stick to the right (inside)
-        \setlength{\hoffset}{\stockwidth-\paperwidth}
-\fi}
+%\usepackage{atbegshi}
+%\AtBeginShipout{
+%    \ifodd\value{page}
+%        %odd pages stick to the left (inside)
+%        \setlength{\hoffset}{0mm}
+%    \else
+%        %even pages stick to the right (inside)
+%        \setlength{\hoffset}{\stockwidth-\paperwidth}
+%\fi}
 
 % set up our own dimensions we need
-\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
-\setlength{\bleed}{2mm}
-\newlength{\fullwidth} %print size including bleed
-\setlength{\fullwidth}{\paperwidth+2\bleed}
-\newlength{\fullheight} %e.g. for fullpage images
-\setlength{\fullheight}{\paperheight+2\bleed}
-
+%\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
+%\setlength{\bleed}{2mm}
+%\newlength{\fullwidth} %print size including bleed
+%\setlength{\fullwidth}{\paperwidth+2\bleed}
+%\newlength{\fullheight} %e.g. for fullpage images
+%\setlength{\fullheight}{\paperheight+2\bleed}
+%
 
 
 \raggedbottom % possibly for the foot notes?
@@ -256,7 +256,7 @@
 	\thispagestyle{empty}
 	\onepagecolor{#1}
 	
-	\begin{textblock*}{\paperwidth}(0mm,0mm)
+	\begin{textblock*}{\paperheight}(0mm,0mm)
 	\noindent
 }{
 	\end{textblock*}
@@ -359,8 +359,7 @@
 }
 
 \NewDocumentCommand{\calJoke}{m}{%
-	%\includegraphics[height=7pt]{calcal} #1%
-	#1%
+	\includegraphics[height=6pt]{calJoke} #1%
 }
 
 \NewDocumentCommand{\calSpecialDayNormal}{m}{%
@@ -564,4 +563,5 @@
 	\begin{fullPage}[einstein-red]
 		\includegraphics[width=\paperwidth,height=\paperheight]{back}
 	\end{fullPage}
+	
 \end{document}
