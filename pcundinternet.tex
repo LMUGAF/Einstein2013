@@ -2,6 +2,30 @@
 Hier erfährst du, welche Möglichkeiten du hast, die CIP-Pools (Computerräume) zu nutzen, die je nach Fach verschieden notwendig, hilfreich und ausgestattet sind, wie du Zugang zum Uni-WLAN erhältst 
 und welche anderen nützlichen Dinge die Uni online anbietet.
 
+%TODO Druckerkontingent (I/MI): gemeinsames Kontingent für Farbe und S/W (Eine Farbseite kostet 3 Seitenwerte)
+% Drucker in Theresienstraße (I/MI) muss erst “freigeschalten” werden (remote-enabler auf https://tools.rz.ifi.lmu.de/cipconf/index.rb?op=remote)
+% evtl. Infos wo/wie man sein verbleibendes Kontingent anschauen kann
+\section{CIP-Pools}
+In CIP-Pools\footnote{Computer-Investitions-Programm} findest du Rechnerarbeitsplätze und Drucker, teilweise auch Scanner. Das Druckerkontingent beträgt für Mathematika, Physika und Statistika 500 Seiten pro Semester. Informatika haben 600 Seiten pro Semester zur freien Verfügung. Einige CIP-Pools haben auch Farbdrucker, deren Kontingent ist kleiner.
+
+\begin{tabularx}{\linewidth}{lX}
+\textbf{Mathematik, Wirtschaftsmathematik} %\subjectList{\subjectM\subjectW}
+& Theresienstraße 37--41, BU135 und BU136, Wendeltreppe nach unten\\
+\textbf{Physik, Meteorologie} %\subjectList{\subjectP}
+& Schellingstraße 4 Erdgeschoss, H037 und H022\\
+\textbf{Medieninformatik, Informatik}  %\subjectList{\subjectMI\subjectI}
+& Oettingenstraße 67, BU102, LU112, LU114 und LU117 (Keller und Barracken)\\
+\textbf{Medieninformatik zusätzlich} %\subjectList{\subjectMI}
+& Amalienstraße 17, EG\\
+\textbf{Für alle*}    %\subjectList{\subjectP\subjectI\subjectMI\subjectM\subjectW}
+& Theresienstraße 37--41, 1. Stock B115 \newline
+\footnotesize{$^*$Physik: arbeiten, nicht drucken \newline $\phantom{^*}$Informatik: drucken, nicht arbeiten}
+\end{tabularx}
+
+\begin{center}
+	{\includegraphics[width=0.6\textwidth]{comic_virus}}
+\end{center}
+
 \section{Online-Dienste der LMU}
 \subsection*{Campus LMU}
 \begin{itemize}
@@ -15,12 +39,12 @@ und welche anderen nützlichen Dinge die Uni online anbietet.
 \end{urlList}
 
 \begin{center}
-	{\includegraphics[width=0.7\textwidth]{comic_university}}
+	{\includegraphics[width=0.6\textwidth]{comic_university}}
 \end{center}
 
 \subsection*{Online-Selbstbedienungsfunktionen}
 \begin{itemize}
-	\item Bescheinigungen für Immatrikulation, Studienverlauf, gezahlte Beiträge
+	\item Bescheinigungen für Immatrikulation, Studienverlauf, gezahlte Beiträge. Diese sind online noch vor dem Versand der offiziellen Bestätigungen verfügbar (nützlich für Arbeitsverträge).
 	\item Änderung von Adressdaten und Telefonnummern
 	\item Formular zur Prüfungsanmeldung
 \end{itemize}
@@ -37,6 +61,26 @@ und welche anderen nützlichen Dinge die Uni online anbietet.
 \end{itemize}
 \begin{urlList}
 	\urlItem{http://www.lsf.lmu.de}
+\end{urlList}
+
+
+\subsection*{E-Medien}
+Viele E-Books, Paper, und wissenschaftliche Journale bekannter Wissenschaftsverlage stehen LMU Mitgliedern kostenlos zur Verfügung.
+Besucht man die Webseiten der entsprechenden Publikationen, fordern die Verlage einen zum kauf auf.
+Besucht man die Webseite jedoch über den E-Medien-Login der Universitätsbibliothek \ref{emedien} stehen einem die Werke kostenlos zum download bereit.
+\begin{urlList}
+	\urlItem{http://emedien.ub.uni-muenchen.de/}[emedien]
+\end{urlList}
+
+\subsection*{Microsoft DreamSpark \subjectList{\subjectI{}\subjectMI{}\subjectP{}}}
+Studika der Physik und Informatik (auch im Nebenfach) bekommen über
+Microsoft DreamSpark (früher MSDNAA) viele Microsoftproduktlizenzen
+gratis, darunter Windows, Visual Studio und viele
+Microsoft Office-Komponenten, jedoch \textbf{nicht} Word, Excel und PowerPoint.
+
+\begin{urlList}
+	\urlItem{http://tools.rz.ifi.lmu.de/cipconf/index.rb?op=msdnaa}
+	\urlItem{https://msdnaa.physik.uni-muenchen.de/}
 \end{urlList}
 
 \subsection*{UniWorX\subjectList{\subjectI{}\subjectMI{}}}
@@ -58,17 +102,29 @@ und welche anderen nützlichen Dinge die Uni online anbietet.
 	\urlItem{http://pvineu.ifi.lmu.de}
 \end{urlList}
 
+
+
+
 \section{E-Mail}
-Damit du nicht unterfordert wirst, besitzt du direkt von Anfang an zwei verschiedene E-Mail-Adressen. Bei beiden E-Mail-Adressen ist es möglich und auch wärmstens empfohlen eine Weiterleitung einzurichten.
+Damit du nicht unterfordert wirst, besitzt du direkt von Anfang an mindestens zwei verschiedene E-Mail-Adressen. Bei beiden E-Mail-Adressen ist es möglich und auch wärmstens empfohlen eine Weiterleitung einzurichten.
 
 Die Campus-Adresse besitzt jedes Studikon der LMU, während die CIP-Adresse für die Nutzer der CIP-Pools ist.
+
+
+\subsection*{Mathematik und Wirtschaftsmathematik\subjectList{\subjectM\subjectW}}
+\begin{itemize}
+	\item <seltsameKombination>@math.lmu.de
+	\item Account bei Herrn Spann (Theresienstraße 37--41, B124) beantragen
+	\item Weiterleitung über Shell-Kommando \verb|echo "neue Adresse" >~/.forward|
+\end{itemize}
 
 \subsection*{Informatik und Medieninformatik \subjectList{\subjectI\subjectMI}}
 Sollte unbedingt abgerufen oder weitergeleitet werden, da hierüber der Großteil des Informatik-Mailverkehrs abläuft. 
 \begin{itemize}
 	\item <accountname>@cip.ifi.lmu.de
+	\item Das Passwort wird während der Anmeldung vergeben
 	\item Beantragung der Kennung während der O"~Phase, in den ersten zwei Wochen des Semesters oder zu den Sprechstunden der RBG\footnote{Rechnerbetriebsgruppe} 
-		(Mo--Fr, 13--17 Uhr) jeweils in der Oettingenstr. 67, in LU113.
+		(Mo--Fr, 13--17 Uhr) jeweils in der Oettingenstraße 67, in LU113.
 \end{itemize}
 \begin{urlList}
 		\urlItem{https://webmail.ifi.lmu.de}
@@ -87,13 +143,6 @@ Physik-Newsletter gesendet.
 	\urlItem{http://www.it.physik.uni-muenchen.de/dienste/kommunikation/e-mail}
 \end{urlList}
 
-\subsection*{Mathematik und Wirtschaftsmathematik\subjectList{\subjectM\subjectW}}
-\begin{itemize}
-	\item <seltsameKombination>@math.lmu.de
-	\item Account bei Herrn Spann (Theresienstr.37--41, B124) beantragen
-	\item Weiterleitung über Shell-Kommando \verb|echo "neue Adresse" >~/.forward|
-\end{itemize}
-
 \subsection*{Für alle Studika der LMU}
 \begin{itemize}
 	\item <vorname.nachname>@campus.lmu.de (bzw. was ihr angegeben habt)
@@ -105,8 +154,8 @@ Physik-Newsletter gesendet.
 
 \section{IRC}
 IRC ist ein steinaltes, minimalistisches und nicht totzukriegendes
-Chatprotokoll für Dinge, die nicht ganz eine Email wert sind. Während die Uni
-es nicht ofiziell nutzt, ist es beliebt unter Studenten, speziell unter
+Chatprotokoll für Dinge, die nicht ganz eine E-Mail wert sind. Während die Uni
+es nicht offiziell nutzt, ist es beliebt unter Studenten, speziell unter
 Informatikern und uns Fachschaftlern. Manch einer zieht es sogar Facebook vor!
 
 Das IRC ist aufgeteilt in Kanäle, die auf Netzwerken leben. Um dich zu einem
@@ -119,39 +168,16 @@ Netzwerk freenode.
 	\urlItem{https://webchat.freenode.net/}
 \end{urlList}
 
-%TODO Druckerkontingent (I/MI): gemeinsames Kontingent für Farbe und S/W (Eine Farbseite kostet 3 Seitenwerte)
-% Drucker in Theresienstraße (I/MI) muss erst “freigeschalten” werden (remote-enabler auf https://tools.rz.ifi.lmu.de/cipconf/index.rb?op=remote)
-% evtl. Infos wo/wie man sein verbleibendes Kontingent anschauen kann
-\section{CIP-Pools}
-In CIP-Pools\footnote{Computer-Investitions-Programm} findest du Rechnerarbeitsplätze und Drucker, teilweise auch Scanner. Das Druckerkontingent beträgt für Mathematika, Physika und Statistika 500 Seiten pro Semester. Informatika haben 600 Seiten pro Semester zur freien Verfügung. Einige CIP-Pools haben auch Farbdrucker, deren Kontingent ist kleiner.
 
-\begin{tabularx}{\linewidth}{lX}
-\textbf{Mathematik, Wirtschaftsmathematik} %\subjectList{\subjectM\subjectW}
-& Theresienstr. 37--41, BU135 und BU136, Wendeltreppe nach unten\\
-\textbf{Physik, Meteorologie} %\subjectList{\subjectP}
-& Schellingstr. 4 Erdgeschoss, H037 und H022\\
-\textbf{Medieninformatik, Informatik}  %\subjectList{\subjectMI\subjectI}
-& Oettingenstr. 67, BU102, LU112, LU114 und LU117 (Keller und Barracken)\\
-\textbf{Medieninformatik zusätzlich} %\subjectList{\subjectMI}
-& Amalienstr. 17, EG\\
-\textbf{Für alle*}    %\subjectList{\subjectP\subjectI\subjectMI\subjectM\subjectW}
-& Theresienstr. 37--41, 1. Stock B115 \newline
-\footnotesize{$^*$Physik: arbeiten, nicht drucken \newline $\phantom{^*}$Informatik: drucken, nicht arbeiten}
-\end{tabularx}
 
-\begin{center}
-	{\includegraphics[width=0.5\textwidth]{comic_virus}}
-\end{center}
-
-\section{Internet: WLAN, VPN und Eduroam}
+\section{Internet / WLAN}
 Um mit deinem Laptop in der Uni ins Internet zu gehen, brauchst du
 deine Campus-Kennung. Damit lassen sich die WLAN-Services des
 Leibniz-Rechen\-zentrums (LRZ) nutzen.
 
 \subsection*{Eduroam}
-Wir empfehlen dir, das WLAN mit dem Namen (SSID) \emph{eduroam}, auf deinen Geräten einzurichten. Mit diesem einmal eingerichteten Eduroam kannst du weltweit an vielen Universitäten und Forschungsinstituten automatisch das dortige WLAN nutzen. Unter \ref{eduroam} findest du ausführliche Anleitungen für die meisten Betriebssysteme und Smart\-phones.
-Diese Seite ist über das \emph{lrz} Wi-Fi erreichbar.
-(Die benötigte LRZ-Kennung findest du in deinem Campus-Account unter `Benutzerkonto' $\rightarrow$ `E-Mail-Einstellungen'.)
+Wir empfehlen dir, das WLAN mit dem Namen (SSID) \emph{eduroam}, auf deinen Geräten einzurichten. Mit diesem einmal eingerichteten Eduroam kannst du weltweit an vielen Universitäten und Forschungsinstituten automatisch das dortige WLAN nutzen. Unter \ref{eduroam} findest du ausführliche Anleitungen für die meisten Betriebssysteme und Smart\-phones 
+(die benötigte LRZ-Kennung findest du in deinem Campus-Account unter `Benutzerkonto' $\rightarrow$ `E-Mail-Einstellungen').
 
 %TODO noch ein Hinweis auf das weniger gefüllte eduroam-a?
 Falls du nun in der Uni sitzt und dich fragst, wie du ohne Internet
@@ -178,22 +204,3 @@ Die Clientsoftware ist übrigens außerhalb der Uni praktisch, um deine
 HTTP"=Verbindungen zu verschlüsseln, etwa wenn du dich in einem
 ungeschützen WLAN befindest.
 
-\subsection*{Microsoft DreamSpark \subjectList{\subjectI{}\subjectMI{}\subjectP{}}}
-Studika der Physik und Informatik (auch im Nebenfach) bekommen über
-Microsoft DreamSpark (früher MSDNAA) viele Microsoftproduktlizenzen
-gratis, darunter Windows, Visual Studio und viele
-Microsoft Office-Komponenten, jedoch \textbf{nicht} Word, Excel und PowerPoint.
-
-\begin{urlList}
-	\urlItem{http://tools.rz.ifi.lmu.de/cipconf/index.rb?op=msdnaa}
-	\urlItem{https://msdnaa.physik.uni-muenchen.de/}
-\end{urlList}
-
-\subsection*{E-Medien}
-Um E-Books, Paper, und wissenschaftliche Journale der Uni-Bib herunterzuladen,
-benötigst du deine Campus-Kennung. Alternativ kannst du auch aus dem Münchner
-Wissenschaftsnetz (z.B. im CIP) zugreifen. Wer sich schon etwas auskennt: ssh
-in einen CIP mit X11-forwarding eines Browsers geht auch.
-\begin{urlList}
-	\urlItem{http://emedien.ub.uni-muenchen.de/}[emedien]
-\end{urlList}

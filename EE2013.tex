@@ -347,7 +347,11 @@
 %% Calendar
 \NewDocumentCommand{\tuFilm}{om}{%
 	\includegraphics[height=7pt]{calFilm} %
-	Heute im TU-Film \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
+	Heute im tu film: \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
+}
+\NewDocumentCommand{\ukino}{om}{%
+	\includegraphics[height=7pt]{calFilm} %
+	Heute im u.kino: \emph{#2}\IfNoValueTF{#1}{}{ (OV)}%
 }
 
 \NewDocumentCommand{\calHeute}{m}{%
