@@ -103,6 +103,7 @@
 \usepackage[center,
     width=152truemm,
     height=214truemm,
+    off
     %mount2
     ]{crop}
 % in conjunction with crop: align pages
@@ -122,13 +123,13 @@
 %\fi}
 
 % set up our own dimensions we need
-%\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
-%\setlength{\bleed}{2mm}
-%\newlength{\fullwidth} %print size including bleed
-%\setlength{\fullwidth}{\paperwidth+2\bleed}
-%\newlength{\fullheight} %e.g. for fullpage images
-%\setlength{\fullheight}{\paperheight+2\bleed}
-%
+\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
+\setlength{\bleed}{2mm}
+\newlength{\fullwidth} %print size including bleed
+\setlength{\fullwidth}{\paperwidth+2\bleed}
+\newlength{\fullheight} %e.g. for fullpage images
+\setlength{\fullheight}{\paperheight+2\bleed}
+
 
 
 \raggedbottom % possibly for the foot notes?
@@ -250,13 +251,14 @@
 
 %%color-definintions
 \definecolor{einstein-red}{HTML}{BF0000}
+\definecolor{mvv-color}{HTML}{F0DDD6}
 
 %% Create empty pages
 \newenvironment{fullPage}[1][white]{
 	\thispagestyle{empty}
 	\onepagecolor{#1}
 	
-	\begin{textblock*}{\paperheight}(0mm,0mm)
+	\begin{textblock*}{\fullwidth}(-2mm,-2mm)
 	\noindent
 }{
 	\end{textblock*}
@@ -507,7 +509,9 @@
 \begin{document}
 	\begin{titlepage}
 		\begin{fullPage}[einstein-red]
-			\includegraphics[width=\paperwidth,height=\paperheight]{titel}
+			\begin{center}
+				\includegraphics[height=\paperheight]{titel}
+			\end{center}
 		\end{fullPage}
 	\end{titlepage}
 	
@@ -548,24 +552,28 @@
 	\include{stundenplan}
 	
 	\cleardoubleoddpage
-	\begin{fullPage}
-		\includegraphics[width=\paperwidth,height=\paperheight]{mvv_links}
+	\begin{fullPage}[mvv-color]
+		\vskip 0mm
+		\hskip 1mm
+		\includegraphics[height=\paperheight,trim={0 0 {\dimexpr \paperwidth-1mm} 0},clip]{mvv}
+	\end{fullPage}
+	
+	\begin{fullPage}[mvv-color]
+		\vskip 0mm
+		\includegraphics[height=\paperheight,trim={{\dimexpr \paperwidth-1mm} 0 0 0},clip]{mvv}
 	\end{fullPage}
 	
 	\begin{fullPage}
-		\includegraphics[width=\paperwidth,height=\paperheight]{mvv_rechts}
+		\includegraphics[width=\fullwidth]{lageplan_links}
 	\end{fullPage}
 	
 	\begin{fullPage}
-		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_links}
-	\end{fullPage}
-	
-	\begin{fullPage}
-		\includegraphics[width=\paperwidth,height=\paperheight]{lageplan_rechts}
+		\includegraphics[width=\fullwidth]{lageplan_rechts}
 	\end{fullPage}
 	
 	\begin{fullPage}[einstein-red]
-		\includegraphics[width=\paperwidth,height=\paperheight]{back}
+		\begin{center}
+			\includegraphics[height=\paperheight]{back}
+		\end{center}
 	\end{fullPage}
-	
 \end{document}
