@@ -5,29 +5,47 @@ DAY_FILES   := $(wildcard days/*.tex)
 .DEFAULT_GOAL: all
 
 ## "Virtual" targets without actual files to update/create
-.PHONY: all EE2013 clean distclean new
+.PHONY: all clean distclean new
 
 
-all: EE2013
+all: main.pdf
 
 
-kalender-days.tex: createcal.py week.tpl $(DAY_FILES)
-	./createcal.py 2014-09-30 2015-04-13 >kalender-days.tex
+FORCE:
+	@true
 
 
-EE2013: kalender-days.tex
-	@tput rev ; tput bold ; echo " Making $@ " ; tput sgr0
-	@exec 3>&1 ; \
-	latexmk 2>&1 >&3 | \
-	sed -l -e "s#\(.*\)#`tput bold`\1`tput sgr0`#"
-	@echo -e "\a"
-	@ln --force tmp/EE2013.pdf $@.pdf
+tmp/kalender-days.tex: createcal.py week.tpl $(DAY_FILES)
+	mkdir -p tmp
+	./createcal.py 2014-09-30 2015-04-13 >tmp/kalender-days.tex
+
+
+.ONESHELL:
+tmp/main.pdf: tmp/kalender-days.tex FORCE
+	@export max_print_line=1000
+	export error_line=254
+	export half_error_line=238
+	
+	if ! latexmk ; then
+		grep  -H -C 10 --color=always -n -E '^(\./|\!).*' tmp/main.log | \
+		python  -c 'import sys;print(sys.stdin.read().replace(sys.argv[1], sys.argv[2]))' tmp/main.log "" | \
+		python  -c 'import sys;print(sys.stdin.read().replace(sys.argv[1], sys.argv[2]))' $$'\033[K./' "$$PWD/"
+		
+		rm -f "tmp/main.pdf"
+		false
+	fi
+
+
+main.pdf: tmp/main.pdf
+	ln --force $^ $@
+
 
 clean:
 	@rm --force --verbose --recursive tmp
-	@rm --force --verbose kalender-days.tex
+
 
 distclean: clean
-	@rm --force --verbose EE2013.pdf
+	@rm --force --verbose main.pdf
+
 
 new: distclean all
