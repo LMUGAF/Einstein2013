@@ -62,6 +62,7 @@
 \usepackage{datetime} % Used to get the name of the calender items
 \usepackage{collcell}
 \usepackage{pgfkeys}
+\usepackage{lmucompatil}
 
 % sorgt für -- -> \endash
 \defaultfontfeatures{Ligatures=TeX}
@@ -341,7 +342,7 @@
 
 %% Better looking hash
 \newfontface\lserif{Liberation Serif}
-\setmainfont{LMU CompatilText} %Remove if you don't have the LMU Compatil Font-series on your device.
+\setmainfont[NFSSFamily=LMU CompatilText]{LMUCompatilText}
 \let\oldHash\#
 \renewcommand{\#}{{\lserif\oldHash}}
 
