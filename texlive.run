@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+cd $BUILD_DIR
+git submodule update --init --recursive
+
 #cp -R $BUILD_DIR/fonts/lmufonts/texmf/fonts/truetype/ $BUILD_DIR/.texlive/texmf-var/fonts/
 #cp -R $BUILD_DIR/fonts/liberationsans/ $BUILD_DIR/.texlive/texmf-var/fonts/truetype/
 
