@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 export HOME=$BUILD_DIR
 
+mkdir $BUILD_DIR/.ssh
+cp $ENV_DIR/id_rsa $BUILD_DIR/.ssh/id_rsa
+cp $ENV_DIR/id_rsa_pub $BUILD_DIR/.ssh/id_rsa.pub
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> $BUILD_DIR/.ssh/config
+
 cd $BUILD_DIR/fonts/
 git clone git@github.com:LMUGAF/lmufonts.git
 
@@ -22,10 +27,6 @@ export PATH=$BUILD_DIR/bin:$PATH
 
 echo "export PATH=/app/bin:\$PATH" > $BUILD_DIR/.bashrc
 chmod +x $BUILD_DIR/.bashrc
-
-mkdir $BUILD_DIR/.ssh
-cp $ENV_DIR/id_rsa $BUILD_DIR/.ssh/id_rsa
-cp $ENV_DIR/id_rsa_pub $BUILD_DIR/.ssh/id_rsa.pub
 
 export PYTHONHOME=$BUILD_DIR/.heroku/python
 export PYTHONPATH=$BUILD_DIR
