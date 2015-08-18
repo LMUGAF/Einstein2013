@@ -4,7 +4,12 @@ export HOME=$BUILD_DIR
 mkdir $BUILD_DIR/.ssh
 cp $ENV_DIR/id_rsa $BUILD_DIR/.ssh/id_rsa
 cp $ENV_DIR/id_rsa_pub $BUILD_DIR/.ssh/id_rsa.pub
-echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> $BUILD_DIR/.ssh/config
+echo -e "Host github.com" >> $BUILD_DIR/.ssh/config
+echo -e "\tStrictHostKeyChecking no" >> $BUILD_DIR/.ssh/config
+echo -e "\tIdentityFile $BUILD_DIR/.ssh/id_rsa" >> $BUILD_DIR/.ssh/config
+echo -e "ssh -F $BUILD_DIR/.ssh/config \$@" > $BUILD_DIR/bin/ssh_wrapper
+chmod +x $BUILD_DIR/bin/ssh_wrapper
+export GIT_SSH=$BUILD_DIR/bin/ssh_wrapper
 
 cd $BUILD_DIR/fonts/
 git clone git@github.com:LMUGAF/lmufonts.git
