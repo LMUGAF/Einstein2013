@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#cp -R $BUILD_DIR/fonts/lmufonts/texmf/fonts/truetype/ $BUILD_DIR/.texlive/texmf-var/fonts/
+#cp -R $BUILD_DIR/fonts/liberationsans/ $BUILD_DIR/.texlive/texmf-var/fonts/truetype/
+
+mkdir $BUILD_DIR/.fonts/
+cp -R $BUILD_DIR/fonts/lmufonts/texmf/fonts/truetype/ $BUILD_DIR/.fonts/LMUCompatil/
+cp -R $BUILD_DIR/fonts/liberationsans/ $BUILD_DIR/.fonts/
+
+cp $BUILD_DIR/fonts/lmufonts/texmf/tex/latex/lmucompatil/lmucompatil.sty $BUILD_DIR/.texlive/texmf-var/tex/
+rm -rf $BUILD_DIR/fonts/lmufonts/texmf/tex/latex/fontspec
+texhash
+luaotfload-tool --update --force -vv
+texhash
+
+chmod +x $BUILD_DIR/bin/make
+export PATH=$BUILD_DIR/bin:$PATH
+
+echo "export PATH=/app/bin:\$PATH" > $BUILD_DIR/.bashrc
+chmod +x $BUILD_DIR/.bashrc
+
+mkdir $BUILD_DIR/.ssh
+cp $ENV_DIR/id_rsa $BUILD_DIR/.ssh/id_rsa
+cp $ENV_DIR/id_rsa_pub $BUILD_DIR/.ssh/id_rsa.pub
+
+export PYTHONHOME=$BUILD_DIR/.heroku/python
+export PYTHONPATH=$BUILD_DIR
+
+cd $BUILD_DIR
+export HOME=$BUILD_DIR
+mkdir tmp
+make 2>&1 | tee tmp/build.log
+tar -C tmp -cf - build.log main.log main.pdf | ssh -o StrictHostKeychecking=no -i $BUILD_DIR/.ssh/id_rsa pub@onmars.eu

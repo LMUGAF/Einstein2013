@@ -1,0 +1,33 @@
+Bei jedem commit, wird der Einstein automatisch von einer Build-Instanz von Heroku neu gebaut.
+
+Bitte texlive.packages aktiv pflegen!
+
+Administratoren für die Heroku-Instanz sind aktuell:
+- Martin
+- Skruppy
+
+Ablageort für generiertes PDF:
+http://build.opha.se/einstein/
+
+Dort werden hinterlegt:
+- main.pdf
+- main.log
+- build.log
+
+Build-related files:
+- texlive.packages: Hier alle zum bauen notwendigen TeX-packages eintragen
+- texlive.run: Das Build-script, dass ausgeführt wird
+- .buildpacks: Die verwendeten Heroku-Buildpacks in der Reihenfolge wie sie ausgeführt werden sollen
+- bin/make: make-3.8.2, da heroku nur eine veraltetes make in der version 3.8.1 ausliefert
+- requirements.txt: Hier alle notwendigen Python-Module eintragen, die beim build benötigt werden
+- runtime.txt: Hier die gewünschte Python-version eintragen, die auf dem stack installiert werden soll
+- In den Congif Vars id_rsa und id_rsa_pub wird ausserdem der SSH-key hinterlegt, welcher zum verschicken des fertigen produktes genutzt wird. 
+
+Heroku-Instanz:
+- gaf-builder-einstein.herokuapp.com
+- einstein.build.opha.se
+- cedar-14/EU
+
+Relevante Kommandos bei Neueinrichtung:
+- git clone --recursive -v git@github.com:LMUGAF/ersti-einstein.git
+- heroku buildpacks:set git://github.com/ddollar/heroku-buildpack-multi.git
