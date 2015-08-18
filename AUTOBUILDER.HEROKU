@@ -17,7 +17,6 @@ Dort werden hinterlegt:
 Build-related files:
 - texlive.packages: Hier alle zum bauen notwendigen TeX-packages eintragen
 - texlive.run: Das Build-script, dass ausgeführt wird
-- .buildpacks: Die verwendeten Heroku-Buildpacks in der Reihenfolge wie sie ausgeführt werden sollen
 - bin/make: make-3.8.2, da heroku nur eine veraltetes make in der version 3.8.1 ausliefert
 - requirements.txt: Hier alle notwendigen Python-Module eintragen, die beim build benötigt werden
 - runtime.txt: Hier die gewünschte Python-version eintragen, die auf dem stack installiert werden soll
@@ -30,4 +29,6 @@ Heroku-Instanz:
 
 Relevante Kommandos bei Neueinrichtung:
 - git clone --recursive -v git@github.com:LMUGAF/ersti-einstein.git
-- heroku buildpacks:set git://github.com/ddollar/heroku-buildpack-multi.git
+- heroku buildpacks:set git://github.com/LMUGAF/heroku-buildpack-tex.git
+- heroku buildpacks:add --index 1 git://github.com/heroku/heroku-buildpack-python.git
+- Ja, das ist komisch... Erst TeX setzen (Position 1), dann Python an Position 1 setzen, sodass TeX and Position 2 rutscht
