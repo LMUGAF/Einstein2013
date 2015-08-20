@@ -155,6 +155,7 @@
 \mathchardef\UrlBreakPenalty=100
 \mathchardef\UrlBigBreakPenalty=100
 
+\newlength{\calCellHeight}\setlength{\calCellHeight}{2.5cm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -443,10 +444,9 @@
 	
 	
 	
-	\begin{tikzpicture}
+	\begin{tikzpicture}[every node/.style={anchor=base,text height=\calCellHeight-3mm}]
 		\matrix (m)[
 			matrix of nodes,
-			minimum height=2.53cm,
 			minimum width=.5\textwidth,
 			row sep=\pgflinewidth,
 			column sep=\pgflinewidth,
@@ -484,7 +484,7 @@
 		align = center,%
 		font=\fontsize{2mm}{1em}\selectfont\sffamily,%
 	] {%
-		\begin{minipage}[t][2.53cm][b]{\textwidth-3mm}%
+		\begin{minipage}[t][\calCellHeight][b]{\textwidth-3mm}%
 			\ifodd\value{page}\else%
 				\flushright%
 			\fi%
