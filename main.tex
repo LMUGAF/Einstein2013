@@ -12,7 +12,14 @@
 % WICHTIG WICHTIG WICHTIG WICHTIG
 % Bitte unbedingt alle verwendeten packages in der texlive.packages eintragen, da sonst der automatische build nicht funktioniert!
 
-\documentclass[twoside,openany,a5paper,fontsize=9pt,cleardoublepage=plain]{scrbook}
+\documentclass[
+	twoside,
+	openany,
+	a5paper,
+	fontsize=9pt,
+	cleardoublepage=plain
+]{scrbook}
+
 \usepackage{fancyhdr} % This needs to come before hyperref to avoid errors
 \usepackage{iftex}
 \ifPDFTeX
@@ -94,24 +101,34 @@
 \usepackage{tabularx}
 \newcolumntype{L}{>{\raggedright\arraybackslash}p{0.3\textwidth}} % linksbündig mit Breitenangabe
 
-%set up margins with geometry package
-\usepackage[twoside,
-    a5paper,
-    inner=15mm,
-    outer=12mm,
-    top=17mm,
-    bottom=20mm,
-    bindingoffset=0mm,
-    %showframe    %TODO REMOVE BEFORE PRODUCTION
-    ]{geometry}
-%use crop package for cropmarks, bleed and stock oversize
-%\usepackage[cam, %No marks for printer
-\usepackage[center,
-    width=152truemm,
-    height=214truemm,
-    off
-    %mount2
-    ]{crop}
+%% bleed = Beschnittzugabe = Anschnitt
+%% A5 is 148mm x 210mm.
+%% diedruckerei.de needs 2mm bleed on _each_ side (even the fold side).
+%% [http://www.diedruckerei.de/Brosch%C3%BCre,-DIN-A5.htm?websale8=diedruckerei&pi=PBRA544&ci=000608]
+%% The crop package doesn't work well with the geometry package (the first page
+%% will never get the size as defined by crop). Therefore we only use geometry.
+\newlength{\bleed}        \setlength{\bleed}        {2truemm}
+
+\newlength{\visiblewidth} \setlength{\visiblewidth} {\paperwidth}
+\newlength{\visibleheight}\setlength{\visibleheight}{\paperheight}
+
+\newlength{\fullwidth}    \setlength{\fullwidth}    {\paperwidth+2\bleed}
+\newlength{\fullheight}   \setlength{\fullheight}   {\paperheight+2\bleed}
+
+\usepackage[
+	twoside,
+	paperwidth=\fullwidth,   %% Paper width as required by diedruckerei
+	paperheight=\fullheight, %% Paper height as required by diedruckerei
+	layoutoffset=\bleed,     %% Center the visible content on the paper
+	layout=a5paper,          %% Size of the visible content
+	inner=15mm,              %% Distance: Text to fold (of visible content)
+	outer=12mm,              %% Distance: Text to not fold (of visible content)
+	top=17mm,                %% Distance: Text (not header) to upper border (of visible content)
+	bottom=20mm,             %% Distance: Text (not footer) to lower border (of visible content)
+	bindingoffset=0mm,       %% Don't add anything to inner
+	%showframe                %% TODO REMOVE BEFORE PRODUCTION!!!!
+]{geometry}
+
 % in conjunction with crop: align pages
 % centered vertically and inner margin 0 (odd/even different)
 %\voffset\stockheight
