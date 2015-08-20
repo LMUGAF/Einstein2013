@@ -145,13 +145,7 @@
 %        \setlength{\hoffset}{\stockwidth-\paperwidth}
 %\fi}
 
-% set up our own dimensions we need
-\newlength{\bleed} %bleed = Beschnittzugabe = Anschnitt
-\setlength{\bleed}{2mm}
-\newlength{\fullwidth} %print size including bleed
-\setlength{\fullwidth}{\paperwidth+2\bleed}
-\newlength{\fullheight} %e.g. for fullpage images
-\setlength{\fullheight}{\paperheight+2\bleed}
+
 
 
 
@@ -273,15 +267,15 @@
 }
 
 %%color-definintions
-\definecolor{einstein-red}{HTML}{BF0000}
+\definecolor{cover-color}{HTML}{BF0000}
 \definecolor{mvv-color}{HTML}{F0DDD6}
 
 %% Create empty pages
-\newenvironment{fullPage}[1][white]{
+\NewDocumentEnvironment{fullPage}{O{white}}{
 	\thispagestyle{empty}
 	\onepagecolor{#1}
 	
-	\begin{textblock*}{\fullwidth}(-2mm,-2mm)
+	\begin{textblock*}{\fullwidth}(0mm,0mm)
 	\noindent
 }{
 	\end{textblock*}
@@ -528,13 +522,18 @@
 \hyphenation{Im-ma-tri-ku-la-tions-be-schei-ni-gung}
 \hyphenation{Deutsch-land-sti-pen-di-um}
 
-
 \begin{document}
+	%% To fit perfectly, the cover image size has to be the paper size as
+	%% requested by the printer (or as set as pagewidth/pageheight in geometry).
+	%% If you ignore the note above, maximizing the width will assure that no
+	%% border should be visible (therefore a tiny bit of the bottom will be cut
+	%% away).
+	%% If you don't end the lines with "%", the page content will be shiftet to
+	%% the right by 0.5mm!
 	\begin{titlepage}
-		\begin{fullPage}[einstein-red]
-			\begin{center}
-				\includegraphics[height=\paperheight]{titel}
-			\end{center}
+		\begin{fullPage}[cover-color]%
+			\centering%
+			\includegraphics[width=\paperwidth]{titel}%
 		\end{fullPage}
 	\end{titlepage}
 	
@@ -574,29 +573,46 @@
 	\backmatter
 	\include{stundenplan}
 	
+	
 	\cleardoubleoddpage
-	\begin{fullPage}[mvv-color]
-		\vskip 0mm
-		\hskip 1mm
-		\includegraphics[height=\paperheight,trim={0 0 {\dimexpr \paperwidth-1mm} 0},clip]{mvv}
+	
+	
+	%% The mvv image has text too colose to the edge. Therefore we scale only up
+	%% to the visible size.
+	%% If you don't end the lines with "%", the page content will be shiftet to
+	%% the right by 0.5mm!
+	\begin{fullPage}[mvv-color]%
+		\vskip 0mm    %% relative to the upper _visibility_ border
+		\hskip \bleed %% relative to the left _paper_ border
+		\includegraphics[height=\visibleheight,trim={0 0 {\dimexpr \visiblewidth-0.5mm} 0},clip]{mvv}%
 	\end{fullPage}
 	
-	\begin{fullPage}[mvv-color]
-		\vskip 0mm
-		\includegraphics[height=\paperheight,trim={{\dimexpr \paperwidth-1mm} 0 0 0},clip]{mvv}
+	\begin{fullPage}[mvv-color]%
+		\vskip 0mm    %% relative to the upper _visibility_ border
+		\includegraphics[height=\visibleheight,trim={{\dimexpr \visiblewidth} 0 0 0},clip]{mvv}%
 	\end{fullPage}
 	
-	\begin{fullPage}
-		\includegraphics[width=\fullwidth]{lageplan_links}
+	
+	%% If you don't end the lines with "%", the page content will be shiftet to
+	%% the right by 0.5mm!
+	\begin{fullPage}%
+		\includegraphics[height=\paperheight,trim={0 0 {\dimexpr \visiblewidth} 0},clip]{lageplan}%
 	\end{fullPage}
 	
-	\begin{fullPage}
-		\includegraphics[width=\fullwidth]{lageplan_rechts}
+	\begin{fullPage}%
+		\includegraphics[height=\paperheight,trim={{\dimexpr \visiblewidth} 0 0 0},clip]{lageplan}%
 	\end{fullPage}
 	
-	\begin{fullPage}[einstein-red]
-		\begin{center}
-			\includegraphics[height=\paperheight]{back}
-		\end{center}
+	
+	%% To fit perfectly, the cover image size has to be the paper size as
+	%% requested by the printer (or as set as pagewidth/pageheight in geometry).
+	%% If you ignore the note above, maximizing the width will assure that no
+	%% border should be visible (therefore a tiny bit of the bottom will be cut
+	%% away).
+	%% If you don't end the lines with "%", the page content will be shiftet to
+	%% the right by 0.5mm!
+	\begin{fullPage}[cover-color]%
+		\centering%
+		\includegraphics[width=\paperwidth]{back}%
 	\end{fullPage}
 \end{document}
