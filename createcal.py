@@ -68,12 +68,12 @@ end   = weekStartFromText(sys.argv[2])
 # http://de.wikipedia.org/wiki/Feiertage_in_Deutschland
 addFeiertag( 1,  1, "Neujahrstag"              , HOLIDAY_DAY) # Fix
 addFeiertag( 1,  6, "Heilige Drei Könige"      , HOLIDAY_DAY) # Fix
-addFeiertag( 4,  2, "Gründonnerstags"          , NO_UNI_DAY ) # Variabel (Donnerstag vor Ostern)
-addFeiertag( 4,  3, "Karfreitag"               , HOLIDAY_DAY) # Variabel (Freitag vor Ostern)
-addFeiertag( 4,  4, "Karsamstag"               , NO_UNI_DAY ) # Variabel (Samstag vor Ostern)
-addFeiertag( 4,  5, "Ostersonntag"                          ) # Variabel
-addFeiertag( 4,  6, "Ostermontag"              , HOLIDAY_DAY) # Variabel (Montag nach Ostersonntag)
-addFeiertag( 4,  7, "Osterdienstag"            , NO_UNI_DAY ) # Variabel (Dienstag nach Ostersonntag)
+addFeiertag( 3, 24, "Gründonnerstags"          , NO_UNI_DAY ) # Variabel (Donnerstag vor Ostern)
+addFeiertag( 3, 25, "Karfreitag"               , HOLIDAY_DAY) # Variabel (Freitag vor Ostern)
+addFeiertag( 3, 26, "Karsamstag"               , NO_UNI_DAY ) # Variabel (Samstag vor Ostern)
+addFeiertag( 3, 27, "Ostersonntag"                          ) # Variabel
+addFeiertag( 3, 28, "Ostermontag"              , HOLIDAY_DAY) # Variabel (Montag nach Ostersonntag)
+addFeiertag( 3, 29, "Osterdienstag"            , NO_UNI_DAY ) # Variabel (Dienstag nach Ostersonntag)
 addFeiertag( 5,  1, "Tag der Arbeit"           , HOLIDAY_DAY) # Fix
 addFeiertag( 0,  0, "Christi Himmelfahrt"      , HOLIDAY_DAY) # Variabel (39. Tag nach Ostersonntag)
 addFeiertag( 0,  0, "Pfingstsonntag"                        ) # Variabel (49. Tag nach Ostersonntag)
@@ -83,10 +83,10 @@ addFeiertag( 0,  0, "Fronleichnam"             , HOLIDAY_DAY) # Variabel (60. Ta
 addFeiertag( 8, 15, "Mariä Himmelfahrt"        , HOLIDAY_DAY) # Fix
 addFeiertag(10,  3, "Tag der deutschen Einheit", HOLIDAY_DAY) # Fix
 addFeiertag(11,  1, "Allerheiligen"            , HOLIDAY_DAY) # Fix
-addFeiertag(11, 30, "1. Advent"                             ) # Variabel
-addFeiertag(12,  7, "2. Advent"                             ) # Variabel
-addFeiertag(12, 14, "3. Advent"                             ) # Variabel
-addFeiertag(12, 21, "4. Advent"                             ) # Variabel
+addFeiertag(11, 29, "1. Advent"                             ) # Variabel
+addFeiertag(12,  6, "2. Advent"                             ) # Variabel
+addFeiertag(12, 13, "3. Advent"                             ) # Variabel
+addFeiertag(12, 20, "4. Advent"                             ) # Variabel
 addFeiertag(12, 24, "Heiligabend"                           ) # Fix
 addFeiertag(12, 25, "1. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
 addFeiertag(12, 26, "2. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
@@ -119,9 +119,9 @@ def addVorlesungsfrei(start, end, text = "Vorlesungsfreie Zeit"):
 ##  * Weihnachtspause vom 24.12. bis 6.1.
 
 
-addVorlesungsfrei(datetime(2015,  2,  1), datetime(2015,  4, 12)) # Variabel
-addVorlesungsfrei(datetime(2014, 12, 24), datetime(2015,  1,  6), "Weihnachtspause") # Fix
-addVorlesungsfrei(datetime(2014,  7, 13), datetime(2014, 10,  5)) # Variabel
+addVorlesungsfrei(datetime(2016,  2,  7), datetime(2016,  4, 10)) # Variabel Semesterferien Winter
+addVorlesungsfrei(datetime(2015, 12, 24), datetime(2016,  1,  6), "Weihnachtspause") # Fix
+addVorlesungsfrei(datetime(2015,  7, 19), datetime(2015, 10,  11)) # Variabel Semesterferien Sommer
 
 
 for curWeek in rrule.rrule(rrule.WEEKLY, dtstart=start, until=end):

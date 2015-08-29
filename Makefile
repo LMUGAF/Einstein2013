@@ -14,10 +14,10 @@ all: main.pdf
 FORCE:
 	@true
 
-
+#Kalendar geht von 1 Woche vor Unibeginn bis Ende Semesterferien Winter
 tmp/kalender-days.tex: createcal.py week.tpl $(DAY_FILES)
 	mkdir -p tmp
-	./createcal.py 2014-09-30 2015-04-13 >tmp/kalender-days.tex
+	./createcal.py 2015-10-05 2016-04-10 >tmp/kalender-days.tex
 
 
 .ONESHELL:
