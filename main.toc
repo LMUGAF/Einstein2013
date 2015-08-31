@@ -1,0 +1,68 @@
+\select@language {german}
+\contentsline {chapter}{\nonumberline Don't Panic!}{iv}{chapter*.2}
+\contentsline {chapter}{\nonumberline Kleine Leseanleitung}{v}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Fachschaftika? Kann man das essen?}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Die Fachschaft}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Aufgaben der Fachschaft}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Kontakt}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Andere Fachschaften}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Computer und Internet}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}CIP-Pools}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Online-Dienste der LMU}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}E-Mail}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}IRC}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Internet / WLAN}{9}{section.2.5}
+\contentsline {chapter}{\numberline {3}Vorlesungszeit}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Veranstaltungen}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Der Stundenplan}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Zentraler Hochschulsport (ZHS)}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Musik}{13}{section.3.4}
+\contentsline {section}{\numberline {3.5}Kino}{14}{section.3.5}
+\contentsline {section}{\numberline {3.6}Essen}{14}{section.3.6}
+\contentsline {chapter}{\numberline {4}Vorlesungsfreie Zeit}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Klausuren und Protokolle}{15}{section.4.1}
+\contentsline {chapter}{\numberline {5}Bibliotheken}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Bücher}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Recherche im OPAC}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}Verhalten in der Bibliothek}{16}{section.5.3}
+\contentsline {section}{\numberline {5.4}Ausleihe}{17}{section.5.4}
+\contentsline {section}{\numberline {5.5}Die wichtigsten Bibliotheken für dich}{17}{section.5.5}
+\contentsline {chapter}{\numberline {6}Café Gumbel}{20}{chapter.6}
+\contentsline {chapter}{\numberline {7}Kalender}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Hilfe und Beratung}{21}{chapter.8}
+\contentsline {section}{\numberline {8.1}Erste Hilfe: GAF}{21}{section.8.1}
+\contentsline {section}{\numberline {8.2}Webforen und Kommilitonen}{21}{section.8.2}
+\contentsline {section}{\numberline {8.3}Probleme mit Lehrveranstaltungen oder Lehrpersonal}{22}{section.8.3}
+\contentsline {section}{\numberline {8.4}Ansprechpartner nach Studiengängen}{22}{section.8.4}
+\contentsline {section}{\numberline {8.5}Prüfungsamt}{24}{section.8.5}
+\contentsline {section}{\numberline {8.6}Studentenkanzlei}{24}{section.8.6}
+\contentsline {section}{\numberline {8.7}Studieren mit Kind}{25}{section.8.7}
+\contentsline {section}{\numberline {8.8}Die Frauenbeauftragten}{25}{section.8.8}
+\contentsline {section}{\numberline {8.9}Studieren mit Behinderung}{26}{section.8.9}
+\contentsline {section}{\numberline {8.10}Student und Arbeitsmarkt}{26}{section.8.10}
+\contentsline {section}{\numberline {8.11}Psychosoziale Beratung}{27}{section.8.11}
+\contentsline {section}{\numberline {8.12}Weitere Beratung des Studentenwerks}{27}{section.8.12}
+\contentsline {section}{\numberline {8.13}Nightline München}{28}{section.8.13}
+\contentsline {section}{\numberline {8.14}Kirchliche Beratung}{28}{section.8.14}
+\contentsline {chapter}{\numberline {9}Ausland und Praktika}{29}{chapter.9}
+\contentsline {section}{\numberline {9.1}Auslandsstudium}{29}{section.9.1}
+\contentsline {section}{\numberline {9.2}Finanzierung}{30}{section.9.2}
+\contentsline {section}{\numberline {9.3}Praktika im In- und Ausland}{30}{section.9.3}
+\contentsline {chapter}{\numberline {10}Geld}{31}{chapter.10}
+\contentsline {section}{\numberline {10.1}Studentenwerksbeitrag}{31}{section.10.1}
+\contentsline {section}{\numberline {10.2}Krankenversicherung}{31}{section.10.2}
+\contentsline {section}{\numberline {10.3}BAföG}{34}{section.10.3}
+\contentsline {section}{\numberline {10.4}Jobben}{34}{section.10.4}
+\contentsline {section}{\numberline {10.5}Stipendien}{35}{section.10.5}
+\contentsline {chapter}{\numberline {11}Ankommen in München}{37}{chapter.11}
+\contentsline {section}{\numberline {11.1}Ummeldung -- Zweitwohnsitz}{37}{section.11.1}
+\contentsline {section}{\numberline {11.2}Wohnen}{37}{section.11.2}
+\contentsline {section}{\numberline {11.3}Rundfunkbeitrag}{39}{section.11.3}
+\contentsline {section}{\numberline {11.4}Mülltrennung}{40}{section.11.4}
+\contentsline {chapter}{\numberline {12}Fortbewegung}{41}{chapter.12}
+\contentsline {section}{\numberline {12.1}Fahrrad}{41}{section.12.1}
+\contentsline {section}{\numberline {12.2}MVV}{42}{section.12.2}
+\contentsline {section}{\numberline {12.3}Auto}{45}{section.12.3}
+\contentsline {chapter}{\numberline {A}Gebäudeübersichten}{46}{appendix.A}
+\contentsline {chapter}{\numberline {B}Rätselseite}{50}{appendix.B}
+\contentsline {chapter}{\numberline {C}Abkürzungen}{52}{appendix.C}

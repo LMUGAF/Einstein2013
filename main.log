@@ -1,0 +1,4455 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2015.8.30)  31 AUG 2015 08:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 13 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2015/07/02 v3.18 KOMA-Script document class (book)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2015/07/02 v3.18 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2015/07/02 v3.18 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2015/07/02 v3.18 KOMA-Script package (loading files)
+
+Package scrlfile, 2015/07/02 v3.18 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2015/07/02 v3.18 KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 125.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 126.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 127.
+Package tocbasic Info: defining new hook before heading of `' on input line 157
+8.
+Class scrbook Info: You've used standard option `openany'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `open=any'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `open=any' there
+(scrbook)           instead of `openany', too.
+Class scrbook Info: File `size9.clo' used to setup font sizes on input line 224
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size9.clo
+File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2015/07/02 v3.18 KOMA-Script package (type area)
+
+Package typearea, 2015/07/02 v3.18 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+Package typearea Info: You've used standard option `a5paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a5'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a5' there
+(typearea)             instead of `a5paper', too.
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+\footheight=\skip45
+
+Package typearea Warning: DIV for 9.0pt and used papersize
+(typearea)                not defined!
+(typearea)                Using DIV=1.
+
+DIV calculation for typearea with good linewidth.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 421.10083pt
+(typearea)              \textwidth      = 315.82562pt
+(typearea)              DIV departure   = 0%
+(typearea)              \evensidemargin = -2.08652pt
+(typearea)              \oddsidemargin  = -37.17825pt
+(typearea)             \paperheight     = 597.50793pt
+(typearea)              \textheight     = 457.94987pt
+(typearea)              \topmargin      = -52.59013pt
+(typearea)              \headheight     = 13.68748pt
+(typearea)              \headsep        = 16.42499pt
+(typearea)              \topskip        = 9.0pt
+(typearea)              \footskip       = 38.32497pt
+(typearea)              \baselineskip   = 10.95pt
+(typearea)              on input line 1506.
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+LaTeX Info: Redefining \textsubscript on input line 4548.
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count87
+\c@table=\count88
+\bibindent=\dimen102
+)
+
+Class scrbook Warning: Usage of package `fancyhdr' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use 
+(scrbook)              package `scrlayer-scrpage'.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `fancyhdr' on input line 24.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip48
+\f@ncyO@elh=\skip49
+\f@ncyO@erh=\skip50
+\f@ncyO@olh=\skip51
+\f@ncyO@orh=\skip52
+\f@ncyO@elf=\skip53
+\f@ncyO@erf=\skip54
+\f@ncyO@olf=\skip55
+\f@ncyO@orf=\skip56
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2015/08/06 v1.42.0 Alternative to Babel for XeLaTeX and Lu
+aLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count89
+)
+(/usr/share/texlive/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count90
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/share/texmf/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/07/30 v5724 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/07/30 v5724 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/07/30 v5721 L3 Bootstrap code
+L3 Module: l3names 2015/07/28 v5705 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/07/14 v5659 L3 Token lists
+L3 Module: l3str 2015/07/14 v5659 L3 Strings
+L3 Module: l3seq 2015/07/24 v5681 L3 Sequences and stacks
+L3 Module: l3int 2015/07/14 v5659 L3 Integers
+\c_max_int=\count91
+\l_tmpa_int=\count92
+\l_tmpb_int=\count93
+\g_tmpa_int=\count94
+\g_tmpb_int=\count95
+L3 Module: l3quark 2015/07/14 v5659 L3 Quarks
+L3 Module: l3prg 2015/07/30 v5722 L3 Control structures
+\g__prg_map_int=\count96
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
+L3 Module: l3file 2015/07/30 v5714 L3 File and I/O operations
+\l_iow_line_count_int=\count97
+\l__iow_target_count_int=\count98
+\l__iow_current_line_int=\count99
+\l__iow_current_word_int=\count100
+\l__iow_current_indentation_int=\count101
+L3 Module: l3skip 2015/07/14 v5659 L3 Dimensions and skips
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip57
+\c_max_skip=\skip58
+\l_tmpa_skip=\skip59
+\l_tmpb_skip=\skip60
+\g_tmpa_skip=\skip61
+\g_tmpb_skip=\skip62
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2015/07/26 v5684 L3 Key-value interfaces
+\g__keyval_level_int=\count102
+\l_keys_choice_int=\count103
+L3 Module: l3fp 2015/07/09 v5652 L3 Floating points
+\c__fp_leading_shift_int=\count104
+\c__fp_middle_shift_int=\count105
+\c__fp_trailing_shift_int=\count106
+\c__fp_big_leading_shift_int=\count107
+\c__fp_big_middle_shift_int=\count108
+\c__fp_big_trailing_shift_int=\count109
+\c__fp_Bigg_leading_shift_int=\count110
+\c__fp_Bigg_middle_shift_int=\count111
+\c__fp_Bigg_trailing_shift_int=\count112
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen109
+\l__coffin_offset_x_dim=\dimen110
+\l__coffin_offset_y_dim=\dimen111
+\l__coffin_x_dim=\dimen112
+\l__coffin_y_dim=\dimen113
+\l__coffin_x_prime_dim=\dimen114
+\l__coffin_y_prime_dim=\dimen115
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen116
+\l__coffin_display_x_dim=\dimen117
+\l__coffin_display_y_dim=\dimen118
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/07/22 v5677 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box41
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+L3 Module: l3luatex 2015/06/30 v5646 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/07/20 v-1 L3 Unicode data
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2015/06/30 v5646 L3 Experimental driver: xdvipdfmx
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2015/07/28 v5700 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count113
+\l__xparse_m_args_int=\count114
+\l__xparse_mandatory_args_int=\count115
+\l__xparse_processor_int=\count116
+\l__xparse_v_nesting_int=\count117
+)
+\l_fontspec_script_int=\count118
+\l_fontspec_language_int=\count119
+\l_fontspec_strnum_int=\count120
+\l__fontspec_tmpa_dim=\dimen134
+\l__fontspec_tmpb_dim=\dimen135
+\l__fontspec_tmpc_dim=\dimen136
+Variant \tl_gset:cV already defined; not changing it on line 71
+
+(/usr/local/share/texmf/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLa
+TeX
+LaTeX Info: Redefining \em on input line 38.
+LaTeX Info: Redefining \emph on input line 46.
+LaTeX Info: Redefining \- on input line 49.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 144.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 148.
+.................................................
+)
+(/usr/local/share/texmf/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTe
+X
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count121
+\tipasavetokens=\toks17
+\tipachecktokens=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 94.
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 41.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 47.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 53.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 59.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 68.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 72.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 76.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 80.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 99.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 103.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 112.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 170.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 181.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 189.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 197.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 226.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 228.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 259.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 279.
+.................................................
+Variant \prop_gput:cnV already defined; not changing it on line 662
+Variant \prop_gput:cnx already defined; not changing it on line 663
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/property-unknown"
+! 
+! The key property '.choice_code:n' is unknown.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.1234  }
+         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| This is a coding error.
+| 
+| LaTeX has been asked to set the property '.choice_code:n' for key
+| 'fontspec-renderer/Renderer': this property is not defined.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/property-unknown"
+! 
+! The key property '.generate_choices:n' is unknown.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.1234  }
+         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| This is a coding error.
+| 
+| LaTeX has been asked to set the property '.generate_choices:n' for key
+| 'fontspec-renderer/Renderer': this property is not defined.
+|...............................................
+
+\l__fontspec_tmp_int=\count122
+LaTeX Info: Redefining \itshape on input line 2193.
+LaTeX Info: Redefining \slshape on input line 2198.
+LaTeX Info: Redefining \scshape on input line 2203.
+LaTeX Info: Redefining \upshape on input line 2208.
+(/usr/local/share/texmf/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\xpg@normalclass=\XeTeXcharclass4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
+File: gloss-german.ldf polyglossia: module for german
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2013/04/30 Babel common definitions for shorthands
+ Taken verbatim from babel.def (2013/04/15 v3.9e)
+)
+Package polyglossia Info: Making " an active character on input line 79.
+)
+Package polyglossia Info: Default language is german.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen139
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count125
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count126
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen140
+\Fld@menulength=\count127
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count128
+\c@Item=\count129
+\c@Hfootnote=\count130
+)
+
+Package hyperref Message: Driver: hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box42
+\c@Hy@AnnotLevel=\count131
+\HyField@AnnotCount=\count132
+\Fld@listcount=\count133
+\c@bookmark@seq@number=\count134
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count135
+\calc@Bcount=\count136
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count137
+\calc@Cskip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen145
+\extrarowheight=\dimen146
+\NC@list=\toks19
+\extratabsurround=\skip67
+\backup@length=\skip68
+)
+\everycr=\toks20
+\minrowclearance=\skip69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2014/01/03 v1.7j
+
+Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)
+\TP@textbox=\box43
+\TP@holdbox=\box44
+\TPHorizModule=\dimen147
+\TPVertModule=\dimen148
+\TP@margin=\dimen149
+\TP@absmargin=\dimen150
+
+Grid set 16 x 16 = 26.3188pt x 37.34424pt
+\TPboxrulesize=\dimen151
+\TP@ox=\dimen152
+\TP@oy=\dimen153
+\TP@tbargs=\toks21
+\TP@prevdepth=\dimen154
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen155
+\pgfutil@tempdimb=\dimen156
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box45
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1 (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1 (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1 (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen157
+\pgf@y=\dimen158
+\pgf@xa=\dimen159
+\pgf@ya=\dimen160
+\pgf@xb=\dimen161
+\pgf@yb=\dimen162
+\pgf@xc=\dimen163
+\pgf@yc=\dimen164
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count138
+\c@pgf@countb=\count139
+\c@pgf@countc=\count140
+\c@pgf@countd=\count141
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count142
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count143
+\pgfsyssoftpath@bigbuffer@items=\count144
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1 (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen165
+\pgfmath@count=\count145
+\pgfmath@box=\box46
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count146
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box47
+\pgf@hbox=\box48
+\pgf@layerbox@main=\box49
+\pgf@picture@serial@count=\count147
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen184
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count148
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box50
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box51
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1 (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1 (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen192
+\pgffor@skip=\dimen193
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1 (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count149
+\pgfplotmarksize=\dimen194
+)
+\tikz@lastx=\dimen195
+\tikz@lasty=\dimen196
+\tikz@lastxsaved=\dimen197
+\tikz@lastysaved=\dimen198
+\tikzleveldistance=\dimen199
+\tikzsiblingdistance=\dimen200
+\tikz@figbox=\box52
+\tikz@figbox@bg=\box53
+\tikz@tempbox=\box54
+\tikz@tempbox@bg=\box55
+\tikztreelevel=\count150
+\tikznumberofchildren=\count151
+\tikznumberofcurrentchild=\count152
+\tikz@fig@count=\count153
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count154
+\pgfmatrixcurrentcolumn=\count155
+\pgf@matrix@numberofcolumns=\count156
+)
+\tikz@expandcount=\count157
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1 (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1 (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1 (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1 (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1 (rcs-revision 1.6)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1 (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box56
+\pgfnodeparttwobox=\box57
+\pgfnodepartthreebox=\box58
+\pgfnodepartfourbox=\box59
+\pgfnodeparttwentybox=\box60
+\pgfnodepartnineteenbox=\box61
+\pgfnodeparteighteenbox=\box62
+\pgfnodepartseventeenbox=\box63
+\pgfnodepartsixteenbox=\box64
+\pgfnodepartfifteenbox=\box65
+\pgfnodepartfourteenbox=\box66
+\pgfnodepartthirteenbox=\box67
+\pgfnodeparttwelvebox=\box68
+\pgfnodepartelevenbox=\box69
+\pgfnodeparttenbox=\box70
+\pgfnodepartninebox=\box71
+\pgfnodeparteightbox=\box72
+\pgfnodepartsevenbox=\box73
+\pgfnodepartsixbox=\box74
+\pgfnodepartfivebox=\box75
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1 (rcs-revision 1.4)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1 (rcs-revision 1.5)
+) (/usr/share/texlive/texmf-dist/tex/latex/dtk/dtklogos.sty
+Package: dtklogos 2014/11/15 v2.2 LaTeX wrapper for `hologo' (RN,HV)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hologo.sty
+Package: hologo 2012/04/26 v1.10 A logo collection with bookmark support (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count158
+\mult@box=\box76
+\multicol@leftmargin=\dimen201
+\c@unbalance=\count159
+\c@collectmore=\count160
+\doublecol@number=\count161
+\multicoltolerance=\count162
+\multicolpretolerance=\count163
+\full@width=\dimen202
+\page@free=\dimen203
+\premulticols=\dimen204
+\postmulticols=\dimen205
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box77
+\last@line=\box78
+\maxbalancingoverflow=\dimen206
+\mult@rightbox=\box79
+\mult@grightbox=\box80
+\mult@gfirstbox=\box81
+\mult@firstbox=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\c@columnbadness=\count164
+\c@finalcolumnbadness=\count165
+\last@try=\dimen207
+\multicolovershoot=\dimen208
+\multicolundershoot=\dimen209
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count166
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen210
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen211
+\WF@size=\dimen212
+\c@WF@wrappedlines=\count167
+\WF@box=\box103
+\WF@everypar=\toks34
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks35
+\MT@count=\count168
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen213
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count169
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 254.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pagecolor/pagecolor.sty
+Package: pagecolor 2015/06/20 v1.0g Provides thepagecolor (HMM)
+Package pagecolor Info: \nopagecolor is undefined on input line 101.
+
+
+Package pagecolor Warning: Option nopagecolor=none requested but \nopagecolor u
+nknown:
+(pagecolor)                By option nopagecolor the "colour" to be used with\n
+opagecolor
+(pagecolor)                is set. The current value is "none" (maybe by defaul
+t),
+(pagecolor)                but command \nopagecolor is undefined.
+(pagecolor)                Therefore the colour cannot be "none".
+(pagecolor)                Please change the option accordingly!
+(pagecolor)                As first aid nopagecolor is now set to white
+(pagecolor)                 on input line 115.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks36
+\AP@partial=\box104
+\AP@footins=\box105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count170
+\float@exts=\toks38
+\float@box=\box106
+\@float@everytoks=\toks39
+\@floatcapt=\box107
+)
+
+Class scrbook Warning: Usage of package `parskip' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use option
+(scrbook)              `parskip' with one of it's several values.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `parskip' on input line 70.
+
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool.sty
+Package: datatool 2015/07/11 v2.23 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2015/07/11 v2.23 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks40
+\ex@=\dimen214
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen215
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count172
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count173
+\leftroot@=\count174
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count175
+\DOTSCASE@=\count176
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box108
+\strutbox@=\box109
+\big@size=\dimen216
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count177
+\c@MaxMatrixCols=\count178
+\dotsspace@=\muskip17
+\c@parentequation=\count179
+\dspbrk@lvl=\count180
+\tag@help=\toks41
+\row@=\count181
+\column@=\count182
+\maxfields@=\count183
+\andhelp@=\toks42
+\eqnshift@=\dimen217
+\alignsep@=\dimen218
+\tagshift@=\dimen219
+\tagwidth@=\dimen220
+\totwidth@=\dimen221
+\lineht@=\dimen222
+\@envbody=\toks43
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks44
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2015/07/11 v2.23 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count184
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count185
+\FP@xia=\count186
+\FP@xib=\count187
+\FP@xfa=\count188
+\FP@xfb=\count189
+\FP@rega=\count190
+\FP@regb=\count191
+\FP@regs=\count192
+\FP@times=\count193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count194
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks45
+\@dtl@tmpcount=\count195
+\dtl@tmplength=\skip75
+\dtl@sortresult=\count196
+\@dtl@numgrpsepcount=\count197
+\@dtl@datatype=\count198
+\dtl@codeA=\count199
+\dtl@codeB=\count200
+\@dtl@foreach@level=\count201
+)
+\dtlcolumnnum=\count202
+\dtlrownum=\count203
+\@dtl@before=\toks46
+\@dtl@after=\toks47
+\@dtl@colhead=\toks48
+\dtlcurrentrow=\toks49
+\dtlbeforerow=\toks50
+\dtlafterrow=\toks51
+\dtlforeachlevel=\count204
+\c@DTLrowi=\count205
+\c@DTLrowii=\count206
+\c@DTLrowiii=\count207
+\c@DTLrow=\count208
+\dtl@rowi=\count209
+\dtl@rowii=\count210
+\dtl@rowiii=\count211
+\@dtl@curi=\toks52
+\@dtl@previ=\toks53
+\@dtl@nexti=\toks54
+\@dtl@curii=\toks55
+\@dtl@previi=\toks56
+\@dtl@nextii=\toks57
+\@dtl@curiii=\toks58
+\@dtl@previii=\toks59
+\@dtl@nextiii=\toks60
+\@dtl@elements=\count212
+\@dtl@list=\toks61
+\@dtl@rowa=\toks62
+\@dtl@rowb=\toks63
+\@dtl@toksA=\toks64
+\@dtl@toksB=\toks65
+\@dtl@write=\write4
+\@dtl@read=\read2
+\dtl@entrycr=\count213
+\dtl@omitlines=\count214
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box110
+)
+\tc@llx=\dimen223
+\tc@lly=\dimen224
+\tc@urx=\dimen225
+\tc@ury=\dimen226
+Package trimclip Info: Using driver 'tc-xetex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
+))
+\adjbox@Width=\dimen227
+\adjbox@Height=\dimen228
+\adjbox@Depth=\dimen229
+\adjbox@Totalheight=\dimen230
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count215
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box111
+\sift@deathcycles=\count216
+\@vwid@loff=\dimen231
+\@vwid@roff=\dimen232
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pst-barcode/pst-barcode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count217
+\pstFP@xia=\count218
+\pstFP@xib=\count219
+\pstFP@xfa=\count220
+\pstFP@xfb=\count221
+\pstFP@rega=\count222
+\pstFP@regb=\count223
+\pstFP@regs=\count224
+\pstFP@times=\count225
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks66
+\pgfutil@tempdima=\dimen233
+\pgfutil@tempdimb=\dimen256
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks67
+\pgffor@toks=\toks68
+)
+\psLoopIndex=\count226
+
+`PSTricks' v2.62  <2015/07/25> (tvz)
+\pst@dima=\dimen259
+\pst@dimb=\dimen260
+\pst@dimc=\dimen261
+\pst@dimd=\dimen262
+\pst@dimg=\dimen263
+\pst@dimh=\dimen264
+\pst@dimm=\dimen265
+\pst@dimn=\dimen266
+\pst@dimo=\dimen267
+\pst@dimp=\dimen268
+\pst@hbox=\box112
+\pst@ibox=\box113
+\pst@boxg=\box114
+\pst@cnta=\count227
+\pst@cntb=\count228
+\pst@cntc=\count229
+\pst@cntd=\count230
+\pst@cntg=\count231
+\pst@cnth=\count232
+\pst@cntm=\count233
+\pst@cntn=\count266
+\pst@cnto=\count267
+\pst@cntp=\count268
+\@zero=\count269
+\pst@toks=\toks69
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
+\psunit=\dimen269
+\psxunit=\dimen270
+\psyunit=\dimen271
+\pst@C@@rType=\count270
+\pslinewidth=\dimen272
+\psk@startLW=\dimen273
+\psk@endLW=\dimen274
+\pst@customdefs=\toks70
+\pslinearc=\dimen275
+\pst@symbolStep=\dimen276
+\pst@symbolWidth=\dimen277
+\pst@symbolLinewidth=\dimen278
+\everypsbox=\toks71
+\psframesep=\dimen279
+\pslabelsep=\dimen280
+\sh@wgridXunit=\dimen281
+\sh@wgridYunit=\dimen282
+\pst@shift=\dimen283
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
+Using PSTricks configuration for XeTeX+xdvipdfmx
+)))
+File: pstricks.tex 2015/07/25 v2.62 `PSTricks' (tvz,hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2015/07/25 v2.62 `PST-fp' (hv)
+)
+Package: pst-barcode 2012/11/16 package wrapper for pst-barcode.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-barcode/pst-barcode.tex
+`PST-barcode' v0.14, 2015/06/17 (tb,hv)
+(/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
+\c@mn@abspage=\count271
+)
+\QR@box=\box115
+)
+File: pst-barcode.tex 2015/06/17 v0.14 `PST-barcode' (hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2015/05/05 v3.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count272
+))
+\c@padzeroesN=\count273
+\fc@tmpcatcode=\count274
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-german.def
+File: fc-german.def 2014/06/09
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-germanb.def
+File: fc-germanb.def 2013/08/17
+))
+\@DT@modctr=\count275
+\@ordinalctr=\count276
+\@orgargctr=\count277
+\@strctr=\count278
+\@tmpstrctr=\count279
+\@DT@loopN=\count280
+\@DT@X=\count281
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count282
+\@month=\count283
+\@year=\count284
+\c@HOUR=\count285
+\c@HOURXII=\count286
+\c@MINUTE=\count287
+\c@TOHOUR=\count288
+\c@TOMINUTE=\count289
+\c@SECOND=\count290
+\currenthour=\count291
+\currentminute=\count292
+\currentsecond=\count293
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count294
+\dayofyear=\count295
+\dayofweek=\count296
+LaTeX Info: Redefining \today on input line 736.
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/dt-german.def
+File: dt-german.def 2010/09/10
+LaTeX Info: Redefining \dategerman on input line 86.
+)
+\dt@a=\toks72
+\dt@b=\toks73
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collcell/collcell.sty
+Package: collcell 2011/02/27 v0.5 Collect the content of a tabular cell
+\collect@cell@count=\count297
+)
+(/usr/local/share/texmf/tex/latex/lmucompatil/lmucompatil.sty
+Package: lmucompatil 2014/09/20 LMU Fonts
+
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\g__file_internal_ior=\read3
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font LMUCompatilExquisit does not contain any OpenType `Script' information.
+.................................................
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.87 ]{LMUCompatilExquisit}
+                           
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+.................................................
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/n}{{m/n}{normal}{bx/n}{...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/n}{{m/n}{normal}{bx/n}...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/it}{{m/n}{normal}{bx/n}...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/it}{{m/n}{normal}{bx/n...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.87 ]{LMUCompatilExquisit}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+. fontspec info: "defining-font"
+. 
+. Font family 'lmucompatilexquisit' created for font 'LMUCompatilExquisit'
+. with options
+. [Ligatures=TeX,Extension=.ttf,BoldFont=*-Bold,BoldFeatures={SmallCapsFont=*-S
+CBold},ItalicFont=*-Obl,BoldItalicFont=*-BoldObl,SmallCapsFont=*-SC,NFSSFamily=
+lmucompatilexquisit].
+. 
+. This font family consists of the following shapes:
+. 
+. * '{m/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold italic}}{n/,}'
+. with NFSS spec.:
+. <->"[LMUCompatilExquisit.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{n/,SmallCapsFont=*-SCBold}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-Bold.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,SmallCapsFont=*-SCBold}' with NFSS
+. spec.:
+. <->"[LMUCompatilExquisit-SCBold.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{m/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-Obl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-BoldObl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilExquisit-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+.................................................
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font LMUCompatilFact does not contain any OpenType `Script' information.
+.................................................
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.92 ]{LMUCompatilFact}
+                       
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+.................................................
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/n}{{m/n}{normal}{bx/n}{...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/n}{{m/n}{normal}{bx/n}...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/it}{{m/n}{normal}{bx/n}...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/it}{{m/n}{normal}{bx/n...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.92 ]{LMUCompatilFact}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+. fontspec info: "defining-font"
+. 
+. Font family 'lmucompatilfact' created for font 'LMUCompatilFact' with
+. options
+. [Ligatures=TeX,Extension=.ttf,BoldFont=*-Bold,BoldFeatures={SmallCapsFont=*-S
+CBold},ItalicFont=*-Obl,BoldItalicFont=*-BoldObl,SmallCapsFont=*-SC,NFSSFamily=
+lmucompatilfact].
+. 
+. This font family consists of the following shapes:
+. 
+. * '{m/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold italic}}{n/,}'
+. with NFSS spec.:
+. <->"[LMUCompatilFact.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,}' with NFSS spec.:
+. <->"[LMUCompatilFact-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{n/,SmallCapsFont=*-SCBold}' with NFSS spec.:
+. <->"[LMUCompatilFact-Bold.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,SmallCapsFont=*-SCBold}' with NFSS
+. spec.:
+. <->"[LMUCompatilFact-SCBold.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{m/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilFact-Obl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilFact-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilFact-BoldObl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilFact-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+.................................................
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font LMUCompatilLetter does not contain any OpenType `Script' information.
+.................................................
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.97 ]{LMUCompatilLetter}
+                         
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+.................................................
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/n}{{m/n}{normal}{bx/n}{...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/n}{{m/n}{normal}{bx/n}...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/it}{{m/n}{normal}{bx/n}...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/it}{{m/n}{normal}{bx/n...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.97 ]{LMUCompatilLetter}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+. fontspec info: "defining-font"
+. 
+. Font family 'lmucompatilletter' created for font 'LMUCompatilLetter' with
+. options
+. [Ligatures=TeX,Extension=.ttf,BoldFont=*-Bold,BoldFeatures={SmallCapsFont=*-S
+CBold},ItalicFont=*-Obl,BoldItalicFont=*-BoldObl,SmallCapsFont=*-SC,NFSSFamily=
+lmucompatilletter].
+. 
+. This font family consists of the following shapes:
+. 
+. * '{m/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold italic}}{n/,}'
+. with NFSS spec.:
+. <->"[LMUCompatilLetter.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,}' with NFSS spec.:
+. <->"[LMUCompatilLetter-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{n/,SmallCapsFont=*-SCBold}' with NFSS spec.:
+. <->"[LMUCompatilLetter-Bold.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,SmallCapsFont=*-SCBold}' with NFSS
+. spec.:
+. <->"[LMUCompatilLetter-SCBold.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{m/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilLetter-Obl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilLetter-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilLetter-BoldObl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilLetter-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+.................................................
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font LMUCompatilText does not contain any OpenType `Script' information.
+.................................................
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! LaTeX error: "kernel/key-unknown"
+! 
+! The key 'fontspec/Renderer' is unknown and is being ignored.
+! 
+! See the LaTeX3 documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.102 ]{LMUCompatilText}
+                        
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| The module 'fontspec' does not have a key called fontspec/Renderer'.
+| Check that you have spelled the key name correctly.
+|...............................................
+
+.................................................
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/n}{{m/n}{normal}{bx/n}{...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/n}{{m/n}{normal}{bx/n}...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/it}{{m/n}{normal}{bx/n}...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/it}{{m/n}{normal}{bx/n...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {bx/sc}{{m/sc}{small caps}...
+l.102 ]{LMUCompatilText}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+. fontspec info: "defining-font"
+. 
+. Font family 'lmucompatiltext' created for font 'LMUCompatilText' with
+. options
+. [Ligatures=TeX,Extension=.ttf,BoldFont=*-Bold,BoldFeatures={SmallCapsFont=*-S
+CBold},ItalicFont=*-Obl,BoldItalicFont=*-BoldObl,SmallCapsFont=*-SC,NFSSFamily=
+lmucompatiltext].
+. 
+. This font family consists of the following shapes:
+. 
+. * '{m/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold italic}}{n/,}'
+. with NFSS spec.:
+. <->"[LMUCompatilText.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,}' with NFSS spec.:
+. <->"[LMUCompatilText-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{n/,SmallCapsFont=*-SCBold}' with NFSS spec.:
+. <->"[LMUCompatilText-Bold.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,SmallCapsFont=*-SCBold}' with NFSS
+. spec.:
+. <->"[LMUCompatilText-SCBold.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{m/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilText-Obl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilText-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+. 
+. * '{bx/it}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold
+. italic}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilText-BoldObl.ttf]/OT:mapping=tex-text;"
+. 
+. * '{bx/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{it/,}' with NFSS spec.:
+. <->"[LMUCompatilText-SC.ttf]/OT:mapping=tex-text;"
+. and font adjustment code:
+. 
+.................................................
+) (/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks74
+\xl@@everylogo=\toks75
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2004/08/31 v1.71 
+\dashlinedash=\dimen284
+\dashlinegap=\dimen285
+\adl@box=\box116
+\adl@height=\dimen286
+\adl@heightsave=\dimen287
+\adl@depth=\dimen288
+\adl@depthsave=\dimen289
+\adl@finaldepth=\dimen290
+\adl@columns=\count298
+\adl@ncol=\count299
+\adl@currentcolumn=\count300
+\adl@currentcolumnsave=\count301
+\adl@totalheight=\count302
+\adl@totalheightsave=\count303
+\adl@dash=\count304
+\adl@gap=\count305
+\adl@cla=\count306
+\adl@clb=\count307
+\adl@everyvbox=\toks76
+\adl@LTpagetotal=\dimen291
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip76
+\cftbeforetoctitleskip=\skip77
+\cftaftertoctitleskip=\skip78
+\cftbeforepartskip=\skip79
+\cftpartnumwidth=\skip80
+\cftpartindent=\skip81
+\cftbeforechapskip=\skip82
+\cftchapindent=\skip83
+\cftchapnumwidth=\skip84
+\cftbeforesecskip=\skip85
+\cftsecindent=\skip86
+\cftsecnumwidth=\skip87
+\cftbeforesubsecskip=\skip88
+\cftsubsecindent=\skip89
+\cftsubsecnumwidth=\skip90
+\cftbeforesubsubsecskip=\skip91
+\cftsubsubsecindent=\skip92
+\cftsubsubsecnumwidth=\skip93
+\cftbeforeparaskip=\skip94
+\cftparaindent=\skip95
+\cftparanumwidth=\skip96
+\cftbeforesubparaskip=\skip97
+\cftsubparaindent=\skip98
+\cftsubparanumwidth=\skip99
+\cftbeforeloftitleskip=\skip100
+\cftafterloftitleskip=\skip101
+\cftbeforefigskip=\skip102
+\cftfigindent=\skip103
+\cftfignumwidth=\skip104
+\c@lofdepth=\count308
+\c@lotdepth=\count309
+\cftbeforelottitleskip=\skip105
+\cftafterlottitleskip=\skip106
+\cftbeforetabskip=\skip107
+\cfttabindent=\skip108
+\cfttabnumwidth=\skip109
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
+\csq@reset=\count310
+\csq@gtype=\count311
+\csq@glevel=\count312
+\csq@qlevel=\count313
+\csq@maxlvl=\count314
+\csq@tshold=\count315
+\csq@ltx@everypar=\toks77
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Option 'babel' depreciated.
+(csquotes)             Using 'autostyle'.
+)
+Package csquotes Info: Redefining quotation style 'german/quotes'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/endnotes/endnotes.sty
+\c@endnote=\count316
+\endnotesep=\dimen292
+\@enotes=\write5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen293
+\TX@old@table=\dimen294
+\TX@old@col=\dimen295
+\TX@target=\dimen296
+\TX@delta=\dimen297
+\TX@cols=\count317
+\TX@ftn=\toks78
+)
+\bleed=\skip110
+\visiblewidth=\skip111
+\visibleheight=\skip112
+\fullwidth=\skip113
+\fullheight=\skip114
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count318
+\Gm@cntv=\count319
+\c@Gm@tempcnt=\count320
+\Gm@bindingoffset=\dimen298
+\Gm@wd@mp=\dimen299
+\Gm@odd@mp=\dimen300
+\Gm@even@mp=\dimen301
+\Gm@layoutwidth=\dimen302
+\Gm@layoutheight=\dimen303
+\Gm@layouthoffset=\dimen304
+\Gm@layoutvoffset=\dimen305
+\Gm@dimlist=\toks79
+)
+\calCellHeight=\skip115
+\c@LeftFlipBookFrame=\count321
+\c@RightFlipBookFrame=\count322
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'fullPage' with sig. 'O{white}' on line 285.
+.................................................
+\c@LinkCnt=\count323
+\dtldb@webcodes=\toks80
+\dtlkeys@webcodes=\toks81
+\dtlrows@webcodes=\count324
+\dtlcols@webcodes=\count325
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \urlItem with sig. 'mo' on line 333.
+.................................................
+
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.361 \newfontface\lserif{Liberation Serif}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 \newfontface\lserif{Liberation Serif}
+                                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\g__fontspec_family_LiberationSerif_int=\count326
+.................................................
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/n}{{m/n}{normal}{bx/n}{...
+l.361 \newfontface\lserif{Liberation Serif}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\l_fontspec_defined_shapes_tl ...* '\str_case:nnn 
+                                                  {m/sc}{{m/sc}{small caps}{...
+l.361 \newfontface\lserif{Liberation Serif}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+. fontspec info: "defining-font"
+. 
+. Font family 'LiberationSerif(0)' created for font 'Liberation Serif' with
+. options [Ligatures=TeX,BoldFont={},ItalicFont={},SmallCapsFont={}].
+. 
+. This font family consists of the following shapes:
+. 
+. * '{m/n}{{m/n}{normal}{bx/n}{bold}{m/it}{italic}{bx/it}{bold italic}}{n/,}'
+. with NFSS spec.:
+. <->"Liberation Serif/OT:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * '{m/sc}{{m/sc}{small caps}{bx/sc}{bold small caps}{m/si}{italic small
+. caps}{bx/si}{bold italic small caps}}{n/,}' with NFSS spec.:
+. 
+. and font adjustment code:
+. 
+.................................................
+! Undefined control sequence.
+<recently read> \str_case:nnn 
+                              
+l.362 ...SFamily=lmucompatiltext]{LMUCompatilText}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font LMUCompatilText does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tuFilm with sig. 'om' on line 371.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ukino with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calHeute with sig. 'm' on line 379.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calHist with sig. 'm' on line 383.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calJoke with sig. 'm' on line 387.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calSpecialDayNormal with sig. 'm' on line 391.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calSpecialDayNoUni with sig. 'm' on line 395.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \calSpecialDayHoliday with sig. 'm' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'calDayDscNr' with sig. 'mm' on line 406.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'calDayDscName' with sig. 'm' on line 412.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'calDayDscSpecial' with sig. 'm' on line 418.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'calDayDescription' with sig. 'mmmmm' on line 425.
+.................................................
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+
+Package csquotes Warning: Using preliminary 'polyglossia' interface.
+(csquotes)                Some of the multilingual features may not
+(csquotes)                work as expected.
+
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'german'.
+(./main.aux (./impressum.aux) (./vorwort.aux) (./diegaf.aux)
+(./pcundinternet.aux) (./vorlesungszeit.aux) (./vorlesungsfrei.aux)
+(./bibliothek.aux) (./gumbel.aux) (./kalender.aux) (./kalender-days.aux)
+(./beratung.aux) (./ausland.aux) (./geld.aux) (./ankommen.aux) (./transport.aux
+) (./gebaeude.aux) (./raetsel.aux) (./glossar.aux) (./stundenplan.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 525.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 525.
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 525.
+LaTeX Font Info:    ... okay on input line 525.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 525.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 525.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 525.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 525.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 525.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 525.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 525.
+LaTeX Font Info:    Redeclaring math accent \check on input line 525.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 525.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 525.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 525.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 525.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 525.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/lmucompatiltext/m/n on input line 5
+25.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 525.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/lmucompatiltext/m/n on input line 
+525.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/lmucompatiltext/m/n --> EU1/lmucompatiltext/m/n on 
+input line 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/lmucompatiltext/m/it on input line
+ 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/lmucompatiltext/bx/n on input line
+ 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 525.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/lmucompatiltext/m/n --> EU1/lmucompatiltext/bx/n on
+ input line 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/lmucompatiltext/bx/it on input li
+ne 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 525.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 525.
+\AtBeginShipoutBox=\box117
+Package hyperref Info: Link coloring OFF on input line 525.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count327
+)
+LaTeX Info: Redefining \ref on input line 525.
+LaTeX Info: Redefining \pageref on input line 525.
+LaTeX Info: Redefining \nameref on input line 525.
+
+(./main.out) (./main.out)
+\@outlinefile=\write6
+\openout6 = `main.out'.
+
+ ABD: EveryShipout initializing macros
+LaTeX Info: Redefining \microtypecontext on input line 525.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmucompatiltext' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `\k A' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\u A' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\k a' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\u a' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'C' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v C' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'c' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v c' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v D' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v d' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\dj ' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\k E' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v E' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\k e' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v e' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\u G' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\u g' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\.I' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'L' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v L' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'l' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v l' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'N' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v N' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'n' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v n' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\H O' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\H o' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'R' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v R' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'r' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v r' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'S' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\c S' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'s' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\c s' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\c T' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v T' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\c t' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\v t' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\H U' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\r U' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\H u' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\r u' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'Z' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\.Z' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\'z' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\.z' is missing
+(microtype)             in font `\EU1/lmucompatiltext/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
+(marginnote)             Extended position detection mode activated.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <custom>
+* layout(width,height): (421.10078pt,597.50787pt)
+* layoutoffset:(h,v)=(5.69054pt,5.69054pt)
+* modes: twoside 
+* h-part:(L,W,R)=(42.67912pt, 344.27837pt, 34.1433pt)
+* v-part:(T,H,B)=(48.36967pt, 492.2327pt, 56.9055pt)
+* \paperwidth=432.4819pt
+* \paperheight=608.889pt
+* \textwidth=344.27837pt
+* \textheight=492.2327pt
+* \oddsidemargin=-23.90033pt
+* \evensidemargin=-32.43616pt
+* \topmargin=-48.32225pt
+* \headheight=13.68748pt
+* \headsep=16.42499pt
+* \topskip=9.0pt
+* \footskip=38.32497pt
+* \marginparwidth=52.6376pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
+[1
+
+] [2
+
+
+]
+File: img//titel.pdf Graphic file (type QTm)
+ <use  "img//titel.pdf" > [3]
+\openout2 = `impressum.aux'.
+
+ (./impressum.tex
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+<use  "img//vcard.pdf" >
+Overfull \vbox (27.85135pt too high) detected at line 28
+ []
+
+<use  "img//vcard.pdf" >
+Overfull \vbox (27.85135pt too high) detected at line 28
+ []
+
+File: img//vcard.pdf Graphic file (type QTm)
+<use  "img//vcard.pdf" >
+Overfull \vbox (27.85135pt too high) detected at line 28
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+) [4
+
+
+] (./main.toc [1
+
+
+] [2])
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+ [3]
+\openout2 = `vorwort.aux'.
+
+ (./vorwort.tex
+chapter without number
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface .
+
+[4
+
+
+]
+chapter without number
+File: img//subjectI.pdf Graphic file (type QTm)
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" >
+File: img//subjectM.pdf Graphic file (type QTm)
+
+<use  "img//subjectM.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+ <use  "img//subjectW.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+
+<use  "img//subjectP.pdf" >) [5
+
+]
+\openout2 = `diegaf.aux'.
+
+ (./diegaf.tex
+chapter 1.
+[1
+
+
+
+
+]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 34--35
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 56--57
+[][][][][][] 
+ []
+
+File: img//aktive-fachschaft_print.jpg Graphic file (type QTm)
+<use  "img//aktive-fachschaft_print.jpg" >) [2] [3]
+\openout2 = `pcundinternet.aux'.
+
+ (./pcundinternet.tex
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\EU1/lmucompatiltext/m/n/9 Theresienstraße 37–41, BU135 und
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\EU1/lmucompatiltext/m/n/9 Oettingenstraße 67, BU102, LU112,
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 31--32
+[][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 41--42
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (3.61748pt too wide) in paragraph at lines 47--48
+\EU1/lmucompatiltext/m/n/9 Hier kannst du deine Campus-Kennung aktivieren, erhä
+ltst Zugang zum E-Mail-Account,
+ []
+
+[4
+
+
+
+]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 58--59
+[][][][][][][] 
+ []
+
+File: img//comic_university.png Graphic file (type QTm)
+<use  "img//comic_university.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]$[][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][][][][] [] [][][][][][]
+[] [] [][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 76--77
+[][][][][][][] 
+ []
+
+[5]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 91--92
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 100--101
+[][][][][][][] 
+ []
+
+File: img//subjectI.pdf Graphic file (type QTm)
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+
+<use  "img//subjectP.pdf" >
+Overfull \hbox (36.0pt too wide) in paragraph at lines 111--112
+[][][][][][][] 
+ []
+
+File: img//subjectI.pdf Graphic file (type QTm)
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" > [6]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 126--127
+[][][][][][][] 
+ []
+
+File: img//subjectI.pdf Graphic file (type QTm)
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" >
+Overfull \hbox (36.0pt too wide) in paragraph at lines 138--139
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 154--155
+[][][][][][][] 
+ []
+
+[7]
+File: img//subjectM.pdf Graphic file (type QTm)
+ <use  "img//subjectM.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+ <use  "img//subjectW.pdf" >
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 160
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (34.93066pt too wide) in paragraph at lines 160--161
+\EU1/lmucompatiltext/m/n/9 Die Weiterleitung erfolgt über das Shell-Kommando []
+\EU1/lmtt/m/n/9 echo "neue Adresse" >~/.forward\EU1/lmucompatiltext/m/n/9 . 
+ []
+
+File: img//subjectI.pdf Graphic file (type QTm)
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" >
+Overfull \hbox (36.0pt too wide) in paragraph at lines 172--173
+[][][][][][][] 
+ []
+
+File: img//subjectP.pdf Graphic file (type QTm)
+<use  "img//subjectP.pdf" >
+Overfull \hbox (36.0pt too wide) in paragraph at lines 184--185
+[][][][][][][] 
+ []
+
+[8]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 200--201
+[][][][][][][] 
+ []
+
+[9]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 219--220
+[][][][][][][] 
+ []
+
+) [10]
+\openout2 = `vorlesungszeit.aux'.
+
+ (./vorlesungszeit.tex
+chapter 3.
+
+Overfull \hbox (4.39398pt too wide) in paragraph at lines 8--9
+[]\EU1/lmucompatiltext/m/n/9 Vorlesungen: Hier präsentiert ein Professorikon de
+n (oft prüfungsrelevanten) Stoff.
+ []
+
+
+Overfull \hbox (23.74663pt too wide) in paragraph at lines 13--14
+[]\EU1/lmucompatiltext/m/n/9 Außerdem musst du zwischen Pflicht- und Wahlpflich
+tveranstaltungen unterscheiden. 
+ []
+
+[11
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]$[][][][] [] [] [] [][][] [] [][][][][] [] [][][] [] [][][][][][][][][][][][]
+[] [] [][] [] [][][] [] [][][][][] [] [][][][][][][][][][] [] [][][][][][][] []
+ [][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][] [] [][][][][]
+[][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][] []
+
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 31--32
+[][][][][][][] 
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]$[][][][] [] [] [] [][][][][][][][] [] [][][] [] [][] [] [][][] [] [][] [] []
+[][][][][][][] [] [][][][][][][][][] [] [][][][][][][][] [] [] [] [][][][][] []
+
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 74--75
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][] [] [][][][][]
+[][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 87--88
+[][][][][][][] 
+ []
+
+[13]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 97--98
+[][][][][][][] 
+ []
+
+)
+Overfull \hbox (36.0pt too wide) in paragraph at lines 116--553
+[][][][][][][] 
+ []
+
+[14]
+\openout2 = `vorlesungsfrei.aux'.
+
+ (./vorlesungsfrei.tex
+chapter 4.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 29--30
+[][][][][][][] 
+ []
+
+) [15
+
+
+
+]
+\openout2 = `bibliothek.aux'.
+
+ (./bibliothek.tex
+chapter 5.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 19--20
+[][][][][][] 
+ []
+
+
+Overfull \hbox (11.91498pt too wide) in paragraph at lines 27--28
+[]\EU1/lmucompatiltext/bx/n/9 Bitte verhalte dich leise! Deine lernenden Kommil
+litonen werden es dir danken. 
+ []
+
+[16
+
+
+
+]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 45--46
+[][][][][][][] 
+ []
+
+File: img//subjectM.pdf Graphic file (type QTm)
+<use  "img//subjectM.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+ <use  "img//subjectW.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+
+<use  "img//subjectP.pdf" >
+File: img//subjectI.pdf Graphic file (type QTm)
+ <use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+
+<use  "img//subjectMI.pdf" > [17]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 76--77
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 91--92
+[][][][][][][] 
+ []
+
+[18]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 100--101
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (14.16847pt too wide) in paragraph at lines 103--107
+\EU1/lmucompatiltext/m/n/9 Niederlassungen über die ganze Stadt verteilt, Ausle
+ihe für Studenten 10 € pro Jahr. 
+ []
+
+)
+Overfull \hbox (36.0pt too wide) in paragraph at lines 110--555
+[][][][][][][] 
+ []
+
+[19]
+\openout2 = `gumbel.aux'.
+
+ (./gumbel.tex
+chapter 6.
+File: img//gumbel_raum_print.jpg Graphic file (type QTm)
+<use  "img//gumbel_raum_print.jpg" >) [20
+
+
+
+]
+\openout2 = `kalender.aux'.
+
+ (./kalender.tex)
+\openout2 = `kalender-days.aux'.
+
+
+No file kalender-days.tex.
+\openout2 = `beratung.aux'.
+
+(./beratung.tex
+chapter 8.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 26--27
+[][][][][][][] 
+ []
+
+File: img/wisdom_of_the_ancients.png Graphic file (type QTm)
+<use  "img/wisdom_of_the_ancients.png" > [21
+
+
+
+
+
+
+
+]
+File: img//subjectM.pdf Graphic file (type QTm)
+ <use  "img//subjectM.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+
+<use  "img//subjectW.pdf" >
+File: img//subjectI.pdf Graphic file (type QTm)
+ <use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+
+<use  "img//subjectMI.pdf" >
+File: img//subjectS.pdf Graphic file (type QTm)
+ <use  "img//subjectS.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+
+<use  "img//subjectP.pdf" >
+File: img//subjectM.pdf Graphic file (type QTm)
+ <use  "img//subjectM.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+
+<use  "img//subjectW.pdf" > [22]
+File: img//subjectM.pdf Graphic file (type QTm)
+ <use  "img//subjectM.pdf" >
+File: img//subjectM.pdf Graphic file (type QTm)
+
+<use  "img//subjectM.pdf" >
+File: img//subjectI.pdf Graphic file (type QTm)
+ <use  "img//subjectI.pdf" >
+File: img//subjectI.pdf Graphic file (type QTm)
+
+<use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+ <use  "img//subjectMI.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+
+<use  "img//subjectP.pdf" > [23]
+File: img//subjectP.pdf Graphic file (type QTm)
+ <use  "img//subjectP.pdf" >
+Overfull \hbox (36.0pt too wide) in paragraph at lines 123--124
+[][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 145--146
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]$[][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][][][][] [] [][][][][][]
+[][] [] [][][][][][][][] [] [][][][][][][] [] [][][][][][][][] [] [][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 155--156
+[][][][][][][] 
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][]
+[][][][][][][][] [] [][] [] [][][][][][][][][][][][][] [] [][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][] [] [][][][][][][][][][][][][] [] [][] [] [][][][][][][][][] 
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]$[][][][] [] [] [] [][][] [] [][][][][][] [] [][][][][][][][][][][][][] [] []
+[] [] [][][][][][][][][] [] [][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 173--174
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 183--184
+[][][][][][][] 
+ []
+
+[26]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 192--193
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][] [
+] [][] [] [][][][][][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 202--203
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 220--221
+[][][][][][][] 
+ []
+
+[27]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 231--232
+[][][][][][][] 
+ []
+
+)
+Overfull \hbox (36.0pt too wide) in paragraph at lines 240--561
+[][][][][][][] 
+ []
+
+[28]
+\openout2 = `ausland.aux'.
+
+ (./ausland.tex
+chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][][][][][][][][] [] [][][]
+[][][][][][][][][][] [] [][] [] [][][][] [] [][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 32--33
+[][][][][][][] 
+ []
+
+[29
+
+
+
+]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 51--52
+[][][][][][][] 
+ []
+
+)
+Overfull \hbox (36.0pt too wide) in paragraph at lines 61--562
+[][][][][][][] 
+ []
+
+[30]
+\openout2 = `geld.aux'.
+
+ (./geld.tex
+chapter 10.
+[31
+
+
+
+] [32] [33]
+Overfull \hbox (2.62779pt too wide) in paragraph at lines 132--136
+[]\EU1/lmucompatiltext/m/n/9 Einen ersten Eindruck deiner Chancen auf BAföG bzw
+. der erwartbaren Höhe bekommst
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 150--151
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (3.8935pt too wide) in paragraph at lines 153--154
+\EU1/lmucompatiltext/m/n/9 Deutlich höhere Stundenlöhne erhältst du, wenn du in
+ einem der vielen IT-Unternehmen
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][] [] [][][][][]
+[][][][] [] [][][][][][][][][][][][][][][] [] [][][][] [] [][][][][][][][][][] 
+[]
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 167--168
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 181--182
+[][][][][][][] 
+ []
+
+) [35] [36]
+\openout2 = `ankommen.aux'.
+
+ (./ankommen.tex
+chapter 11.
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 19--20
+[][][][][][][] 
+ []
+
+[37
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][] [
+] [][] [] [][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][] [
+] [][] [] [][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][] [
+] [][] [] [][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][] [] [][] [
+] [][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 36--37
+[][][][][][][] 
+ []
+
+[38]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 56--57
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 85--86
+[][][][][][][] 
+ []
+
+File: img//comic_laundry.png Graphic file (type QTm)
+<use  "img//comic_laundry.png" > [39]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 103--104
+[][][][][][][] 
+ []
+
+) [40]
+\openout2 = `transport.aux'.
+
+ (./transport.tex
+chapter 12.
+[41
+
+
+
+]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 64--65
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (15.36084pt too wide) in paragraph at lines 73--74
+\EU1/lmucompatiltext/m/n/9 Der Münchner Verkehrsverbund ist der Träger des Groß
+teils des ÖPNV in München. 
+ []
+
+File: img//IsarCardSemester-MVG-ICA-Automat.jpg Graphic file (type QTm)
+<use  "img//IsarCardSemester-MVG-ICA-Automat.jpg" >
+File: img//IsarCardSemester-MVG-ICA-Automat-Kaufbeleg.jpg Graphic file (type QT
+m)
+
+<use  "img//IsarCardSemester-MVG-ICA-Automat-Kaufbeleg.jpg" > [42]
+File: img//IsarCardSemester-DB-Automat.jpg Graphic file (type QTm)
+
+<use  "img//IsarCardSemester-DB-Automat.jpg" >
+File: img//IsarCardSemester-DB-Automat-Kaufbeleg.jpg Graphic file (type QTm)
+
+<use  "img//IsarCardSemester-DB-Automat-Kaufbeleg.jpg" > [43]
+Overfull \hbox (36.0pt too wide) in paragraph at lines 158--159
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 175--176
+[][][][][][][] 
+ []
+
+) [44] [45]
+\openout2 = `gebaeude.aux'.
+
+ (./gebaeude.tex
+chapter A.
+File: img//hauptgeb.png Graphic file (type QTm)
+<use  "img//hauptgeb.png" >
+File: img//mathebau_eg.pdf Graphic file (type QTm)
+ <use  "img//mathebau_eg.pdf" >
+File: img//mathebau_og.pdf Graphic file (type QTm)
+
+<use  "img//mathebau_og.pdf" > [46
+
+
+
+]
+File: img//subjectI.pdf Graphic file (type QTm)
+ <use  "img//subjectI.pdf" >
+File: img//subjectMI.pdf Graphic file (type QTm)
+
+<use  "img//subjectMI.pdf" >
+File: img//oettingen_ug.pdf Graphic file (type QTm)
+ <use  "img//oettingen_ug.pdf" >
+File: img//oettingen_eg.pdf Graphic file (type QTm)
+
+<use  "img//oettingen_eg.pdf" > [47]
+File: img//subjectP.pdf Graphic file (type QTm)
+ <use  "img//subjectP.pdf" >
+File: img//schelling.pdf Graphic file (type QTm)
+
+<use  "img//schelling.pdf" >) [48] [49]
+\openout2 = `raetsel.aux'.
+
+ (./raetsel.tex
+chapter B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\EU1/lmucompatiltext/m/n/9 Löse folgende Gleichung, wobei je-
+ []
+
+File: img//2011-10-02-134837_191x192_scrot.png Graphic file (type QTm)
+<use  "img//2011-10-02-134837_191x192_scrot.png" >
+Overfull \hbox (13.28505pt too wide) in paragraph at lines 31--32
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+\EU1/lmucompatiltext/m/n/9 Welchen Film haben wir hier ver-
+ []
+
+
+Overfull \hbox (33.51154pt too wide) in paragraph at lines 36--45
+[][] 
+ []
+
+[50
+
+
+
+]
+File: img//minepuzzle_gen02tr.png Graphic file (type QTm)
+ <use  "img//minepuzzle_gen02tr.png" >
+File: img//minepuzzle_gen14tr.png Graphic file (type QTm)
+
+<use  "img//minepuzzle_gen14tr.png" >
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 53--55
+[][] [] 
+ []
+
+File: img//minepuzzle_gen18tr.png Graphic file (type QTm)
+<use  "img//minepuzzle_gen18tr.png" >
+File: img//minepuzzle_gen21tr.png Graphic file (type QTm)
+ <use  "img//minepuzzle_gen21tr.png" >
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 56--58
+[][] [] 
+ []
+
+File: img//minepuzzle_gen29tr.png Graphic file (type QTm)
+<use  "img//minepuzzle_gen29tr.png" >
+File: img//minepuzzle_gen19tr.png Graphic file (type QTm)
+ <use  "img//minepuzzle_gen19tr.png" >
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 59--61
+[][] [] 
+ []
+
+
+Overfull \hbox (14.16536pt too wide) in paragraph at lines 78--100
+ [] 
+ []
+
+) [51]
+\openout2 = `glossar.aux'.
+
+ (./glossar.tex
+chapter C.
+
+Overfull \hbox (29.41219pt too wide) in paragraph at lines 3--25
+[] 
+ []
+
+) [52
+
+
+
+]
+\openout2 = `stundenplan.aux'.
+
+ (./stundenplan.tex [53
+
+
+
+
+]) [54
+
+
+
+
+]
+File: img//mvv.pdf Graphic file (type QTm)
+ <use  "img//mvv.pdf" >
+Overfull \hbox (30.20514pt too wide) in paragraph at lines 589--591
+[] [] 
+ []
+
+[55]
+File: img//mvv.pdf Graphic file (type QTm)
+ <use  "img//mvv.pdf" >
+Overfull \hbox (23.09361pt too wide) in paragraph at lines 595--596
+[][] 
+ []
+
+[56
+
+]
+File: img//lageplan.pdf Graphic file (type QTm)
+ <use  "img//lageplan.pdf" >
+Overfull \hbox (29.54298pt too wide) in paragraph at lines 602--603
+[] 
+ []
+
+[57
+
+]
+File: img//lageplan.pdf Graphic file (type QTm)
+ <use  "img//lageplan.pdf" >
+Overfull \hbox (29.543pt too wide) in paragraph at lines 606--607
+[] 
+ []
+
+[58
+
+]
+File: img//back.pdf Graphic file (type QTm)
+ <use  "img//back.pdf" > [59
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 621.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 621.
+ (./main.aux (./impressum.aux) (./vorwort.aux) (./diegaf.aux) (./pcundinternet.
+aux) (./vorlesungszeit.aux)
+(./vorlesungsfrei.aux) (./bibliothek.aux) (./gumbel.aux) (./kalender.aux)
+(./kalender-days.aux) (./beratung.aux) (./ausland.aux) (./geld.aux)
+(./ankommen.aux) (./transport.aux) (./gebaeude.aux) (./raetsel.aux)
+(./glossar.aux) (./stundenplan.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 621.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 621.
+ )
+(\end occurred when \iffalse on line 25 was incomplete) 
+Here is how much of TeX's memory you used:
+ 45295 strings out of 495522
+ 863252 string characters out of 6183361
+ 1184412 words of memory out of 5000000
+ 47542 multiletter control sequences out of 15000+600000
+ 8312 words of font info for 85 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 66i,14n,71p,10450b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (68 pages).
