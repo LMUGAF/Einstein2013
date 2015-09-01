@@ -1,0 +1,99 @@
+
+*** These modified files were found in JOE when it aborted on Tue Sep  1 13:18:51 2015
+*** JOE was aborted by UNIX signal 1
+
+*** Datei '/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG'
+
+# Bitte geben Sie eine Commit-Beschreibung für Ihre Änderungen ein. Zeilen,
+# die mit '#' beginnen, werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+# Auf Branch master
+# Ihr Branch ist auf dem selben Stand wie 'origin/master'.
+#
+# zum Commit vorgemerkte Änderungen:
+#	neue Datei:     .~lock.webcodes.csv#
+#	geändert:       ankommen.aux
+#	geändert:       ankommen.tex
+#	geändert:       beratung.tex
+#	geändert:       gebaeude.aux
+#	geändert:       geld.tex
+#	geändert:       glossar.aux
+#	geändert:       main.log
+#	geändert:       main.synctex.gz
+#	geändert:       raetsel.aux
+#	geändert:       stundenplan.aux
+#	geändert:       transport.aux
+#	geändert:       transport.tex
+#	geändert:       webcodes.csv
+
+
+*** Datei '(Unbenannt)'
+.circuslinuxrc
+.widelands/config
+.wine/config
+.wine/config
+.Ankh2/settings.ini
+ankh2.desktop
+ankh2.desktop
+/home/viktoria/.gitconfig
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+
+*** These modified files were found in JOE when it aborted on Tue Sep  1 13:19:30 2015
+*** JOE was aborted by UNIX signal 1
+
+*** Datei '(Unbenannt)'
+.circuslinuxrc
+.widelands/config
+.wine/config
+.wine/config
+.Ankh2/settings.ini
+ankh2.desktop
+ankh2.desktop
+/home/viktoria/.gitconfig
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+
+*** These modified files were found in JOE when it aborted on Tue Sep  1 13:23:29 2015
+*** JOE was aborted by UNIX signal 1
+
+*** Datei '/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG'
+
+# Bitte geben Sie eine Commit-Beschreibung für Ihre Änderungen ein. Zeilen,
+# die mit '#' beginnen, werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+# Auf Branch master
+# Ihr Branch ist auf dem selben Stand wie 'origin/master'.
+#
+# zum Commit vorgemerkte Änderungen:
+#	neue Datei:     .~lock.webcodes.csv#
+#	neue Datei:     DEADJOE
+#	geändert:       ankommen.aux
+#	geändert:       ankommen.tex
+#	geändert:       beratung.tex
+#	geändert:       gebaeude.aux
+#	geändert:       geld.tex
+#	geändert:       glossar.aux
+#	geändert:       main.log
+#	geändert:       main.synctex.gz
+#	geändert:       raetsel.aux
+#	geändert:       stundenplan.aux
+#	geändert:       transport.aux
+#	geändert:       transport.tex
+#	geändert:       webcodes.csv
+Typos
+
+*** Datei '(Unbenannt)'
+.circuslinuxrc
+.widelands/config
+.wine/config
+.wine/config
+.Ankh2/settings.ini
+ankh2.desktop
+ankh2.desktop
+/home/viktoria/.gitconfig
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG
+/home/viktoria/ersti-einstein/.git/COMMIT_EDITMSG

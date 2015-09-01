@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2015.8.30)  31 AUG 2015 13:14
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2015.8.30)  1 SEP 2015 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3994,36 +3994,33 @@ File: img//subjectI.pdf Graphic file (type QTm)
 File: img//subjectMI.pdf Graphic file (type QTm)
 
 <use  "img//subjectMI.pdf" >
-File: img//subjectS.pdf Graphic file (type QTm)
- <use  "img//subjectS.pdf" >
 File: img//subjectP.pdf Graphic file (type QTm)
-
-<use  "img//subjectP.pdf" >
-File: img//subjectM.pdf Graphic file (type QTm)
- <use  "img//subjectM.pdf" >
-File: img//subjectW.pdf Graphic file (type QTm)
-
-<use  "img//subjectW.pdf" > [22]
-File: img//subjectM.pdf Graphic file (type QTm)
- <use  "img//subjectM.pdf" >
+ <use  "img//subjectP.pdf" >
 File: img//subjectM.pdf Graphic file (type QTm)
 
 <use  "img//subjectM.pdf" >
-File: img//subjectI.pdf Graphic file (type QTm)
- <use  "img//subjectI.pdf" >
+File: img//subjectW.pdf Graphic file (type QTm)
+ <use  "img//subjectW.pdf" > [22]
+File: img//subjectM.pdf Graphic file (type QTm)
+
+<use  "img//subjectM.pdf" >
+File: img//subjectM.pdf Graphic file (type QTm)
+ <use  "img//subjectM.pdf" >
 File: img//subjectI.pdf Graphic file (type QTm)
 
 <use  "img//subjectI.pdf" >
+File: img//subjectI.pdf Graphic file (type QTm)
+ <use  "img//subjectI.pdf" >
 File: img//subjectMI.pdf Graphic file (type QTm)
- <use  "img//subjectMI.pdf" >
-File: img//subjectP.pdf Graphic file (type QTm)
 
-<use  "img//subjectP.pdf" > [23]
+<use  "img//subjectMI.pdf" >
 File: img//subjectP.pdf Graphic file (type QTm)
- <use  "img//subjectP.pdf" >
+ <use  "img//subjectP.pdf" > [23]
 File: img//subjectP.pdf Graphic file (type QTm)
 
 <use  "img//subjectP.pdf" >
+File: img//subjectP.pdf Graphic file (type QTm)
+ <use  "img//subjectP.pdf" >
 Overfull \hbox (36.0pt too wide) in paragraph at lines 123--124
 [][][][][][][] 
  []
@@ -4312,24 +4309,33 @@ File: img//schelling.pdf Graphic file (type QTm)
 
  (./raetsel.tex
 chapter B.
+! Extra }, or forgotten \endgroup.
+l.28 ^^I- Hmm, das genügt mir noch nicht \ldots}
+                                                 \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-\EU1/lmucompatiltext/m/n/9 Löse folgende Gleichung, wobei je-
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--31
+
  []
 
 File: img//2011-10-02-134837_191x192_scrot.png Graphic file (type QTm)
 <use  "img//2011-10-02-134837_191x192_scrot.png" >
-Overfull \hbox (13.28505pt too wide) in paragraph at lines 31--32
+Overfull \hbox (13.28505pt too wide) in paragraph at lines 39--40
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 \EU1/lmucompatiltext/m/n/9 Welchen Film haben wir hier ver-
  []
 
 
-Overfull \hbox (33.51154pt too wide) in paragraph at lines 36--45
+Overfull \hbox (33.51154pt too wide) in paragraph at lines 44--53
 [][] 
  []
 
@@ -4343,7 +4349,7 @@ File: img//minepuzzle_gen02tr.png Graphic file (type QTm)
 File: img//minepuzzle_gen14tr.png Graphic file (type QTm)
 
 <use  "img//minepuzzle_gen14tr.png" >
-Overfull \hbox (14.95305pt too wide) in paragraph at lines 53--55
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 61--63
 [][] [] 
  []
 
@@ -4351,7 +4357,7 @@ File: img//minepuzzle_gen18tr.png Graphic file (type QTm)
 <use  "img//minepuzzle_gen18tr.png" >
 File: img//minepuzzle_gen21tr.png Graphic file (type QTm)
  <use  "img//minepuzzle_gen21tr.png" >
-Overfull \hbox (14.95305pt too wide) in paragraph at lines 56--58
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 64--66
 [][] [] 
  []
 
@@ -4359,12 +4365,17 @@ File: img//minepuzzle_gen29tr.png Graphic file (type QTm)
 <use  "img//minepuzzle_gen29tr.png" >
 File: img//minepuzzle_gen19tr.png Graphic file (type QTm)
  <use  "img//minepuzzle_gen19tr.png" >
-Overfull \hbox (14.95305pt too wide) in paragraph at lines 59--61
+Overfull \hbox (14.95305pt too wide) in paragraph at lines 67--69
 [][] [] 
  []
 
 
-Overfull \hbox (14.16536pt too wide) in paragraph at lines 78--100
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Overfull \hbox (14.16536pt too wide) in paragraph at lines 92--114
  [] 
  []
 
@@ -4447,10 +4458,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 621.
  )
 (\end occurred when \iffalse on line 25 was incomplete) 
 Here is how much of TeX's memory you used:
- 45295 strings out of 495522
- 863252 string characters out of 6183361
- 1184412 words of memory out of 5000000
- 47542 multiletter control sequences out of 15000+600000
+ 45294 strings out of 495522
+ 863231 string characters out of 6183361
+ 1185374 words of memory out of 5000000
+ 47541 multiletter control sequences out of 15000+600000
  8312 words of font info for 85 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  66i,14n,71p,10450b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
