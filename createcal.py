@@ -88,8 +88,8 @@ addFeiertag(12,  6, "2. Advent"                             ) # Variabel
 addFeiertag(12, 13, "3. Advent"                             ) # Variabel
 addFeiertag(12, 20, "4. Advent"                             ) # Variabel
 addFeiertag(12, 24, "Heiligabend"                           ) # Fix
-addFeiertag(12, 25, "1. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
-addFeiertag(12, 26, "2. Weihnachtsfeiertag"    , HOLIDAY_DAY) # Fix
+addFeiertag(12, 25, "1. Weihnachtstag"         , HOLIDAY_DAY) # Fix
+addFeiertag(12, 26, "2. Weihnachtstag"         , HOLIDAY_DAY) # Fix
 
 # http://de.wikipedia.org/wiki/Diskordianischer_Kalender
 addFeiertag( 1,  5, "Mungtag"                        ) # Fix
