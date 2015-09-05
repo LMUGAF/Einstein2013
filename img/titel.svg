@@ -13,7 +13,7 @@
    height="214mm"
    id="svg3013"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="titel.svg">
   <defs
      id="defs3015" />
@@ -25,14 +25,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.89027629"
-     inkscape:cx="69.133048"
-     inkscape:cy="319.90228"
+     inkscape:cx="158.99279"
+     inkscape:cy="230.04254"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="true"
-     inkscape:window-width="1916"
-     inkscape:window-height="1041"
+     inkscape:window-width="1362"
+     inkscape:window-height="729"
      inkscape:window-x="0"
      inkscape:window-y="18"
      inkscape:window-maximized="0"
@@ -82,49 +82,56 @@
          cy="418.91455"
          cx="158.37779"
          id="path5704"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.23005295;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.23005295;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 173.08347,418.91455 c 0,1.9182 -6.58395,3.47321 -14.70568,3.47321 -8.12172,0 -14.70568,-1.55501 -14.70568,-3.47321 0,-1.9182 6.58396,-3.47321 14.70568,-3.47321 8.12173,0 14.70568,1.55501 14.70568,3.47321 z" />
       <ellipse
          ry="1.6848701"
          rx="6.7394805"
          cy="412.73669"
          cx="117.94091"
          id="path5706"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 124.68039,412.73669 c 0,0.93053 -3.01737,1.68487 -6.73948,1.68487 -3.72211,0 -6.73948,-0.75434 -6.73948,-1.68487 0,-0.93052 3.01737,-1.68487 6.73948,-1.68487 3.72211,0 6.73948,0.75435 6.73948,1.68487 z" />
       <ellipse
          ry="1.9408777"
          rx="6.2934589"
          cy="413.43872"
          cx="59.532082"
          id="path5708"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.2057966;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.2057966;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 65.825541,413.43872 c 0,1.07192 -2.817678,1.94088 -6.293459,1.94088 -3.475782,0 -6.293459,-0.86896 -6.293459,-1.94088 0,-1.07192 2.817677,-1.94088 6.293459,-1.94088 3.475781,0 6.293459,0.86896 6.293459,1.94088 z" />
       <ellipse
          ry="2.2464936"
          rx="6.7394805"
          cy="427.3389"
          cx="87.613243"
          id="path5710"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 94.352724,427.3389 c 0,1.2407 -3.017369,2.24649 -6.739481,2.24649 -3.722112,0 -6.73948,-1.00579 -6.73948,-2.24649 0,-1.24071 3.017368,-2.2465 6.73948,-2.2465 3.722112,0 6.739481,1.00579 6.739481,2.2465 z" />
       <ellipse
          ry="1.9656819"
          rx="9.8284092"
          cy="411.89426"
          cx="195.72575"
          id="path5712"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.43700004;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 205.55416,411.89426 c 0,1.08561 -4.40033,1.96568 -9.82841,1.96568 -5.42808,0 -9.82841,-0.88007 -9.82841,-1.96568 0,-1.08562 4.40033,-1.96569 9.82841,-1.96569 5.42808,0 9.82841,0.88007 9.82841,1.96569 z" />
       <ellipse
          ry="1.9129596"
          rx="4.8614821"
          cy="428.00101"
          cx="186.42566"
          id="path5714"
-         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.26163316;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.26163316;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 191.28714,428.00101 c 0,1.0565 -2.17656,1.91296 -4.86148,1.91296 -2.68492,0 -4.86148,-0.85646 -4.86148,-1.91296 0,-1.0565 2.17656,-1.91296 4.86148,-1.91296 2.68492,0 4.86148,0.85646 4.86148,1.91296 z" />
       <ellipse
          ry="1.0134436"
          rx="3.8215604"
          cy="424.89969"
          cx="33.243122"
          id="path5714-8"
-         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.81417167;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.81417167;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 37.064682,424.89969 c 0,0.55971 -1.71097,1.01344 -3.82156,1.01344 -2.110589,0 -3.82156,-0.45373 -3.82156,-1.01344 0,-0.55971 1.710971,-1.01344 3.82156,-1.01344 2.11059,0 3.82156,0.45373 3.82156,1.01344 z" />
     </g>
   </g>
   <g
@@ -192,7 +199,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LMU CompatilFact';-inkscape-font-specification:'LMU CompatilFact'">Info - Physik - Medieninfo - Meteorologie</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'LMU CompatilFact';-inkscape-font-specification:'LMU CompatilFact';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LMU CompatilFact;-inkscape-font-specification:LMU CompatilFact"
        x="430.82599"
        y="341.24948"
        id="text3344"
@@ -201,7 +208,7 @@
          id="tspan3346"
          x="430.82599"
          y="341.24948"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LMU CompatilFact';-inkscape-font-specification:'LMU CompatilFact'">WS 2014/15</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LMU CompatilFact;-inkscape-font-specification:LMU CompatilFact">WS 2015/16</tspan></text>
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.13849354;marker:none;enable-background:accumulate"
        d="m -485.91992,92.832982 -2.0106,9.558348 c -9.71036,45.63098 -9.22837,90.05105 1.88494,138.59655 l 65.34454,0 c -0.67532,-1.73082 -5.51057,-9.66811 -11.56095,-18.92558 -29.52091,-45.16985 -44.4992,-79.26825 -51.64732,-118.14161 l -2.01061,-11.087708 z"
